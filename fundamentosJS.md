@@ -911,14 +911,14 @@ En este ejemplo le vamos a devolver el horozcopo del día al usuario de acuerdo 
 				break
 			case 'géminis':
 			case 'geminis':
-				alert('Durante el mes de enero...)
+				alert('Durante el mes de enero...')
 				break
 			case 'cáncer':
 			case 'cancer':
 				alert('La situación económica de Cáncer podría tener...')
 				break
 			case 'leo':
-				alert('A pesar de las prisas por terminar un proyecto...)
+				alert('A pesar de las prisas por terminar un proyecto...')
 				break
 			case 'virgo':
 				alert('Durante el mes de enero se presentan...')	
