@@ -15,7 +15,12 @@
 
 ## [Estructuras de Control y Funciones](#sec2)
 ### [12 - Condicionales](#clase12)
-### [13 - Funciones que retornan valores](#clase13) 
+### [13 - Funciones que retornan valores](#clase13)
+### [14 - Arrow Functions](#clase14)
+### [15 - ](#clase15)
+### [16 - ](#clase16)
+### [17 - ](#clase17)
+### [18 - ](#clase18)
 
 
 <br>
@@ -635,3 +640,118 @@ Los condicionales (_if...else_) nos permiten decidir si un código se ejecuta o 
 
 ## <a name="clase13"> 13 - Funciones que retornan valores </a>
 
+Usamos condicionales para desglosar las funciones en funciones más pequeñas que retornen un valor.
+
+Return detiene la ejecución de una función y devuelve el valor de esa función.
+
+Las variables definidas con _'const'_ se comportan como las variables _'var'_, excepto que no pueden ser reasignadas. Las constantes pueden ser declaradas en mayúsculas o minúsculas. Pero por convención, para distinguirlas del resto de variables, se escribe todo en mayusculas.
+
+
+
+```javascript
+
+	var sacha = {
+		nombre: 'Sacha',
+		apellido: 'Lifszyc',
+		edad: 28,
+		ingeniero: true,
+		cocinero: false,
+		cantante: false,
+		dj: false,
+		guitarrista: false,
+		drone: true
+	}
+
+	const MAYORIA_DE_EDAD = 18
+
+	functionesMayorDeEdad(persona) {
+		return persona.edad >= MAYORIA_DE_EDAD
+	}
+
+	functionimprimirSiEsMayorDeEdad(persona) {
+		if(esMayorDeEdad(persona)) {
+			console.log(`${persona.nombre}${persona.apellido} es mayor de edad.`)
+		} else {
+			console.log(`${persona.nombre}${persona.apellido} no es mayor de edad.`)		
+		}
+	}
+
+```
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase14"> 14 - Arrow Functions </a>
+
+Loas Arrow Functions permiten una nomenclatura más corta para escribir expresiones de funciones. 
+
+Este tipo de funciones deben definirse antes de ser utilizadas.
+
+Al escribir las Arrow Functions no es necesario escribir la palabra function, la palabra return, ni las llaves.
+
+
+JS permite asignar una función a una variable. Se llama función anónima. Y se puede escribir de varias maneras:
+
+```javascript
+
+	const MAYORIA_DE_EDAD = 18
+
+	var esMayorDeEdad =function(persona){   	
+		return persona.edad >= MAYORIA_DE_EDAD
+	}
+
+```
+
+<br>
+
+Sacha prefiere declararla como _‘const’_ y no como _‘var’_ para definir que es una función y no una variable:
+
+```javascript
+
+	const esMayorDeEdad =function(persona){   	
+		return persona.edad >= MAYORIA_DE_EDAD
+	}
+
+``` 
+
+
+
+La palabra clave _‘function’_ puede reemplazarse por un ‘=>’ después de persona y se convierte en un _arrow function_:
+
+
+```javascript
+
+	const esMayorDeEdad = (persona) => {   	
+		return persona.edad >= MAYORIA_DE_EDAD
+	}
+
+```
+
+Se pueden seguir quitando caracteres.
+Cuando hay un sólo parámetro se pueden quitar los paréntesis.
+
+```javascript
+
+	const esMayorDeEdad = persona => {   	
+		return persona.edad >= MAYORIA_DE_EDAD
+	}
+
+```
+
+Si una función sólo retorna un valor se puede quitar el keyword _‘return’_ y las llaves _'{}'_.
+
+```javascript
+
+	const esMayorDeEdad = persona => persona.edad >= MAYORIA_DE_EDAD
+
+```
+
+También se puede desestructurar el parámetro ya que sólo nos interesa la edad. Hay que agregar paréntesis:
+
+```javascript
+
+	const esMayorDeEdad =  ({edad}) => persona >= MAYORIA_DE_EDAD
+
+```
