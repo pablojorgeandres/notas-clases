@@ -72,6 +72,39 @@ ej:
 
 ## <a name="clase5"> Clase 5: Variables - Strings </a>
 
+Sobre una variable tipo string los métodos más básicos que podemos usar son:
+
+	.toUpperCase() 	// convierte todo el string en mayúsculas
+	.toLowerCase() 	// convierte todo el string en minúsculas
+	.charAt(n)  		// nos dirige al caracter de la posición 'n'
+	.length   			// arroja un número que equivale a la cantidad de caracteres del string 
+	.substr(n, n1)  		// arroja un string que comienza en la letra 'n' y termina en la letra 'n1' del string dado
+
+Ej:
+	
+```
+
+var nombre = 'Sacha', apellido = 'Lifszyc'
+
+var nombreEnMayusculas = nombre.toUpperCase()  
+// "SACHA"
+
+var apellidoEnMinusculas = apellido.toLowerCase()   
+// "lifszyc"
+
+var primeraLetraDelNombre = nombre.charAt(0) 		
+// "S"
+
+var cantidadDeLetrasDelNombre = nombre.length    	
+// 5
+
+var nombreCompleto = `${nombre} ${apellido.toUpperCase()}`	
+// también podemos acceder dentro de los escapes. Esta manera de concatenar se llama interpolación de texto.
+
+var str = nombre.substr(1, 2)
+// "ac"
+
+```
 
 
 
