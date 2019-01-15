@@ -5,7 +5,11 @@
 ### [06 - Variables - Numbers](#clase6)
 ### [07 - Funciones](#clase7)
 ### [08 - Alcance de las Funciones](#clase8)
-### [09 - Objetos](#clase9)    
+### [09 - Objetos](#clase9)
+### [10 - Desestructurar Objetos](#clase10)
+### [11 - Parámetros como referencia o como valor](#clase11)
+
+
 
 <br>
 <br>
@@ -368,7 +372,86 @@ Lo hacemos pasando el _key_ del atributo entre "{}" dentro de los parámetros de
 <br>
 <br>
 
-## <a name="clase9"> 09 - Objetos </a>
+## <a name="clase10"> 10 - Desestructurar Objetos </a>
+
+Otra forma de acceder a los atributos de los objetos es la desestructurización de los mismos.
+Para no duplicar las variables, introducir como nombre de la variable el parámetro de la segunda variable entre '{}'. 
+
+Ej:
+
+```javascript
+	
+	var yigit = {
+		nombre: 'Yigit',
+		apellido: 'Sultan'
+	}
+
+	function imprimirMayuscula(persona){
+		var { nombre } = persona  // var nombre = persona.nombre
+		console.log(nombre.toUpperCase())
+	}
+	
+	imprimirMayuscula(yigit)
+	// YIGIT
+	
+```
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase11"> 11 - Parámetros como referencia o como valor </a>
+
+Javascript se comporta de manera distinta cuando le pasamos un objeto como parámetro.
+
+Cuando los objetos se pasan como una referencia, estos se modifican fuera de la función.
+
+```javascript
+
+	var sacha = {
+		nombre: 'Sacha',
+		apellido: 'Lifszyc',
+		edad: 28
+	}
+
+	functioncumpleanos(persona) {
+		persona.edad += 1
+	} // esta función modifica el objeto
+	
+	sacha
+	// { nombre: 'Sacha', apellido: 'Lifszyc', edad: 29 }
+
+```
+
+<br>
+
+
+Para solucionar esto se puede crear un objeto diferente. 
+Esto lo podemos hacer colocando tres puntos antes del nombre del parámetro al declarar la función.
+
+La siguiente función copia el objeto (en la línea ...persona) y genera uno nuevo:
+
+```javascript
+
+	function cumpleanosOtro(persona) {
+		return {
+			...persona,
+			edad: persona.edad + 1
+		}
+	}
+
+	cumpleanosOtro(sacha) 
+	// { nombre: 'Sacha', apellido: 'Lifszyc', edad: 29 }
+	
+	sacha
+	// { nombre: 'Sacha', apellido: 'Lifszyc', edad: 28 }
+	
+```
+
+
+
+
 
 
 
