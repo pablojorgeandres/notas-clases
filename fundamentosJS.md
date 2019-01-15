@@ -4,7 +4,8 @@
 ### [05 - Variables - Strings](#clase5)
 ### [06 - Variables - Numbers](#clase6)
 ### [07 - Funciones](#clase7)
-    
+### [08 - Alcance de las Funciones](#clase8)
+### [09 - Objetos](#clase9)    
 
 <br>
 <br>
@@ -45,8 +46,8 @@ Otra forma:
 
 ```   
 
-    Javascript posee tipos de variables fácilmente intercambiables en la declaración de su valor. Esto significa que es un lenguaje debilmente tipeado. 
-    Esto quiere decir que las variables declaradas pueden ser de cualquier tipo; string, number, boolean, etc. No conocemos exactamente el tipo de variables que estamos usando.
+ Javascript posee tipos de variables fácilmente intercambiables en la declaración de su valor. Esto significa que es un lenguaje debilmente tipeado. 
+ Esto quiere decir que las variables declaradas pueden ser de cualquier tipo; string, number, boolean, etc. No conocemos exactamente el tipo de variables que estamos usando.
     
 ej:
 
@@ -59,7 +60,7 @@ ej:
 
 ### Encadenar variables:
 
-  Las variables en JS pueden encadenarse con otras variables y/o con texto con un signo '+'.
+ Las variables en JS pueden encadenarse con otras variables y/o con texto con un signo '+'.
 
 ```javascript
 
@@ -226,11 +227,127 @@ Código de la clase:
 
 ## <a name="clase8"> 08 - Alcance de las Funciones </a>
 
+  A qué variables puede acceder una función y qué valores van a tener esas variables al momento de invocar una función.
+
+  Si una variable no está definida dentro de una función es de alcance global; es decir, se puede acceder a esta desde cualquier función. 
+
+```javascript
+
+	var nombre = 'Sacha'// global 
+
+	functionnombreMayuscula(){
+		nombre = nombre.toUpperCase() 
+		console.log(nombre)
+	}
+
+	nombreMayuscula()
+	// Esta función modofica la variable.
+
+```
+
+Al definir una variable de forma global, se la asigna al objeto global.
+En un servidor el contexto es por ejemplo node, en el browser el objeto global es 'window'. La variable 'nombre'en el ejemplo anterior queda asignada al objeto global 'window'.
+
+```javascript
+
+	window.nombre 
+	// "SACHA"
+	
+```
+
+
+Es buena práctica que las funciones no modifiquen variables que no están dentro de ellas misma.
+Para esto podemos usar los parámetros en las funciones.
+
+
+```javascript
+
+	functionnombreMayuscula(n){
+		n = n.toUpperCase() 
+		console.log(n)
+	}
+
+	nombreMayuscula('Juan') 
+	// "JUAN"
+
+```
+
+También podemos usar específicamente la variable 'nombre' aunque la hayamos ya definido anteriormente, es decir que las variables como parámetros dentro de una función no modificarán las variables definidas por fuera de ellas con el mismo nombre.
+
+
+```javascript
+
+	functionnombreMayuscula( nombre ){
+		nombre = nombre.toUpperCase() 
+		console.log(nombre)
+	}
+
+	nombreMayuscula()
+
+```
 
 
 
+<br>
+<br>
+<br>
+
+## <a name="clase9"> 09 - Objetos </a>
+
+Cómo declararlos, cuáles son sus ventajas, cómo asignarles atributos y cómo trabajar con ellos dentro de las funciones.
+
+Los objetos se definen delimitados mediante llaves {}
+
+	var objeto = {}
+
+Un atributo se compone de una clave (key) y un valor (value), que se separan entre sí por dos puntos “”:"". 
+
+	var yigit = {
+		nombre: 'Yigit'
+	}
+
+Los valores pueden ser de tipo string, número, booleano, etc. Cada atributo está separado del siguiente por una coma. Un objeto puede tener todos los atributos que sean necesarios.
+
+```javascript
+
+	var yigit = {
+		nombre: 'Yigit',
+		apellido: 'Sultan'
+		edad: 13
+		...
+	}
+``` 
+
+Escribir el nombre de un objeto separado por un punto del nombre de un atributo, nos permite acceder al valor de dicho atributo para ese objeto. Un objeto también se puede pasar como atributo en una función.
+
+```javascript
+
+	yigit.nombre
+	// "Yigit"
+	
+	function imprimirMayuscula(persona){
+		console.log(persona.nombre.toUpperCase())
+	}
+	
+	imprimirMayuscula(yigit)
+	// YIGIT
+
+```
+
+Las últimas versiones de JavaScript nos permiten desglosar el objeto dentro de los parámetros de la función. 
+Lo hacemos pasando el _key_ del atributo entre "{}" dentro de los parámetros de la declaración de la función. 
+
+```javascript
+
+	function imprimirMayuscula({ nombre }){
+		console.log(nombre.toUpperCase())
+	}
+	
+	imprimirMayusculas(yigit)
+	// YIGIT
 
 
+```
 
 
 
