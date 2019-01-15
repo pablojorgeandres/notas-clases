@@ -4,8 +4,13 @@
 ### [Clase 5 - Variables - Strings](#clase5)
     
 
+<br>
+<br>
+<br>
+
 # Resumen clase por clase:
 
+<br>
 
 ## <a name="clase4"> 04 - Variables </a>
 
@@ -67,7 +72,8 @@ ej:
     console.log(`Mi nombre es ${nombre} ${apellido}`)
     
 ```   
-  
+
+<br>
 <br>
 <br>
 
@@ -110,15 +116,66 @@ var str = nombre.substr(1, 2)
 
 <br>
 <br>
+<br>
 
 ## <a name="clase6"> 06 - Variables - Numbers </a>
 
+Sobre una variable tipo _number_ los métodos básicos son:
+
+	var += n 	// suma el valor agregado después de += a la variable
+	var -= n 	// resta el valor agregado después de -= a la variable
+	Math.round 	// redondea un floating-point number al integer más cercano
+	toFixed(n)	// devuelve el valor mismo de la variable con 'n' dígitos después del '.' . La variable pasa de ser número a string
+	parseFloat(var)	// convierte un string en un floating-point number
+
+Ej:
+
+```javascript
+
+	var a = 10
+	var b = 5
+
+	a += 1 // a = a + 1
+	// a = 11
+	
+	a -= 1  // a = a - 1
+	// a = 10
+	
+	var c = a + b  
+	// (Suma) c = 15
+	
+	c = a - b   
+	// (Resta) c = 5
+	
+	var d = 200.3
+	
+	var e = a / b 
+	// (División) e = 2
+
+	d = d * 3 
+	// (Multiplicación) d = 600.9000000000001 
+	//javascript arroja siempre esta cantidad de números después de la ',' para números flotantes
+	
+	d = d * 100 * 3 / 100 
+	// d = 600.9
+	
+	d = Math.round(d * 100 * 3 / 100) 
+	// igual que sentencia anterior pero más preciso
+
+	d = d.toFixed(2) 
+	// d = "600.90" // Muestra 2 dígitos después de la coma.
+	
+	d = parseFloat(d)
+	// d = 600.9
 
 
+```
 
+<br>
+<br>
+<br>
 
-
-
+## <a name="clase7"> 07 - Funciones </a>
 
 
 
