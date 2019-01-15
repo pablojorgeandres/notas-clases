@@ -7,7 +7,7 @@
 # Resumen clase por clase:
 
 
-## <a name="clase4"> Clase 4: Variables </a>
+## <a name="clase4"> 04 - Variables </a>
 
 
 ### Declaración:
@@ -68,9 +68,10 @@ ej:
     
 ```   
   
+<br>
+<br>
 
-
-## <a name="clase5"> Clase 5: Variables - Strings </a>
+## <a name="clase5"> 05 - Variables - Strings </a>
 
 Sobre una variable tipo string los métodos más básicos que podemos usar son:
 
@@ -107,6 +108,10 @@ var str = nombre.substr(1, 2)
 ```
 
 
+<br>
+<br>
+
+## <a name="clase6"> 06 - Variables - Numbers </a>
 
 
 
