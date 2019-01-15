@@ -20,7 +20,7 @@
 ### [15 - Estructuras repetitivas: for...](#clase15)
 ### [16 - Estructuras repetitivas: while...](#clase16)
 ### [17 - Estructuras repetitivas: do while...](#clase17)
-### [18 - ](#clase18)
+### [18 - Condicional Múltiple: switch ](#clase18)
 
 
 <br>
