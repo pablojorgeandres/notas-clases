@@ -17,9 +17,9 @@
 ### [12 - Condicionales](#clase12)
 ### [13 - Funciones que retornan valores](#clase13)
 ### [14 - Arrow Functions](#clase14)
-### [15 - ](#clase15)
-### [16 - ](#clase16)
-### [17 - ](#clase17)
+### [15 - Estructuras repetitivas: for...](#clase15)
+### [16 - Estructuras repetitivas: while...](#clase16)
+### [17 - Estructuras repetitivas: do while...](#clase17)
 ### [18 - ](#clase18)
 
 
@@ -753,5 +753,130 @@ También se puede desestructurar el parámetro ya que sólo nos interesa la edad
 ```javascript
 
 	const esMayorDeEdad =  ({edad}) => persona >= MAYORIA_DE_EDAD
+
+```
+
+<br>
+<br>
+<br>
+
+## <a name="clase15"> 15 - Estructuras repetitivas: for ... </a>
+
+El bucle _'for'_, se utiliza para repetir una o más instrucciones un determinado número de veces.
+
+Para escribir un bucle _'for'_ se coloca la palabra _'for'_ seguida de paréntesis y llaves.
+
+Ej. 
+
+	for(){ } 
+
+Dentro de los paréntesis irán las condiciones para ejecutar el bucle, y dentro las llaves irán las instrucciones que se deben repetir.
+
+Las condiciones del _'for'_ son 3 comandos separados por ‘;’.
+
+• El primero es la declaración del contador, desde dónde comienza a contar; ‘let i = 1’ en este caso.
+• El segundo es hasta dónde cuenta; ‘i <= 365’ en este caso.
+• El tercero es incrementar en 1 la variable contador; ‘i++’.
+
+En este ejemplo la variable i la utilizamos como contador.
+
+```javascript
+
+	for(let i=1; i <= 10; i++) {
+		console.log(i)
+	}
+	// 1
+	// 2
+	// 3
+	// 4
+	// 5
+	// 6
+	// 7
+	// 8
+	// 9
+	// 10
+
+```
+
+En el siguiente ejemplo se imprime el peso de la persona (objeto) al iniciar el año y luego del for (365 días) se imprime el peso de esa misma persona después del año.
+
+
+```javascript
+
+	var sacha = {
+		nombre: 'Sacha',
+		apellido: 'Lifszyc',
+		edad: 28,
+		peso: 75
+	}
+
+	console.log(`Al inicio del año ${sacha.nombre} pesa ${sacha.peso}kg`);
+
+	const VARIACION_DE_PESO = 0.2
+	const aumentoDePeso = persona => persona.peso += VARIACION_DE_PESO
+	const bajaDePeso = persona => persona.peso -= VARIACION_DE_PESO
+
+	for (let i = 1; i <= 365; i++) {
+		var random = Math.random();
+		if(random < 0.25) {
+			aumentoDePeso(sacha)
+		} else if (random < 0.50) {
+			bajaDePeso(sacha)
+		}
+	}
+
+	console.log(`Al final del año ${sacha.nombre} pesa ${sacha.peso.toFixed(1)}kg`);
+
+
+```
+
+<br>
+<br>
+<br>
+
+## <a name="clase16"> 16 - Estructuras repetitivas: while ... </a>
+
+La estructura repetitiva _'while'_ nos permite repetir un loop hasta que se cumple una condición; hasta que la condición entre paréntesis de como resultado ‘true’.
+
+
+	while(sacha.peso > META) {
+		do next...
+	}
+
+
+A demás aprendimos a usar el keyword ‘debugger’ que se usa cuándo nuestro código falla o no se ejecuta.
+Cada vez que el código lea esta palabra detiene su ejecución.
+
+En este caso lo insertamos dentro del while, en la primera línea; después, en la consola, en la pestaña ‘sources’ nos muestra dónde se detiene. 
+Con los botones superiores lo vamos haciendo avanzar hasta que muestra el error.
+
+
+	while(sacha.peso > META) {
+		debugger
+		if(comeMucho()){
+
+<br>
+<br>
+<br>
+
+## <a name="clase17"> 17 - Estructuras repetitivas: do-while ... </a>
+
+Otra estructura repetitiva es el _'do-while'_. 
+A diferencia de la instrucción _'while'_, un bucle _'do…while'_ se ejecuta una vez antes de que se evalúe la expresión condicional.
+
+El ciclo _'do-while'_ va a ejecutar el o los comandos dentro de las llaves del _‘do’_ al menos una vez hasta que la función declarada dentro de los paréntesis del while se cumpla.
+El _“al menos una vez”_ es porque el flujo de ejecución comienza con _‘do’_ (hacer) y luego verifica por primera vez la condición.
+
+
+```javascript
+
+	var contador = 0 
+	const llueve = () => Math.random() < 0.25
+
+	do {
+		contador++
+	} while(!llueve()) 
+
+	console.log(`Fui a ver si llueve ${contador} veces.`)
 
 ```
