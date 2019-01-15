@@ -7,7 +7,7 @@
 # Resumen clase por clase:
 
 
-## <a name="clse4"> Clase 4: Variables </a>
+## <a name="clase4"> Clase 4: Variables </a>
 
 
 ### Declaración:
@@ -70,4 +70,29 @@ ej:
   
 
 
-## <a name="clse5"> Clase 5: Variables - Strings </a>
+## <a name="clase5"> Clase 5: Variables - Strings </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
