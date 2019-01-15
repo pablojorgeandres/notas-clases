@@ -1,7 +1,9 @@
 # Índice
 
-### [Clase 4 - Variables](#clase4)
-### [Clase 5 - Variables - Strings](#clase5)
+### [04 - Variables](#clase4)
+### [05 - Variables - Strings](#clase5)
+### [06 - Variables - Numbers](#clase6)
+### [07 - Funciones](#clase7)
     
 
 <br>
