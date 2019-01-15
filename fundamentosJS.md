@@ -8,6 +8,7 @@
 ### [09 - Objetos](#clase9)
 ### [10 - Desestructurar Objetos](#clase10)
 ### [11 - Parámetros como referencia o como valor](#clase11)
+### [12 - Comparaciones en JavaScript](#Clase12)
 
 
 
@@ -405,7 +406,7 @@ Ej:
 
 Javascript se comporta de manera distinta cuando le pasamos un objeto como parámetro.
 
-Cuando los objetos se pasan como una referencia, estos se modifican fuera de la función.
+Cuando los objetos se pasan como una referencia, estos serán modificados dentro y fuera de la función.
 
 ```javascript
 
@@ -449,9 +450,114 @@ La siguiente función copia el objeto (en la línea ...persona) y genera uno nue
 	
 ```
 
+<br>
+<br>
+<br>
+
+## <a name="clase12"> 12 - Comparaciones en JavaScript</a>
+
+Existen varias maneras de comparar variables u objetos dentro de javascript.
+
+Existen cinco tipos de datos que son primitivos y es necesario comprender al momento de hacer comparaciones:
+
+	• Boolean
+	• Null
+	• Undefined
+	• Number
+	• String
+
+<br>
+
+#### Variables
+
+En el primer ejemplo le asignamos a _'x'_ un valor numérico y a _'y'_ un string. 
+Para poder compararlos debemos agregar dos signos de igual "==". Esto los _convierte al mismo tipo de valor_ y permite que se puedan comparar.
+
+```javascript
+
+	var x = 4
+	var y = '4'
+
+	x == y    
+	// true
+	
+```
+<br>
+
+Cuando realizamos operaciones es recomendable usar tres símbolos de igual (===). Esto permite que JavasScript no iguale las variables que son de distinto tipo. 
+
+						*Sacha recomienda usa siempre el triple igual, pero hay controversia...
 
 
+```javascript
+
+	x === y  
+	// false
+
+```
+
+#### Objetos
+
+Al comparar objetos JS tiene en cuenta también el nombre del objeto, por lo tanto se remite a comparar el nombre de las variables a demás del valor de los atributos.
+Con objetos literales desglosados (_otroMas_ en este caso), pasa lo mismo y la comparación da false ya que lo que se genera es un nuevo objeto a partir del desglosado.
+ 
+
+```javascript
+
+	var sacha = {
+		nombre: 'Sacha'
+	}
+	var otro = {
+		nombre: 'Sacha'
+	}
+	var otroMas = {
+		...sacha
+	}
+	
+	sacha == otro		
+	// false
+	
+	sacha === otro 	
+	// false
+
+	sacha == otroMas	
+	// false
+	
+	sacha === otroMas	
+	// false
+
+```
+
+<br>
+
+Si asignamos el valor del objeto a una variable y los comparamos, el doble y el triple igual darán como resultado ‘true’ ya que en este caso las dos variables estarían refiriendo al mismo espacio en la memoria RAM.
+
+```javascript
+
+	var otroMasTodavia = sacha
+
+	sacha == otroMasTodavia	
+	// True
+	
+	sacha === otroMasTodavia	
+	// True
+
+```
 
 
+Otra cosa a tener en cuenta es que si cambiamos el valor del atributo en la variable, automáticamente cambia el valor del objeto también, por el mismo motivo que los operadores dan ‘true’, ambos refieren al mismo espacio en la memoria RAM.
+
+
+```javascript
+
+	otroMasTodavia.nombre = "Pepe"
+	
+	otroMasTodavia.nombre
+	// "Pepe"
+	
+	sacha.nombre
+	// "Pepe"
+
+```
 
 
