@@ -177,9 +177,52 @@ Ej:
 
 ## <a name="clase7"> 07 - Funciones </a>
 
+Las funciones son pedazos de código reutilizable.
+Se declaran precedidas de la palabra clave 'function', van seguidas de un nombre para la función y lo que queremos que haga dentro de '{}'.
+
+ej:
+	function myFunction(){
+		console.log('Hola Mundo!!!')
+	}
+	myFunction()
+	// Hola Mundo!!!
+	
+
+Puedo agregar parámetros dentro de los paréntesis para hacer mi función dinámica.
+
+ej:
+	function myFunction(nombre) {
+		console.log(`Hola ${nombre}.`)
+	}
+	myFunction('Walter')
+	// Hola Walter.
+	
+
+Código de la clase:
+
+```javascript
+
+	var nombre = 'Sacha', edad = 28
+
+	function imprimirEdad(n, e) {
+	  console.log(`${n} tiene ${e} años`)
+	}
+
+	imprimirEdad(nombre, edad)
+	imprimirEdad('Vicky', 28)
+	imprimirEdad('Eric', 24)
+	imprimirEdad('Darío', 27)
+	imprimirEdad(25, 'Carlos')
+	imprimirEdad('Juan')
+
+```
 
 
+<br>
+<br>
+<br>
 
+## <a name="clase8"> 08 - Alcance de las Funciones </a>
 
 
 
