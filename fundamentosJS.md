@@ -1,14 +1,14 @@
 # Índice
 
-### [04 - Variables](#clase4)
-### [05 - Variables - Strings](#clase5)
-### [06 - Variables - Numbers](#clase6)
-### [07 - Funciones](#clase7)
-### [08 - Alcance de las Funciones](#clase8)
-### [09 - Objetos](#clase9)
-### [10 - Desestructurar Objetos](#clase10)
-### [11 - Parámetros como referencia o como valor](#clase11)
-### [12 - Comparaciones en JavaScript](#Clase12)
+### [03 - Variables](#clase3)
+### [04 - Variables - Strings](#clase4)
+### [05 - Variables - Numbers](#clase5)
+### [06 - Funciones](#clase6)
+### [07 - Alcance de las Funciones](#clase7)
+### [08 - Objetos](#clase8)
+### [09 - Desestructurar Objetos](#clase9)
+### [10 - Parámetros como referencia o como valor](#clase10)
+### [11 - Comparaciones en JavaScript](#Clase11)
 
 
 
@@ -20,7 +20,7 @@
 
 <br>
 
-## <a name="clase4"> 04 - Variables </a>
+## <a name="clase3"> 03 - Variables </a>
 
 
 ### Declaración:
@@ -85,7 +85,7 @@ ej:
 <br>
 <br>
 
-## <a name="clase5"> 05 - Variables - Strings </a>
+## <a name="clase4"> 04 - Variables - Strings </a>
 
 Sobre una variable tipo string los métodos más básicos que podemos usar son:
 
@@ -126,7 +126,7 @@ var str = nombre.substr(1, 2)
 <br>
 <br>
 
-## <a name="clase6"> 06 - Variables - Numbers </a>
+## <a name="clase5"> 05 - Variables - Numbers </a>
 
 Sobre una variable tipo _number_ los métodos básicos son:
 
@@ -183,7 +183,7 @@ Ej:
 <br>
 <br>
 
-## <a name="clase7"> 07 - Funciones </a>
+## <a name="clase6"> 06 - Funciones </a>
 
 Las funciones son pedazos de código reutilizable.
 Se declaran precedidas de la palabra clave 'function', van seguidas de un nombre para la función y lo que queremos que haga dentro de '{}'.
@@ -232,7 +232,7 @@ Código de la clase:
 <br>
 <br>
 
-## <a name="clase8"> 08 - Alcance de las Funciones </a>
+## <a name="clase7"> 07 - Alcance de las Funciones </a>
 
   A qué variables puede acceder una función y qué valores van a tener esas variables al momento de invocar una función.
 
@@ -304,7 +304,7 @@ También podemos usar específicamente la variable 'nombre' aunque la hayamos ya
 <br>
 <br>
 
-## <a name="clase9"> 09 - Objetos </a>
+## <a name="clase8"> 08 - Objetos </a>
 
 Cómo declararlos, cuáles son sus ventajas, cómo asignarles atributos y cómo trabajar con ellos dentro de las funciones.
 
@@ -373,7 +373,7 @@ Lo hacemos pasando el _key_ del atributo entre "{}" dentro de los parámetros de
 <br>
 <br>
 
-## <a name="clase10"> 10 - Desestructurar Objetos </a>
+## <a name="clase09"> 09 - Desestructurar Objetos </a>
 
 Otra forma de acceder a los atributos de los objetos es la desestructurización de los mismos.
 Para no duplicar las variables, introducir como nombre de la variable el parámetro de la segunda variable entre '{}'. 
@@ -402,7 +402,7 @@ Ej:
 <br>
 <br>
 
-## <a name="clase11"> 11 - Parámetros como referencia o como valor </a>
+## <a name="clase10"> 10 - Parámetros como referencia o como valor </a>
 
 Javascript se comporta de manera distinta cuando le pasamos un objeto como parámetro.
 
@@ -454,7 +454,7 @@ La siguiente función copia el objeto (en la línea ...persona) y genera uno nue
 <br>
 <br>
 
-## <a name="clase12"> 12 - Comparaciones en JavaScript</a>
+## <a name="clase11"> 11 - Comparaciones en JavaScript</a>
 
 Existen varias maneras de comparar variables u objetos dentro de javascript.
 
