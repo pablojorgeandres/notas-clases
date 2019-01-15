@@ -2,21 +2,21 @@
 
 ### [Primeros Pasos](#sec1)
 <br>
-### 	[03 - Variables](#clase3)
-### 	[04 - Variables - Strings](#clase4)
-### 	[05 - Variables - Numbers](#clase5)
-### 	[06 - Funciones](#clase6)
-### 	[07 - Alcance de las Funciones](#clase7)
-### 	[08 - Objetos](#clase8)
-### 	[09 - Desestructurar Objetos](#clase9)
-### 	[10 - Parámetros como referencia o como valor](#clase10)
-### 	[11 - Comparaciones en JavaScript](#Clase11)
+### [03 - Variables](#clase3)
+### [04 - Variables - Strings](#clase4)
+### [05 - Variables - Numbers](#clase5)
+### [06 - Funciones](#clase6)
+### [07 - Alcance de las Funciones](#clase7)
+### [08 - Objetos](#clase8)
+### [09 - Desestructurar Objetos](#clase9)
+### [10 - Parámetros como referencia o como valor](#clase10)
+### [11 - Comparaciones en JavaScript](#Clase11)
 <br>
 <br>
 ### [Estructuras de Control y Funciones](#sec2)
 <br>
-### 	[12 - Condicionales](#clase12)
-###	[13 - Funciones que retornan valores](#clase13) 
+### [12 - Condicionales](#clase12)
+### [13 - Funciones que retornan valores](#clase13) 
 
 
 <br>
