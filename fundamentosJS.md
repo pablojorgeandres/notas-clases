@@ -1,15 +1,22 @@
 # Índice
 
-### [03 - Variables](#clase3)
-### [04 - Variables - Strings](#clase4)
-### [05 - Variables - Numbers](#clase5)
-### [06 - Funciones](#clase6)
-### [07 - Alcance de las Funciones](#clase7)
-### [08 - Objetos](#clase8)
-### [09 - Desestructurar Objetos](#clase9)
-### [10 - Parámetros como referencia o como valor](#clase10)
-### [11 - Comparaciones en JavaScript](#Clase11)
-
+### [Primeros Pasos](#sec1)
+<br>
+### 	[03 - Variables](#clase3)
+### 	[04 - Variables - Strings](#clase4)
+### 	[05 - Variables - Numbers](#clase5)
+### 	[06 - Funciones](#clase6)
+### 	[07 - Alcance de las Funciones](#clase7)
+### 	[08 - Objetos](#clase8)
+### 	[09 - Desestructurar Objetos](#clase9)
+### 	[10 - Parámetros como referencia o como valor](#clase10)
+### 	[11 - Comparaciones en JavaScript](#Clase11)
+<br>
+<br>
+### [Estructuras de Control y Funciones](#sec2)
+<br>
+### 	[12 - Condicionales](#clase12)
+###	[13 - Funciones que retornan valores](#clase13) 
 
 
 <br>
@@ -19,6 +26,8 @@
 # Resumen clase por clase:
 
 <br>
+
+# <a name="sec1"></a>Sección I - Primeros Pasos
 
 ## <a name="clase3"> 03 - Variables </a>
 
@@ -560,4 +569,70 @@ Otra cosa a tener en cuenta es que si cambiamos el valor del atributo en la vari
 
 ```
 
+
+<br>
+<br>
+<br>
+# <a name="sec2"></a>Sección II - Estructuras de Control y Funciones
+<br>
+<br>
+
+## <a name="clase12"> 12 - Condicionales</a>
+
+Las estructuras de control nos permiten controlar el flujo de nuestro código.
+Algunas de ellas son:
+
+  • if...else
+  • switch
+  • while
+  • for
+  • for...in
+  • try
+
+Los condicionales (_if...else_) nos permiten decidir si un código se ejecuta o no. Mediante un condicional (if) decidiremos si se ejecuta una parte de nuestro código cuando se cumpla o no cierta condición.
+
+```javascript
+
+	var sacha = {
+		nombre: 'Sacha',
+		apellido: 'Lifszyc',
+		edad: 28,
+		ingeniero: true,
+		cocinero: false,
+		cantante: false,
+		dj: false,
+		guitarrista: false,
+		drone: true
+	}
+
+	function imprimirProfesion(persona) {
+		console.log(`${persona.nombre} ${persona.apellido} es: `)
+		if(persona.ingeniero) {
+			console.log('Ingeniero')
+		} else {
+			console.log('No es Ingeniero')
+		}
+		if(persona.cocinero) {
+			console.log('Cocinero')
+		}
+		if(persona.cantante) {
+			console.log('Cantante')
+		}
+		if(persona.dj) {
+			console.log('dj')
+		}
+		if(persona.guitarrista) {
+			console.log('Guitarrista')
+		}
+		if(persona.drone) {
+			console.log('Piloto de Drone')
+		}
+	}
+
+```
+<br>
+<br>
+<br>
+
+## <a name="clase13"> 13 - Funciones que retornan valores </a>
 
