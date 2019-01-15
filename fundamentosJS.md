@@ -880,3 +880,71 @@ El _“al menos una vez”_ es porque el flujo de ejecución comienza con _‘do
 	console.log(`Fui a ver si llueve ${contador} veces.`)
 
 ```
+
+<br>
+<br>
+<br>
+
+## <a name="clase18"> 18 - Estructuras repetitivas: switch ... </a>
+
+
+Switch se utiliza para realizar diferentes acciones basadas en múltiples condiciones.
+
+Prompt, muestra un cuadro de mensaje que le pide al usuario que ingrese algúna información.
+
+Break, sirve para que el browser se salte un bucle.
+
+
+En este ejemplo le vamos a devolver el horozcopo del día al usuario de acuerdo al signo que ingrese.
+
+```javascript
+
+	while (window) {
+		let signo = prompt('Cuál es tu signo?')
+
+		switch (signo) {
+			case 'aries':
+				alert('Aries empezará un año con...')
+				break
+			case 'tauro':
+				alert('Tanta carga de trabajo que Tauro... ')
+				break
+			case 'géminis':
+			case 'geminis':
+				alert('Durante el mes de enero...)
+				break
+			case 'cáncer':
+			case 'cancer':
+				alert('La situación económica de Cáncer podría tener...')
+				break
+			case 'leo':
+				alert('A pesar de las prisas por terminar un proyecto...)
+				break
+			case 'virgo':
+				alert('Durante el mes de enero se presentan...')	
+				break
+			case 'libra':
+				alert('La situación económica de Libra... ')	
+				break
+			case 'escorpio':
+				alert('Enero, será un mes en el cual Escorpio deberá...')	
+				break
+			case 'sagitario':
+				alert('Sagitario empezará un poco tenso ... ')	
+				break
+			case 'capricornio':
+				alert('El fuerte carácter de Capricornio...')	
+				break
+			case 'acuario':	
+				alert('Los astros se han alineado estos primeros días... ')	
+				break
+			case 'piscis':
+				alert('Después de tantas distracciones...')	
+				break
+			default:
+				alert('No es un signo válido.')
+				break
+		}
+	}
+
+```
