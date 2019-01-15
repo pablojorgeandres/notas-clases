@@ -1,6 +1,6 @@
 # Índice
 
-## [Primeros Pasos](#sec1)
+## [Sección I - Primeros Pasos](#sec1)
 ### [03 - Variables](#clase3)
 ### [04 - Variables - Strings](#clase4)
 ### [05 - Variables - Numbers](#clase5)
@@ -13,7 +13,7 @@
 
 # 
 
-## [Estructuras de Control y Funciones](#sec2)
+## [Sección II - Estructuras de Control y Funciones](#sec2)
 ### [12 - Condicionales](#clase12)
 ### [13 - Funciones que retornan valores](#clase13)
 ### [14 - Arrow Functions](#clase14)
@@ -22,6 +22,37 @@
 ### [17 - Estructuras repetitivas: do while...](#clase17)
 ### [18 - Condicional Múltiple: switch ](#clase18)
 
+# 
+
+## [Sección III - Arrays](#sec3)
+### [19 - Introducción a los Arrays](#clase19)
+### [20 - Filtrar un array](#clase20)
+### [21 - Transformar un array](#clase21)
+### [22 - Filtrar un array](#clase22)
+
+# 
+
+## [Sección IV - Programación Orientada a Objetos en JavaScript (POO)](#sec4)
+### [23 - Como funcionan las clases en JavaScript](#clase23)
+### [24 - Modificando un prototipo](#clase24)
+### [25 - El contexto de las funciones: Quién es _this_?](#clase25)
+### [26 - La verdad oculta sobre las clases en JavaScript](#clase26)
+### [27 - Clases en JavaScript](#clase27)
+
+#
+
+## [Sección V - Asincronismo](#sec5)
+### [28 - Funciones como parámetros](#clase28)
+### [29 - Cómo funciona el asincronismo en JavaScript](#clase29)
+### [30 - Cómo funciona el tiempo en JavaScript](#clase30)
+### [31 - Callbacks](#clase31)
+### [32 - Haciendo múltiples requests](#clase32)
+### [33 - Manejando el Orden y el Asincronismo en JavaScript](#clase33)
+### [34 - Manejo de errores con callbacks](#clase34)
+### [35 - Promesas](#clase35)
+### [36 - Promesas Encadenadas](#clase36)
+### [37 - Múltiples promesas en paralelo](#clase37)
+### [38 - Async-await: lo último en asincronismo](#clase38)
 
 <br>
 <br>
@@ -948,3 +979,312 @@ En este ejemplo le vamos a devolver el horozcopo del día al usuario de acuerdo 
 	}
 
 ```
+
+
+
+<br>
+<br>
+<br>
+# <a name="sec3"></a>Sección III - Arrays
+<br>
+<br>
+
+## <a name="clase19"> 19 - Introducción a los arrays</a>
+
+Los arrays son estructuras de datos que nos permiten organizar elementos dentro de una collección. 
+Estos elementos pueden ser números, strings, booleanos, objetos, etc.
+Luego es posible realizar operaciones sobre esa colección.
+
+Según la documentación de developer.mozilla.org; …‘es un objeto global que es usado en la construcción de arrays, que son objetos tipo lista de alto nivel’.
+
+Para indicar que una variable es un array se usan los corchetes rectos:
+
+	var array = []
+
+Y para mostrar el contenido:
+
+
+```javascript
+
+	var sacha = {
+	    nombre: 'Sacha',
+	    apellido: 'Lifszyc',
+	    altura: 1.72
+	}
+
+	var alan = {
+	    nombre: 'Alan',
+	    apellido: 'Perez',
+	    altura: 1.86
+	}
+
+	var martin = {
+	    nombre: 'Martin',
+	    apellido: 'Gomez',
+	    altura: 1.85
+	}
+
+	var dario = {
+	    nombre: 'Dario',
+	    apellido: 'Juarez',
+	    altura: 1.71
+	}
+
+	var vicky = {
+	    nombre: 'Vicky',
+	    apellido: 'Zapata',
+	    altura: 1.56
+	}
+
+	var paula = {
+	    nombre: 'Paula',
+	    apellido: 'Barros',
+	    altura: 1.76
+	}
+
+	var personas = [sacha,alan,martin,dario,vicky,paula];
+
+	personas[0]
+	//{nombre: "Sacha", apellido: "Lifszyc", altura: 1.72}
+	
+	personas[1] 	
+	{nombre: "Alan", apellido: "Perez", altura: 1.86}
+	
+	// El 0 y el 1 representan respectivamente el subíndice del elemento que se va a mostrar, el orden en que están cargados en el array.
+
+	personas[0].nombre
+	// "Sacha"
+	
+	personas[3].altura
+	//1.71
+
+	//también se puede usar
+	personas[0].['nombre']
+	// "Sacha"
+	
+	personas[3].['altura']
+	//1.71
+
+```
+
+También se puede recorrer un array con un for loop e ir imprimiendo las propiedades deseadas del mismo:
+
+```javascript
+	
+	for(var i=0; i<personas.length; i++){
+	  var persona=personas[i];
+	  console.log(`${persona.nombre} mide ${persona.altura}.`);
+	}	
+
+	// Sacha mide 1.72.
+	// Alan mide 1.86.
+	// Martin mide 1.85.
+	// Dario mide 1.71.
+	// Vicky mide 1.56.
+	// Paula mide 1.76.
+
+```
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase20"> 20 - Filtrar un array</a>
+
+Para filtrar necesitamos dos cosas: una función y una condición.
+Usamos la función nativa de javascript ‘filter()’ que recibe una condición como parámetro.
+
+En este ejemplo nuestra condición es que la estatura de las personas sea mayor de 1.80mts.
+
+```javascript
+
+	var sacha = {
+	    nombre: 'Sacha',
+	    apellido: 'Lifszyc',
+	    altura: 1.72
+	}
+
+	var alan = {
+	    nombre: 'Alan',
+	    apellido: 'Perez',
+	    altura: 1.86
+	}
+
+	var martin = {
+	    nombre: 'Martin',
+	    apellido: 'Gomez',
+	    altura: 1.85
+	}
+
+	var dario = {
+	    nombre: 'Dario',
+	    apellido: 'Juarez',
+	    altura: 1.71
+	}
+
+	var vicky = {
+	    nombre: 'Vicky',
+	    apellido: 'Zapata',
+	    altura: 1.56
+	}
+
+	var paula = {
+	    nombre: 'Paula',
+	    apellido: 'Barros',
+	    altura: 1.76
+	}
+
+	var personas = [sacha, alan, martin, dario, vicky, paula]
+	
+	const esAlta = ({ altura }) => altura > 1.8
+	var personasAltas = personas.filter(esAlta)
+
+	console.log(personasAltas)
+	
+	// También puede escribirse así:
+	
+	var personasAltas = personas.filter(function(){
+		return personas.altura > 1.8
+	})
+
+```
+
+El método _'filter( )'_ crea una nueva matriz con todos los elementos que pasan la prueba implementada por la función proporcionada.
+Recuerda que si no hay elementos que pasen la prueba, _'filter'_ devuelve un array vacío.
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase21"> 21 - Transformar un array</a>
+
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase22"> 22 - Reducir un array a un valor</a>
+
+
+<br>
+<br>
+<br>
+# <a name="sec4"></a>Sección IV - Programación Orientada a Objetos en JavaScript (POO)
+<br>
+<br>
+
+## <a name="clase23"> 23 - Como funcionan las clases en JavaScript</a>
+
+<br>
+<br>
+<br>
+
+## <a name="clase24"> 24 - Modificando un prototipo</a>
+
+<br>
+<br>
+<br>
+
+## <a name="clase25"> 25 - El contexto de las funciones: Quién es _this_?</a>
+
+<br>
+<br>
+<br>
+
+## <a name="clase26"> 26 - La verdad oculta sobre las clases en JavaScript</a>
+
+<br>
+<br>
+<br>
+
+## <a name="clase27"> 27 - Clases en JavaScript</a>
+
+
+
+<br>
+<br>
+<br>
+# <a name="sec5"></a>Sección V - Asincronismo
+<br>
+<br>
+
+
+## <a name="clase28"></a> 28 - Funciones como parámetros
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase29"></a> 29 - Cómo funciona el asincronismo en JavaScript
+
+<br>
+<br>
+<br>
+
+## <a name="clase30"></a> 30 - Cómo funciona el tiempo en JavaScript
+
+<br>
+<br>
+<br>
+
+## <a name="clase31"></a> 31 - Callbacks
+
+<br>
+<br>
+<br>
+
+## <a name="clase32"></a> 32 - Haciendo múltiples requests
+
+<br>
+<br>
+<br>
+
+## <a name="clase33"></a> 33 - Manejando el Orden y el Asincronismo en JavaScript
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase34"></a> 34 - Manejo de errores con callbacks
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase35"></a> 35 - Promesas
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase36"></a> 36 - Promesas Encadenadas
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase37"></a> 37 - Múltiples promesas en paralelo
+
+<br>
+<br>
+<br>
+
+## <a name="clase38"></a> 38 - Async-await: lo último en asincronismo
+
+
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase39"></a> 39 - 
+
