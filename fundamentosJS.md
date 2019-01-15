@@ -76,13 +76,13 @@ Sobre una variable tipo string los métodos más básicos que podemos usar son:
 
 	.toUpperCase() 	// convierte todo el string en mayúsculas
 	.toLowerCase() 	// convierte todo el string en minúsculas
-	.charAt(n)  		// nos dirige al caracter de la posición 'n'
-	.length   			// arroja un número que equivale a la cantidad de caracteres del string 
-	.substr(n, n1)  		// arroja un string que comienza en la letra 'n' y termina en la letra 'n1' del string dado
+	.charAt(n)  	// nos dirige al caracter de la posición 'n'
+	.length   	// arroja un número que equivale a la cantidad de caracteres del string 
+	.substr(n, n1)  // arroja un string que comienza en la letra 'n' y termina en la letra 'n1' del string dado.
 
 Ej:
 	
-```
+```javascript
 
 var nombre = 'Sacha', apellido = 'Lifszyc'
 
