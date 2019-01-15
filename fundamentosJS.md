@@ -201,6 +201,8 @@ ej:
 	// Hola Walter.
 	
 
+<br>
+
 Código de la clase:
 
 ```javascript
@@ -245,6 +247,8 @@ Código de la clase:
 
 ```
 
+<br>
+
 Al definir una variable de forma global, se la asigna al objeto global.
 En un servidor el contexto es por ejemplo node, en el browser el objeto global es 'window'. La variable 'nombre'en el ejemplo anterior queda asignada al objeto global 'window'.
 
@@ -255,6 +259,7 @@ En un servidor el contexto es por ejemplo node, en el browser el objeto global e
 	
 ```
 
+<br>
 
 Es buena práctica que las funciones no modifiquen variables que no están dentro de ellas misma.
 Para esto podemos usar los parámetros en las funciones.
@@ -271,6 +276,8 @@ Para esto podemos usar los parámetros en las funciones.
 	// "JUAN"
 
 ```
+
+<br>
 
 También podemos usar específicamente la variable 'nombre' aunque la hayamos ya definido anteriormente, es decir que las variables como parámetros dentro de una función no modificarán las variables definidas por fuera de ellas con el mismo nombre.
 
@@ -300,11 +307,15 @@ Los objetos se definen delimitados mediante llaves {}
 
 	var objeto = {}
 
+<br>
+
 Un atributo se compone de una clave (key) y un valor (value), que se separan entre sí por dos puntos “”:"". 
 
 	var yigit = {
 		nombre: 'Yigit'
 	}
+
+<br>
 
 Los valores pueden ser de tipo string, número, booleano, etc. Cada atributo está separado del siguiente por una coma. Un objeto puede tener todos los atributos que sean necesarios.
 
@@ -317,6 +328,8 @@ Los valores pueden ser de tipo string, número, booleano, etc. Cada atributo est
 		...
 	}
 ``` 
+
+<br>
 
 Escribir el nombre de un objeto separado por un punto del nombre de un atributo, nos permite acceder al valor de dicho atributo para ese objeto. Un objeto también se puede pasar como atributo en una función.
 
@@ -334,6 +347,8 @@ Escribir el nombre de un objeto separado por un punto del nombre de un atributo,
 
 ```
 
+<br>
+
 Las últimas versiones de JavaScript nos permiten desglosar el objeto dentro de los parámetros de la función. 
 Lo hacemos pasando el _key_ del atributo entre "{}" dentro de los parámetros de la declaración de la función. 
 
@@ -349,7 +364,11 @@ Lo hacemos pasando el _key_ del atributo entre "{}" dentro de los parámetros de
 
 ```
 
+<br>
+<br>
+<br>
 
+## <a name="clase9"> 09 - Objetos </a>
 
 
 
