@@ -10,6 +10,7 @@
 ### [09 - Desestructurar Objetos](#clase9)
 ### [10 - Parámetros como referencia o como valor](#clase10)
 ### [11 - Comparaciones en JavaScript](#Clase11)
+
 ## [Estructuras de Control y Funciones](#sec2)
 ### [12 - Condicionales](#clase12)
 ### [13 - Funciones que retornan valores](#clase13) 
