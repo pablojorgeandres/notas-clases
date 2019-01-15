@@ -1,7 +1,13 @@
+# Índice
+
+    ### [Clase 4 - Variables](#clase4)
+    ### [Clase 5 - Variables - Strings](#clase5)
+    
+
 # Resumen clase por clase:
 
 
-## Clase 1: Variables
+## <a name="clse4"> Clase 4: Variables </a>
 
 
 ### Declaración:
@@ -10,11 +16,13 @@ Con el prefijo _'var'_ podemos crear una variable.
 
 ej:
 
+```javascript
 
     var nombre
     nombre = 'Aristóteles'
     var apellido = 'De Atenas'      //se puede declarar en una sóla linea
 
+```
 
 Otra forma:
 
@@ -42,7 +50,7 @@ ej:
 
 ```
 
-Encadenar variables:
+### Encadenar variables:
 
   Las variables en JS pueden encadenarse con otras variables y/o con texto con un signo '+'.
 
@@ -60,4 +68,6 @@ Encadenar variables:
     
 ```   
   
-      
+
+
+## <a name="clse5"> Clase 5: Variables - Strings </a>
