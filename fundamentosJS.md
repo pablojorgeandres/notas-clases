@@ -1160,6 +1160,33 @@ Recuerda que si no hay elementos que pasen la prueba, _'filter'_ devuelve un arr
 
 ## <a name="clase21"> 21 - Transformar un array</a>
 
+El método _map()_ itera sobre los elementos de un array en el orden de inserción y devuelve array nuevo con los elementos modificados.
+_map()_ siempre nos devuelve un nuevo array.
+En este ejemplo lo usamos para cambiar la unidad de medida de la altura.
+
+```javascript
+	
+	var personas = [sacha, alan, martin, dario, vicky, paula]
+
+	const pasarAlturaACmts = persona => ({
+		...persona,
+		altura: persona.altura * 100
+	})
+	var alturaEnCmts = personas.map(pasarAlturaACmts)
+	
+```
+
+Otra manera que se mostró en la clase.
+Pero esta función modifica también el array ingresado, así que paso a ser la forma correcta la que está en el ejemplo anterior.
+
+```javascript
+
+	const pasarAlturaACmts = persona => {
+		persona.altura *= 100// Es lo mismo que persona.altura = persona.altura * 100
+		return persona
+	}
+
+```
 
 
 <br>
