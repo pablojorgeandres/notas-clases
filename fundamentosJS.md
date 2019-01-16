@@ -1415,7 +1415,8 @@ Si declaro la función al final del código, después de llamar a la función; r
 ```
 <br>
 
-Si convierto la función en _'arrow function'_ también tendré conflictos pero esta vez con el _'this'_; siempre obtendremos _false_ como respuesta a la función.
+Si convierto la función en _'arrow function'_ también tendré conflictos pero esta vez con el _'this'_; siempre obtendremos _false_ como respuesta a la función ya que la propiedad _'this.altura'_ es _'undefined'_.
+
 
 ```javascript
 
@@ -1444,14 +1445,21 @@ Si convierto la función en _'arrow function'_ también tendré conflictos pero 
 
 ```
 
-
-
-
 <br>
 <br>
 <br>
 
 ## <a name="clase25"> 25 - El contexto de las funciones: Quién es _this_?</a>
+
+Al cambiar una función por un arrow function en el código nos comenzó a arrojar valores ‘undefined’.
+La propiedad _'this.altura'_ es _'undefined'_ debido a que _'this'_ no refiere al prototipo que nosotros creamos.
+
+Al debbuguear nos muestra que _this_ === _window_. 
+
+• **_’this’ en el espacio global refiere al objeto 'window'_**; 'this' **es** el objeto 'window', _**el mismo campo en memoria**_.
+
+• **Los arrow function refieren siempre al ‘this’ del ‘window’ **y no del prototipo.**
+
 
 <br>
 <br>
