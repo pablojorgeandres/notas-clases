@@ -1458,7 +1458,7 @@ Al debbuguear nos muestra que _this_ === _window_.
 
 • **_’this’ en el espacio global refiere al objeto 'window'_**; 'this' **es** el objeto 'window', _**el mismo campo en memoria**_.
 
-• **Los arrow function refieren siempre al ‘this’ del ‘window’ **y no del prototipo.**
+• Los arrow function refieren siempre al _'this'_ del _'window'_ **y no del prototipo.**
 
 
 <br>
@@ -1467,18 +1467,288 @@ Al debbuguear nos muestra que _this_ === _window_.
 
 ## <a name="clase26"> 26 - La verdad oculta sobre las clases en JavaScript</a>
 
+Cómo hago para que un prototipo herede de otro?
+
+> …“JS no soporta la herencia porque no soporta las clases, no hay clases, hay prototipos a los que les vamos agregando métodos que reciben funciones, saben quien es ‘this’ y saben como ejecutarlas. Pero no existe un sistema como tal donde yo diga: _ "este prototipo va a heredar de otro”…
+> Lo que sí existe es la 'herencia prototipal’
+
+Cómo funciona? 
+Es posible crear _‘prototipoHijo’_ que van a ser un subtipo del _'prototipoPadre'_ (_persona_ en el ejemplo que venimos usando), podemos crear por ejemplo un sub-tipo de _'persona'_, un ‘desarrollador’.
+
+Este _‘prototiposHijo’_, cada vez que sea requerido buscará los métodos en sí mismo, luego si no los encuentra, buscará en su _'prototipoPadre'_, _'prototipoAbuelo'_ … y así hasta llegar al _'prototipo'_ base de todos los objetos que en JavaScript es _'object'_. 
+Si _'object'_ no conoce ese mensaje, recién ahí es que javaScript lanzará el error de que ese método no puede ejecutarse.
+
+Para crear nuestro 'desarrollador'  **generamos este _‘prototipoHijo’_ inmediatamente después del código del _'prototipoPadre'_**, _'Persona'_ en este caso.
+Y agregamos un método a este _‘prototiposHijo’_ para que devuelva un saludo particular de desarrollador.
+
+```javascript
+
+
+	function Desarrollador(nombre, apellido){
+		this.nombre = nombre
+		this.apellido = apellido
+	}
+	Desarrollador.prototype.saludar = function(){
+		console.log(`Hola, me llamo ${this.nombre}${this.apellido} y soy desarrollader.`)
+	}
+
+
+```
+<br>
+
+**Pero cómo hacemos para que este _‘prototipoHijo’_ herede los métodos del _'prototipoPadre'_?**
+
+Para esto tenemos que generar una nueva función que le diga al _‘prototipoHijo’_ quién va a ser su _'prototipoPadre'_ y la llamamos inmediatamente después de la declaración del _‘prototipoHijo’_ y antes de declarar las funciones de este mismo, ya que si queremos "pisar" algún método del _'prototipoPadre'_, esta llamada va a volver a sentenciar los métodos del _'prototipoPadre'_.
+
+
+_(Hasta las regulaciones del ECMAScript esta era la única manera de generar herencia en JS)_
+
+
+```javascript
+
+	// función enlace
+	function heredaDe(prototipoHijo, prototipoPadre) {
+	  ...
+	}
+
+	// función padre
+	function Persona(nombre, apellido, altura) {
+	  ...
+	}
+	Persona.prototype.saludar = function () {
+	  ...
+	}
+	Persona.prototype.soyAlto = function () {
+	  ...
+	}
+
+	// función hijo
+	function Desarrollador(nombre, apellido) {
+	  this.nombre = nombre
+	  this.apellido = apellido
+	}
+	
+	// invocación de función enlace 
+	heredaDe(Desarrollador, Persona)
+
+	//método de función hijo
+	Desarrollador.prototype.saludar = function () {
+	  console.log(`Hola, me llamo ${this.nombre} ${this.apellido} y soy desarrollador/a`)
+	}
+
+```
+
+La funcionalidad de la función que va a generar el enlace de herencia es la siguiente.
+
+• Primero generamos una variable a la que le cargamos una función vacía:
+
+	function heredaDe(prototipoHijo, prototipoPadre) {
+	    var fn = function () {}
+	}
+
+• Luego asignamos el prototipo del _'prototipoPadre'_ a esta misma:
+	
+	function heredaDe(prototipoHijo, prototipoPadre) {
+	    var fn = function () {}
+	    fn.prototype = prototipoPadre.prototype
+	}
+
+• Y entonces ahora asignamos el _'prototipoPadre'_ al prototipo del _‘prototipoHijo’_. Lo hacemos de esta manera así, al estar generando un clon del _'prototipoPadre'_ no "pisamos" o modificamos nada en este.
+
+
+	function heredaDe(prototipoHijo, prototipoPadre) {
+	    var fn = function () {}
+	    fn.prototype = prototipoPadre.prototype
+	    prototipoHijo.prototype = new fn
+	}
+
+
+• Y finalmente llamamos al _'constructor'_ del mismo _‘prototipoHijo’_ para que se refiera a sí mismo y no al constructor del _'prototipoPadre'_
+
+
+	function heredaDe(prototipoHijo, prototipoPadre) {
+	  var fn = function () {}
+	  fn.prototype = prototipoPadre.prototype
+	  prototipoHijo.prototype = new fn
+	  prototipoHijo.prototype.constructor = prototipoHijo
+	}
+
+Este es un método muy complejo, ya obsoleto. Hoy por hoy lo hacemos de otra manera.
+
+El código completo queda así:
+
+```javascript
+
+	function heredaDe(prototipoHijo, prototipoPadre) {
+	  var fn = function () {}
+	  fn.prototype = prototipoPadre.prototype
+	  prototipoHijo.prototype = new fn
+	  prototipoHijo.prototype.constructor = prototipoHijo
+	}
+
+	function Persona(nombre, apellido, altura) {
+	  this.nombre = nombre
+	  this.apellido = apellido
+	  this.altura = altura
+	}
+
+	Persona.prototype.saludar = function () {
+	  console.log(`Hola, me llamo ${this.nombre} ${this.apellido}`)
+	}
+
+	Persona.prototype.soyAlto = function () {
+	  return this.altura > 1.8
+	}
+
+	function Desarrollador(nombre, apellido) {
+	  this.nombre = nombre
+	  this.apellido = apellido
+	}
+
+	heredaDe(Desarrollador, Persona)
+
+	Desarrollador.prototype.saludar = function () {
+	  console.log(`Hola, me llamo ${this.nombre} ${this.apellido} y soy desarrollador/a`)
+	}
+
+
+```
+
+Creamos unos objetos y analizamos como se comportan:
+
+
+```javascript
+
+
+	var sacha = new Persona('Sacha', 'Lifszyc', 1.72)
+	var erika = new Persona('Erika', 'Luna', 1.65)
+	var arturo = new Desarrollador('Arturo', 'Martinez', 1.89)
+
+	sacha.saludar()
+	// Hola, me llamo Sacha Lifszyc
+	
+	erika.saludar()
+	// Hola, me llamo Erika Luna
+	
+	arturo.saludar()
+	// Hola me llamo Arturo Martinez y soy desarrollador/a.
+	// este nos arroja el saludo de _Desarrollador_ ya que es una instancia del mismo
+
+```
+
+Ahora analicemos al atributo _.prototipe_ en consola:
+
+
+```javascript
+
+	Persona.prototype
+	// {saludar: ƒ, soyAlto: ƒ, constructor: ƒ}
+	//	saludar: ƒ ()
+	//	soyAlto: ƒ ()
+	//	constructor: ƒ Persona(nombre, apellido, altura)
+	//	__proto__: Object
+
+```
+
+Vemos que _.prototype_ es un atributo que tiene todas las funciones de Persona. 
+Es un **objeto** que tiene métodos y su propio _constructor_ a demás de un atributo __proto__ que es el que hace referencia al _'prototipoPadre'_; en este caso _'Object'_
+
+	__proto__: Object
+
+Veamos a quién hace referencia el _‘prototipoHijo’_
+
+
+```javascript
+
+	Desarrollador.prototype
+	//Persona {constructor: ƒ, saludar: ƒ}
+	//	constructor: ƒ Desarrollador(nombre, apellido)
+	//	saludar: ƒ ()
+	//	__proto__:
+	//		saludar: ƒ ()
+	//		soyAlto: ƒ ()
+	//		constructor: ƒ Persona(nombre, apellido, altura)
+	//		__proto__: Object
+
+```
+
+  Y aquí vemos que hace referencia al prototipo _Persona_ aunque en principio nos muestra su propio _'constructor'_ y su propio método _'saludar'_. Dentro del _'proto'_ nos muestra los métodos del _'prototipoPadre'_ y a su vez el _'proto'_ de este hace referencia a su _'prototipoPadre'_ que es nuevamente _'Object'_
+  Es desde este encadenamiento que es posible que hagamos la invocación de los métodos del _'prototipoPadre'_ en el _‘prototipoHijo’_.
+  
+
+
 <br>
 <br>
 <br>
 
 ## <a name="clase27"> 27 - Clases en JavaScript</a>
 
+Como ya se mencionó en esta referencia, a partir del standar de código de JavaScript, ECMAScript 2015 y sus subsiguientes versiones se modificó la forma vista de generar herencia prototipal.
+Estos standars no agregaron funcionalidad nueva a este tema pero sí lo ha facilitado y sintetizado mucho.
+
+> Dato extra: "**_sugar syntax_**; este es un término usado para describir una característica en un lenguaje que te permite hacer algo más facilmente con menos escritura o código, pero en realidad no agrega ninguna funcionalidad nueva al lenguaje".
+
+Definimos la variable persona de acuerdo a ECMA-Script 2015 entonces:
 
 
+```javascript
+
+
+	class Persona {
+		constructor(nombre, apellido, altura, genero){
+			this.nombre = nombre
+			this.apellido = apellido
+			this.altura = altura
+			this.genero = genero
+		}
+		saludar(){
+			console.log(`Hola me llamo ${this.nombre}${this.apellido}`)
+		}
+		soyAltX(){
+			var altX = this.genero == 'masculino' ? 'alto' : 'alta'
+			var string = this.altura >= 1.8 	? `Soy ${this.nombre}${this.apellido} y definitivamente soy ${altX}.` 
+							: `Soy ${this.nombre}${this.apellido} y no, no soy ${altX}.`
+			console.log(string)
+		}
+	}
+
+
+
+```
+
+Vemos que se utiliza el keyword _class_ para definir el prototipo (aunque se llame 'class' sigue siendo un prototipo). Y que agregamos una definición de _constructor_ como la función que recibe los parámetros.
+También podemos, a continuación de este y dentro del contexto de la clase y no por fuera definir los métodos que esta _clase_ va a utilizar.
+
+<br>
+
+Cómo logramos que una clase herede de otra?
+
+Simplemente definimos una nueva clase y agregamos a esta el keyword _extends_ seguido de la clase de la que va a Heredar. A demás, en el constructor de la misma debemos invocar los parámetros de la función de la que hereda con el keyword _super_.
+
+
+```javascript
+
+	class Desarrollador extends Persona{
+		constructor(nombre, apellido, altura, genero){
+			super(nombre, apellido, altura, genero) // super llama los atributos del padre
+		}
+		saludar(){
+			console.log(`Hola, me llamo ${this.nombre} ${this.apellido} y soy desarrollader.`)
+		}
+	}
+
+
+```
+Notemos que _Persona.prototype_ en consola seguirá arrojando el objeto _prototype_ exactamente igual que con la sintaxis referida exclusivamente a _prototype_.
+
+
+
 <br>
 <br>
 <br>
-# <a name="sec5"></a>Sección V - Asincronismo
+
+# <a name="sec5">Sección V - Asincronismo</a>
+
 <br>
 <br>
 
