@@ -1330,6 +1330,7 @@ Crear un prototipo es muy similar a crear una variable:
 	var rosa = new Persona('Rosa', 'Mosqueta')
 
 	rosa.saludar()
+	// Hola me llamo Rosa Mosqueta
 
 ```
 
