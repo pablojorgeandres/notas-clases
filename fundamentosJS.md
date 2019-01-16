@@ -1195,6 +1195,72 @@ Pero esta función modifica también el array ingresado, así que paso a ser la 
 
 ## <a name="clase22"> 22 - Reducir un array a un valor</a>
 
+**Función Reduce**
+
+Es otra de las funciones más usadas con arrays en JS.
+Reduce un array a un valor único.
+
+Si lo que queremos es calcular la cantidad total de libros de las personas definidas en los siguientes objetos es posible usar un for e ir incrementando un acumulador. Pero se ajusta mucho más para tal fin el método .reduce()
+
+
+```javascript
+
+	var sacha = {
+	    nombre: 'Sacha',
+	    cantidadDeLibros: 111
+	}
+	var alan = {
+	    nombre: 'Alan',
+	    cantidadDeLibros: 78
+	}
+	var martin = {
+	    nombre: 'Martin',
+	    cantidadDeLibros: 132
+	}
+	var dario = {
+	    nombre: 'Dario',
+	    cantidadDeLibros: 90
+	}
+	var vicky = {
+	    nombre: 'Vicky',
+	    cantidadDeLibros: 91
+	}
+	var paula = {
+	    nombre: 'Paula',
+	    cantidadDeLibros: 182
+	}
+
+	var personas = [sacha, alan, martin, dario, vicky, paula]
+
+```
+
+Con un loop _for_...
+
+
+```javascript
+
+	var acum = 0
+
+	for (var i = 0; i < personas.length; i++) {
+		acum = acum + personas[i].cantidadDeLibros
+	}
+
+	console.log(`Entotal todos tienen ${acum} libros.`)
+
+
+```
+
+Con el método .reduce():
+
+
+```javascript
+
+	const reducer = (acum, persona) => acum + persona.cantidadDeLibros
+	var totalDeLibros = personas.reduce(reducer, 0)
+	console.log(`Entotal todos tienen ${totalDeLibros} libros.`)
+
+```
+
 
 <br>
 <br>
