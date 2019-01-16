@@ -1752,8 +1752,156 @@ Notemos que _Persona.prototype_ en consola seguirá arrojando el objeto _prototy
 <br>
 <br>
 
-
 ## <a name="clase28"></a> 28 - Funciones como parámetros
+
+Antes de comenzar a hablar de asincronismo tenemos que comprender la mecánica de las funciones como parámetro.
+Es posible pasar funciones como parámetro, como si fuera cualquier otro tipo de variable.
+
+Cómo se declara?
+Como cualquier función.
+
+La siguiente función es una respuesta a la función saludar del código que traemos de las clases anteriores:
+
+	functionresponderSaludo(){
+		console.log(`Buen día`)
+	}
+
+Cómo se implementa al prototipo?
+Se agrega un parámetro a la función que la va a disparar dentro del prototipo ( ‘saludar(fn)’, en este caso ) y un if que evalúe si es llamada.
+
+```javascript
+
+	saludar(fn){
+	    console.log(`Hola me llamo ${this.nombre} ${this.apellido}`)
+	    if(fn){
+	        fn()
+	    }
+	}
+
+```
+Cómo se ejecuta?	
+Se ejecuta invocando la función sin paréntesis dentro de los paréntesis de la función saludar ya que es una respuesta al saludo:
+
+	sacha.saludar(responderSaludo)
+
+Si quiero pasar parámetros?
+
+Los agrego al declarar la función y luego los agrego entre paréntesis a la invocación de la misma dentro de la función que la dispara en el prototipo. Funcionan implícitamente, es decir, no se agregan cuando invoco la función dentro del ‘saludar()’.
+
+En la declaración:
+
+
+```javascript
+
+
+	functionresponderSaludo(_nombre_, _apellido_, _esDev_){
+		console.log(`Buen día ${_nombre_}${_apellido_}.`)
+		if (_esDev_) {
+			console.log(`Ah mirá, no sabía que eras dev.`)
+		}
+	}
+
+```
+
+En la función nativa:
+
+```javascript
+
+	saludar(fn){
+		console.log(`Hola me llamo ${this.nombre} ${this.apellido}`)
+		if(fn){
+			fn(_this.nombre_, _this.apellido_)
+		}
+	}
+
+```
+
+Se invoca:
+
+```javascript
+
+	sacha.saludar(responderSaludo)
+
+```
+
+Para despejar la lectura del código y escribir menos:
+
+
+```javascript
+
+	saludar(fn){
+		console.log(`Hola me llamo ${this.nombre}${this.apellido}`)
+		if(fn){
+			var {nombre, apellido} = this 
+			// == var nombre = this.nombre // var apellido = this.apellido
+			fn(nombre, apellido)
+		}
+	}
+
+
+```
+<br>
+
+Hay valores que al ser evaluados dentro de un if dan verdadero y otros falso, en este caso fn dentro del if evalúa si existe la función en la invocación de saludar().
+
+El código completo quedaría así:
+
+```javascript
+
+	classPersona{
+		constructor(nombre, apellido, altura, genero){
+			this.nombre = nombre
+			this.apellido = apellido
+			this.altura = altura
+			this.genero = genero
+		}
+		saludar(fn){
+			console.log(`Hola me llamo ${this.nombre}${this.apellido}`)
+			if(fn){
+				var {nombre, apellido} = this
+				fn(nombre, apellido)
+			}
+		}
+		soyAltX(){
+			var altX = this.genero == 'masculino' ? 'alto' : 'alta'
+			var string = this.altura >= 1.8 ? `Soy ${this.nombre}${this.apellido} y definitivamente soy ${altX}.` 
+											: `Soy ${this.nombre}${this.apellido} y no, no soy ${altX}.`
+			console.log(string)
+		}
+	}
+
+	classDesarrolladorextendsPersona{
+		constructor(nombre, apellido, altura){
+			super(nombre, apellido, altura)
+		}
+		saludar(fn){
+			console.log(`Hola, me llamo ${this.nombre}${this.apellido} y soy desarrollader.`)
+			if(fn){
+				var {nombre, apellido} = this
+				fn(nombre, apellido, true)
+			}
+		}
+	}
+
+	functionresponderSaludo(nombre, apellido, esDev){
+		console.log(`Buen día ${nombre}${apellido}.`)
+		if (esDev) {
+			console.log(`Ah mirá, no sabía que eras dev.`)
+		}
+	}
+
+	var pablo = new Persona('Pablo', 'Andrés', 1.78, 'masculino')
+	var joaquin = new Desarrollador('Joaquín', 'Perez', 1.91, 'masculino')
+	var rosa = new Persona('Rosa', 'Mosqueta', 1.81, 'femenino')
+	var elis = new Persona('Elis', 'Detta', 1.73, 'femenino')
+
+	pablo.saludar()
+	joaquin.saludar(responderSaludo)
+	rosa.saludar(responderSaludo)
+	elis.saludar(responderSaludo)
+
+
+```
 
 
 <br>
