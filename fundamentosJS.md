@@ -1348,6 +1348,105 @@ Crear un prototipo es muy similar a crear una variable:
 
 ## <a name="clase24"> 24 - Modificando un prototipo</a>
 
+  El prototipo es un objeto de javascript, si lo modificamos en un cierto lugar del código, a una cierta altura, a partir de ahí va a quedar modificado.
+  Por lo que una buena práctica, o más bien la manera de declarar un prototipo es al inicio del código y en bloque, es decir todo el código junto (propiedades y funciones del prototipo).
+  De otra manera, si queremos correr una función antes de declararla JS arrojará un error y quedará interrumpido el flujo de ejecución.
+
+Ej:
+
+```javascript
+
+	function Persona(nombre, apellido, altura) {
+	  this.nombre = nombre
+	  this.apellido = apellido
+	  this.altura = altura
+	}
+	Persona.prototype.saludar = () => {
+	  console.log(`Hola, me llamo ${this.nombre} ${this.apellido}`)
+	}
+
+	Persona.prototype.soyAlto = function() { 
+	  return this.altura > 1.8 
+	}
+
+	var sacha = new Persona('Sacha', 'Lifszyc', 1.72)
+	var erika = new Persona('Erika', 'Luna', 1.65)
+	var arturo = new Persona('Arturo', 'Martinez', 1.89)
+
+	sacha.soyAlto()
+	// false
+	
+	erika.soyAlto()
+	// false
+	
+	arturo.soyAlto()
+	// true
+
+
+```
+<br>
+
+Si declaro la función al final del código, después de llamar a la función; retorna un error _'Uncaught TypeError: sacha.soyAlto is not a function'_
+
+```javascript
+
+	function Persona(nombre, apellido, altura) {
+	  this.nombre = nombre
+	  this.apellido = apellido
+	  this.altura = altura
+	}
+	Persona.prototype.saludar = () => {
+	  console.log(`Hola, me llamo ${this.nombre} ${this.apellido}`)
+	}
+	//Persona.prototype.soyAlto = () => this.altura > 1.8
+	var sacha = new Persona('Sacha', 'Lifszyc', 1.72)
+	var erika = new Persona('Erika', 'Luna', 1.65)
+	var arturo = new Persona('Arturo', 'Martinez', 1.89)
+
+	sacha.soyAlto()
+	erika.soyAlto()
+	arturo.soyAlto()
+
+	Persona.prototype.soyAlto = function() { 
+	  return this.altura > 1.8 
+	}
+	// Uncaught TypeError: sacha.soyAlto is not a function
+
+```
+<br>
+
+Si convierto la función en _'arrow function'_ también tendré conflictos pero esta vez con el _'this'_; siempre obtendremos _false_ como respuesta a la función.
+
+```javascript
+
+	function Persona(nombre, apellido, altura) {
+	  this.nombre = nombre
+	  this.apellido = apellido
+	  this.altura = altura
+	}
+	Persona.prototype.saludar = () => {
+	  console.log(`Hola, me llamo ${this.nombre} ${this.apellido}`)
+	}
+	Persona.prototype.soyAlto = () => this.altura > 1.8
+
+	var sacha = new Persona('Sacha', 'Lifszyc', 1.72)
+	var erika = new Persona('Erika', 'Luna', 1.65)
+	var arturo = new Persona('Arturo', 'Martinez', 1.89)
+
+	sacha.soyAlto()
+	// false
+	
+	erika.soyAlto()
+	// false
+	
+	arturo.soyAlto()
+	// false
+
+```
+
+
+
+
 <br>
 <br>
 <br>
