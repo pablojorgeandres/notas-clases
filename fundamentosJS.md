@@ -28,7 +28,7 @@
 ### [19 - Introducción a los Arrays](#clase19)
 ### [20 - Filtrar un array](#clase20)
 ### [21 - Transformar un array](#clase21)
-### [22 - Filtrar un array](#clase22)
+### [22 - Reducir un array a un valor](#clase22)
 
 # 
 
@@ -1272,6 +1272,66 @@ Con el método .reduce():
 <br>
 
 ## <a name="clase23"> 23 - Como funcionan las clases en JavaScript</a>
+
+
+En JavaScript hablar de _objetos_ es más bien referirse a _**Prototipos**_ y no tanto a _clases_. Si bien en las nuevas versiones de JavaScript existen las _clases_ no son clases como tales, como las pordríamos conocer en cualquier otro lenguaje de programación; no existe la _herencia_ como tal.
+Pero sí existen los _**Prototipos**_ y vamos a ver que esas llamadas _clases_ terminan siendo _**Prototipos**_.
+
+**Objetos => Prototipos**
+
+Crear un prototipo es muy similar a crear una variable:
+
+• se antepone el keyword _function_;
+• la primer letra del nombre va en mayúscula;
+• para invocar un nuevo objeto a partir de este _**prototipo**_ se usa el keyword _'new'_.
+
+```javascript
+
+	function Persona(){
+		console.log('Hola, soy un nuevo objeto.')	
+	}
+	var pablo = new Persona()
+
+```
+
+• se le pueden pasar parámetros;
+• para generar nuevos parámetros o atributos dentro de la declaración del objeto se usa el keyword 'this'
+• es implícito en javaScript el retornar el objeto que se está creando 
+
+
+```javascript
+
+	function Persona(nombre, apellido){
+		this.nombre = nombre
+		this.apellido = apellido
+	}
+	var pablo = new Persona('Pablo', 'Andrés')
+
+```
+
+• es posible anexar funciones al prototipo usando el apéndice _.prototype_ precedido de el nombre que le asignamos a nuestro nuevo _**prototipo**_ y sucedido del nombre de nuestra nueva función encadenados. Luego este se iguala a una función anónima.
+
+• se pueden usar los mismos atributos que en el objeto (_this.xxx_)
+
+
+```javascript
+
+	function Persona(nombre, apellido){
+		this.nombre = nombre
+		this.apellido = apellido
+	}
+
+	Persona.prototype.saludar = function(){
+		console.log(`Hola me llamo ${this.nombre} ${this.apellido}`)
+	}
+
+	var pablo = new Persona('Pablo', 'Andrés')
+	var joaquin = new Persona('Joaquín', 'Perez')
+	var rosa = new Persona('Rosa', 'Mosqueta')
+
+	rosa.saludar()
+
+```
 
 <br>
 <br>
