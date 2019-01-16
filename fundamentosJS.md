@@ -1277,6 +1277,14 @@ Con el método .reduce():
 En JavaScript hablar de _objetos_ es más bien referirse a _**Prototipos**_ y no tanto a _clases_. Si bien en las nuevas versiones de JavaScript existen las _clases_ no son clases como tales, como las pordríamos conocer en cualquier otro lenguaje de programación; no existe la _herencia_ como tal.
 Pero sí existen los _**Prototipos**_ y vamos a ver que esas llamadas _clases_ terminan siendo _**Prototipos**_.
 
+**Qué son los _prototipos_:**
+
+> ..."comenzaremos diciendo que (en JavaScript) todos los objetos dependen de un prototipo y que _**los prototipos son objetos**_, es más cualquier objeto puede ser un prototipo"… 
+> ..."un prototipo es un objeto del que otros objetos heredan propiedades. Los objetos siempre heredan propiedades de algún objeto anterior, de este modo solo el objeto original y primigenio de javascript es el único que no hereda de nadie…
+
+			**Referencia:** http://mialtoweb.es/prototipos-en-javascript/
+
+
 **Objetos => Prototipos**
 
 Crear un prototipo es muy similar a crear una variable:
