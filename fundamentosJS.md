@@ -1265,7 +1265,7 @@ Con el método .reduce():
 <br>
 <br>
 <br>
-# <a name="sec4"></a>Sección IV - Programación Orientada a Objetos en JavaScript (POO)
+# Sección IV - Programación Orientada a Objetos en JavaScript (POO) <a name="sec4"></a>
 <br>
 <br>
 
