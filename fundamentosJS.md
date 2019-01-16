@@ -1762,7 +1762,7 @@ Como cualquier función.
 
 La siguiente función es una respuesta a la función saludar del código que traemos de las clases anteriores:
 
-	functionresponderSaludo(){
+	function responderSaludo(){
 		console.log(`Buen día`)
 	}
 
@@ -1794,9 +1794,9 @@ En la declaración:
 ```javascript
 
 
-	functionresponderSaludo(_nombre_, _apellido_, _esDev_){
-		console.log(`Buen día ${_nombre_}${_apellido_}.`)
-		if (_esDev_) {
+	function responderSaludo(nombre, apellido, esDev){
+		console.log(`Buen día ${nombre}${apellido}.`)
+		if (esDev) {
 			console.log(`Ah mirá, no sabía que eras dev.`)
 		}
 	}
@@ -1810,7 +1810,7 @@ En la función nativa:
 	saludar(fn){
 		console.log(`Hola me llamo ${this.nombre} ${this.apellido}`)
 		if(fn){
-			fn(_this.nombre_, _this.apellido_)
+			fn(this.nombre, this.apellido)
 		}
 	}
 
@@ -1848,7 +1848,7 @@ El código completo quedaría así:
 
 ```javascript
 
-	classPersona{
+	class Persona{
 		constructor(nombre, apellido, altura, genero){
 			this.nombre = nombre
 			this.apellido = apellido
@@ -1856,7 +1856,7 @@ El código completo quedaría así:
 			this.genero = genero
 		}
 		saludar(fn){
-			console.log(`Hola me llamo ${this.nombre}${this.apellido}`)
+			console.log(`Hola me llamo ${this.nombre} ${this.apellido}`)
 			if(fn){
 				var {nombre, apellido} = this
 				fn(nombre, apellido)
@@ -1870,7 +1870,7 @@ El código completo quedaría así:
 		}
 	}
 
-	classDesarrolladorextendsPersona{
+	class Desarrollador extends Persona{
 		constructor(nombre, apellido, altura){
 			super(nombre, apellido, altura)
 		}
@@ -1883,8 +1883,8 @@ El código completo quedaría así:
 		}
 	}
 
-	functionresponderSaludo(nombre, apellido, esDev){
-		console.log(`Buen día ${nombre}${apellido}.`)
+	function responderSaludo(nombre, apellido, esDev){
+		console.log(`Buen día ${nombre} ${apellido}.`)
 		if (esDev) {
 			console.log(`Ah mirá, no sabía que eras dev.`)
 		}
