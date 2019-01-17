@@ -2333,7 +2333,7 @@ Las promesas se declaran de la siguiente manera:
 
 ```javascript
 
-	newPromise( function( resolve, reject ) {
+	new Promise( function( resolve, reject ) {
 		...
 	}).then( valor => {
 		...
@@ -2356,8 +2356,8 @@ function obtenerPersonaje() ya no recibirá un callback, directamente va a retor
 
 ```javascript
 
-	functionobtenerPersonaje(id) {
-		returnnewPromise( function(resolve, reject){ 
+	function obtenerPersonaje(id) {
+		return new Promise( function(resolve, reject){ 
 			...
 		})
 	}
@@ -2368,8 +2368,8 @@ Como arrow function:
 
 ```javascript
 
-	functionobtenerPersonaje(id) {
-		returnnewPromise((resolve, reject) => { 
+	function obtenerPersonaje(id) {
+		return new Promise((resolve, reject) => { 
 			...  //Aquí dentro se genera el llamado asíncrono   ...
 		})
 	}
@@ -2381,8 +2381,8 @@ También vamos a vover a insertar el método .fail() invocando el parámetro/fun
 
 ```javascript
 
-	functionobtenerPersonaje(id) {
-		returnnew Promise((resolve, reject) => {
+	function obtenerPersonaje(id) {
+		return new Promise((resolve, reject) => {
 			consturl = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
 			$
 				.get(url, opts, function(data){
@@ -2412,7 +2412,7 @@ Y si sucede algún error en nuestro callback lo vamos a obtener con el método .
 
 ```javascript
 
-	functiononError(id){
+	function onError(id){
 		console.log(`ERORRRRRRR!!!!!!!!!!! No se pudo obtener el personaje con id = ${id}.`)
 	}
 
@@ -2449,8 +2449,8 @@ Código final completo:
 	const PEOPLE_URL = 'people/:id'
 	const opts = { crossDomain: true}
 
-	functionobtenerPersonaje(id) {
-		returnnew Promise((resolve, reject) => {
+	function obtenerPersonaje(id) {
+		return new Promise((resolve, reject) => {
 			consturl = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
 			$
 				.get(url, opts, function(data){
@@ -2460,7 +2460,7 @@ Código final completo:
 		})
 	}
 
-	functiononError(id){
+	function onError(id){
 		console.log(`ERORRRRRRR!!!!!!!!!!! No se pudo obtener el personaje con id = ${id}.`)
 	}
 
