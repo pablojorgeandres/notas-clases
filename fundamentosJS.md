@@ -1795,7 +1795,7 @@ En la declaración:
 
 
 	function responderSaludo(nombre, apellido, esDev){
-		console.log(`Buen día ${nombre}${apellido}.`)
+		console.log(`Buen día ${nombre} ${apellido}.`)
 		if (esDev) {
 			console.log(`Ah mirá, no sabía que eras dev.`)
 		}
@@ -1830,10 +1830,9 @@ Para despejar la lectura del código y escribir menos:
 ```javascript
 
 	saludar(fn){
-		console.log(`Hola me llamo ${this.nombre}${this.apellido}`)
+		var {nombre, apellido} = this 
+		console.log(`Hola me llamo ${nombre}${apellido}`)
 		if(fn){
-			var {nombre, apellido} = this 
-			// == var nombre = this.nombre // var apellido = this.apellido
 			fn(nombre, apellido)
 		}
 	}
@@ -1856,16 +1855,16 @@ El código completo quedaría así:
 			this.genero = genero
 		}
 		saludar(fn){
-			console.log(`Hola me llamo ${this.nombre} ${this.apellido}`)
+			var {nombre, apellido} = this
+			console.log(`Hola me llamo ${nombre} ${apellido}`)
 			if(fn){
-				var {nombre, apellido} = this
 				fn(nombre, apellido)
 			}
 		}
 		soyAltX(){
 			var altX = this.genero == 'masculino' ? 'alto' : 'alta'
-			var string = this.altura >= 1.8 ? `Soy ${this.nombre}${this.apellido} y definitivamente soy ${altX}.` 
-											: `Soy ${this.nombre}${this.apellido} y no, no soy ${altX}.`
+			var string = this.altura >= 1.8 ? `Soy ${this.nombre} ${this.apellido} y definitivamente soy ${altX}.` 
+							: `Soy ${this.nombre} ${this.apellido} y no, no soy ${altX}.`
 			console.log(string)
 		}
 	}
@@ -1875,9 +1874,9 @@ El código completo quedaría así:
 			super(nombre, apellido, altura)
 		}
 		saludar(fn){
-			console.log(`Hola, me llamo ${this.nombre}${this.apellido} y soy desarrollader.`)
+			var {nombre, apellido} = this
+			console.log(`Hola, me llamo ${this.nombre} ${this.apellido} y soy dev.`)
 			if(fn){
-				var {nombre, apellido} = this
 				fn(nombre, apellido, true)
 			}
 		}
@@ -1909,6 +1908,10 @@ El código completo quedaría así:
 <br>
 
 ## <a name="clase29"></a> 29 - Cómo funciona el asincronismo en JavaScript
+
+
+
+
 
 <br>
 <br>
