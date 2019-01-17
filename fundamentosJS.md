@@ -1909,8 +1909,38 @@ El código completo quedaría así:
 
 ## <a name="clase29"></a> 29 - Cómo funciona el asincronismo en JavaScript
 
+_Transcripción del guión del video... No tan exacta._
+
+**Asincronismo**
+
+Javascript sólo puede hacer una cosa a la vez … pero puede delegar la ejecución de ciertas funciones a otros procesos.
+Este modelo de concurrencia se llama EventLoop.
 
 
+JavaScript tiene algo llamado pila de ejecución o callStack donde va poniendo las llamadas a las funciones según el orden de ejecución de nuestro programa; si una función llama a otra, entonces esta se agrega a la pila.
+Cuando termina de ejecutar una función la saca de la pila y la desecha.
+
+
+En algún momento dado nuestro programa necesita algún dato de otro sitio en la web y le pide al navegador que cuándo obtenga los datos ejecute cierta función. Esta tarea que se lleva el navegador se llama ‘callBack’.
+Mientras tanto js sigue ejecutando nuestro programa principal y cuando la respuesta llega va a parar a la ‘cola de tareas’.
+Aquí las tareas se ordenan una detrás de la otra a medida de que van llegando.
+
+
+Qué tareas van a parar a esta cola?
+• las peticiones a servidores
+• las interacciones visuales
+• la navegación clayInside (dice esto?)
+• los eventos que se realizan cada cierto tiempo
+
+
+Recién cuando el programa se queda sin funciones en la pila de ejecución es que va a ir a buscar las funciones en la ‘cola de tareas’; por eso es que hay que tener cuidado de no generar un ‘cuello de botella’ en la pila de ejecución.
+
+
+Si javaScript se queda ejecutando tareas muy pesadas las funciones de la ‘cola de tareas’ van a tardar mucho tiempo en ejecutarse.
+
+
+Por eso recuerda estas palabras y repitelas todas las noche antes de irte a dormir:
+No Voy A Bloquear el EventLoop!
 
 
 <br>
@@ -1919,11 +1949,77 @@ El código completo quedaría así:
 
 ## <a name="clase30"></a> 30 - Cómo funciona el tiempo en JavaScript
 
+**Tiempos y prioridades de ejecución en JS:**
+
+Dados los siguientes console.logs, ‘a’, ‘b’ y ‘c’, los resultados son en orden e inmediatos; estarán en orden en el EventLoop.
+
+```javascript
+
+	console.log(`a`)
+	console.log(`b`)
+	console.log(`c`)
+
+	// a
+	// b
+	// c
+
+```
+<br>
+
+Si genero un callBack a partir de un setTimeout(), el browser toma la petición y después del tiempo estipulado se dispara el console.log.
+
+
+```javascript
+
+	console.log(`a`)
+	setTimeoun(()=> console.log(`b`), 2000)
+	console.log(`c`)
+
+	// a
+	// c
+
+	// b [2 segundos después]
+
+```
+<br>
+
+Si genero otro setTimeout, pero con un tiempo = 0, el callBack será generado de todas maneras por la función setTimeout y el console.log será disparado al finalizar el EventLoop de nuestro programa, cuando está listo para revisar la cola de tareas.
+
+```javascript
+
+	console.log(`a`)
+	setTimeout(()=> console.log(`b`), 0)
+	console.log(`c`)
+
+	// a
+	// c
+
+	// b [después de finalizado el EventLoop]
+
+
+```
+<br>
+
+Esto puede verse más claramente si generamos un loop for que demore un tiempo evidente y mayor al seteado en el callBack.
+El tiempo configurado para el setTimeout es de 2000 milisegundos, como mínimo 2000 milisegundos, ya que el console.log funcionará  después de que el for termine su proceso.
+
+
+```javascript
+
+	setTimeout(() =>console.log(`b`), 2000)
+	for(var i = 0; i < 10000000000; i++){}
+
+```
+
+
 <br>
 <br>
 <br>
 
 ## <a name="clase31"></a> 31 - Callbacks
+
+
+
 
 <br>
 <br>
