@@ -2139,7 +2139,7 @@ Creamos una nueva función y modificamos levemente el código para hacer el call
 		console.log(person.name)
 	}
 
-	functionobtenerPersonaje(id){
+	function obtenerPersonaje(id){
 		consturl = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
 		$.get(url, opts, onPeopleResponse)
 	}
@@ -2183,7 +2183,7 @@ También reemplazamos la constante en el tercer parámetro del $.get por la func
 
 ```javascript
 
-	functionobtenerPersonaje(id, callback) {
+	function obtenerPersonaje(id, callback) {
 		consturl = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
 		$.get(url, opts, function(people){
 			console.log(people.name)
@@ -2225,12 +2225,252 @@ Pero esto, como podemos ya ver, trae la problemática del anidamiento infinito l
 
 ## <a name="clase34"></a> 34 - Manejo de errores con callbacks
 
+Cómo solucionar o prever el que el programa se quede sin conexión u algo parecido?
+
+Primero modificamos la función y quitamos el if:
+
+```javascript
+
+	function obtenerPersonaje(id, callback) {
+		consturl = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
+		$.get(url, opts, callback)
+	}
+
+```
+El callback ahora lo llamaremos desde la invocación de la función:
+
+```javascript
+
+	obtenerPersonaje(1, function(person){
+		console.log(person.name)
+	})
+
+```
+
+A demás del método get() podemos encadenar otro llamado al método fail() que va a recibir un callback y se va a disparar si hay algún error.
+
+```javascript
+
+$.get(url, opts, callback).fail(() => { console.log(`EROR! La conexiónse ha interrumpido y no podemos mostrarte el resto de los personajes.`) })
+
+```
+
+Probamos en consola, pestaña ‘Network’ deshabilitamos la cache y después de recargar nos pusimos en modo offline y se reprodujo el error para disparar el fail().
+
+El código completo queda así:
+
+```javascript
+
+	const API_URL = 'https://swapi.co/api/'
+	const PEOPLE_URL = 'people/:id'
+	const opts = { crossDomain: true}
+
+	functionobtenerPersonaje(id, callback) {
+		consturl = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
+		$
+			.get(url, opts, callback)
+			.fail(() => { console.log(`ERORRRRRRR!!!!!!!!!!! No se pudo obtener el personaje ${id}.`)})
+	}
+
+	obtenerPersonaje(1, function(character) {
+		console.log(character.name)
+
+		obtenerPersonaje(2, function(character) {
+			console.log(character.name)
+
+			obtenerPersonaje(3, function(character) {
+				console.log(character.name)
+
+				obtenerPersonaje(4, function(character){
+					console.log(character.name)
+
+					obtenerPersonaje(5, function(character){
+						console.log(character.name)
+
+						obtenerPersonaje(6, function(character){
+							console.log(character.name)
+
+							obtenerPersonaje(7, function(character){
+								console.log(character.name)            
+							} )
+						} )
+					} )
+				} )
+			})
+		})
+	})
+
+```
 
 <br>
 <br>
 <br>
 
 ## <a name="clase35"></a> 35 - Promesas
+
+Con los callBacks teníamos un problema al anidarlos.
+Para este problema existen las ‘promesas’.
+
+Antes era necesario usar librerías externas pero ahora la mayoría de los browsers soportan las promesas.
+Si queremos verificar si las promesas son soportadas por el usuario se podría usar lo que se llama un ‘polifield’. Este detecta si el navegador donde está corriendo nuestro código no soporta las promesas, y si así es, crea las clases de las promesas por nosotros y así podrían ser utilizadas por nosotros de manera transparente para nuestro código.
+
+Qué son las promesas?
+Tenemos que pensar las promesas como valores que aún no conocemos. Es la promesa de que ahí va a haber un valor cuando una acción asíncrona suceda y se devuelva.
+
+Las promesas tienen 3 estados y son como cualquier otro objeto de javascript.
+
+El primero de los estados es ‘pending’. Es el estado cuando las creamos.
+Si se resuelve exitosamente pasa al estado ‘fulfilled’.
+Si ocurre algún error y no se resuelve pasa al estado de ‘rejected’.
+
+Las promesas pueden no ser asíncronas también.
+
+Para obtener el valor de la resolución de la promesa llamamos a la función _.then(val =>) _a la que le vamos a pasar como parámetro otra función en la que el primer parámetro será el valor que esperábamos.
+
+Si sucede algún error agregamos el método .catch(err=>) al que se le asigna una función también como parámetro que va a recibir el error.
+
+Las promesas se declaran de la siguiente manera:
+
+```javascript
+
+	newPromise( function( resolve, reject ) {
+		...
+	}).then( valor => {
+		...
+	}).catch( err => {
+		...
+	})
+
+```
+
+Se crea el nuevo objeto y se le asigna una función con dos parámetros ‘resolve’ y ‘reject’. Estas son dos funciones que debemos llamar si la promesa se resuelve o no.
+Si se resuelve exitosamente llamamos a ‘.then(valor =>’ para obtener el valor del promise dentro del arrow function (valor=>).
+Si sucede algún error podemos llamar al ‘.catch( err =>’ para obtener el tipo de error que sucedió y actuar en consecuencia.
+
+Otra cosa más a cerca de las promesas es que luego de llegar al estado de 'fulfilled’ podemos retornar otra promesa dentro del .then y de esa manera ir encadenándolas en sucesivas acciones asíncronas. Cada una de ellas puede ser resuelta o rechazada en una nueva promesa que terminará en el estado de ‘fulfilled’.
+
+Entonces en nuestro código borramos las invocaciones anidadas y volvemos a modificar obtenerPersonaje().
+
+function obtenerPersonaje() ya no recibirá un callback, directamente va a retornar una promesa.
+
+
+```javascript
+
+	functionobtenerPersonaje(id) {
+		returnnewPromise( function(resolve, reject){ 
+			...
+		})
+	}
+
+```
+
+Como arrow function:
+
+```javascript
+
+	functionobtenerPersonaje(id) {
+		returnnewPromise((resolve, reject) => { 
+			...  //Aquí dentro se genera el llamado asíncrono   ...
+		})
+	}
+
+```
+Dentro de esta función se va a generar el llamado asíncrono.
+Devolvemos la generación de url y el $.get con el parámetro ‘callback’ reemplazado por una nueva función a modo de callback que se va a ejecutar recién cuando el get haya sido exitoso resolviendo la promesa. Por lo que le pasamos el parámetro ‘data’, a través del cual van a llegar los valores de nuestro personaje, y dentro de la función invocamos, a su vez, a la función resolve.
+También vamos a vover a insertar el método .fail() invocando el parámetro/función ‘reject’ con parámetro ‘id’.
+
+```javascript
+
+	functionobtenerPersonaje(id) {
+		returnnew Promise((resolve, reject) => {
+			consturl = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
+			$
+				.get(url, opts, function(data){
+					resolve(data)
+				})
+				.fail(() => reject(id))
+		})
+	}
+	
+```
+La función se invocaría entonces solamente con el parámetro id.
+
+	obtenerPersonaje(id)
+
+La forma de obtener el valor es llamando al .then() con su respectiva función como parámetro que va a estar trayendo a nuestro personaje a través del parámetro ‘data’ que está en la función invocada en los parámetros del .get si este es exitoso.
+
+```javascript
+
+	obtenerPersonaje(1)
+    	.then(function(personaje){
+        	console.log(personaje.name)
+    	})
+```
+
+Y si sucede algún error en nuestro callback lo vamos a obtener con el método .catch() que va a recibir el id que viene a través del .fail() de la función.
+
+
+```javascript
+
+	functiononError(id){
+		console.log(`ERORRRRRRR!!!!!!!!!!! No se pudo obtener el personaje con id = ${id}.`)
+	}
+
+	obtenerPersonaje(1)
+		.then(function(personaje){
+			console.log(personaje.name)
+		})
+		.catch(function(id){
+			onError(id)
+		})
+
+```
+O directamente invocamos la función desde el parámetro del .catch:
+
+```javascript
+
+	function onError(id){
+		console.log(`ERORRRRRRR!!!!!!!!!!! No se pudo obtener el personaje con id = ${id}.`)
+	}
+
+	obtenerPersonaje(1)
+		.then(function(personaje){
+			console.log(personaje.name)
+		})
+		.catch(onError)
+
+```
+
+Código final completo:
+
+```javascript
+
+	const API_URL = 'https://swapi.co/api/'
+	const PEOPLE_URL = 'people/:id'
+	const opts = { crossDomain: true}
+
+	functionobtenerPersonaje(id) {
+		returnnew Promise((resolve, reject) => {
+			consturl = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
+			$
+				.get(url, opts, function(data){
+					resolve(data)
+				})
+				.fail(() => reject(id))
+		})
+	}
+
+	functiononError(id){
+		console.log(`ERORRRRRRR!!!!!!!!!!! No se pudo obtener el personaje con id = ${id}.`)
+	}
+
+	obtenerPersonaje(1)
+		.then(function(personaje){
+			console.log(personaje.name)
+		})
+		.catch(onError)
+
+```
 
 
 <br>
