@@ -2036,6 +2036,8 @@ Realizamos el request. En este caso:
 	const API_URL = 'https://swapi.co/api/'
 	const PEOPLE_URL = 'people/:id'
 
+	const URL = `${API_URL}${PEOPLE_URL)}`
+
 	$.get(URL, {crossDomain: true}, function(){ }) 
 
 ```
@@ -2103,6 +2105,11 @@ Por último generamos una constante a partir de la función:
 
 ```javascript
 
+	const API_URL = 'https://swapi.co/api/'
+	const PEOPLE_URL = 'people/:id'
+
+	const URL = `${API_URL}${PEOPLE_URL.replace(':id', 1)}`
+	const opts = { crossDomain: true }
 	const onPeopleResponse = function (personaje) {
 		console.log(personaje.name)
 	}
