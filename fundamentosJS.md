@@ -2125,11 +2125,98 @@ Por último generamos una constante a partir de la función:
 
 ## <a name="clase32"></a> 32 - Haciendo múltiples requests
 
+**Requests en Paralelo**
+
+Creamos una nueva función y modificamos levemente el código para hacer el callback ingresando solamente el id:
+
+```javascript
+
+	const API_URL = 'https://swapi.co/api/'
+	const PEOPLE_URL = 'people/:id'
+
+	const opts = { crossDomain: true}
+	const onPeopleResponse = function(person){
+		console.log(person.name)
+	}
+
+	functionobtenerPersonaje(id){
+		consturl = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
+		$.get(url, opts, onPeopleResponse)
+	}
+
+```
+
+Dado este código.
+En qué orden nos llegarán las respuestas a varios request al mismo tiempo?
+
+
+```javascript
+
+	obtenerPersonaje(1)
+	obtenerPersonaje(2)
+	obtenerPersonaje(3)
+
+	//  3
+	//  2
+	//  1
+
+```
+En este request el resultado llegó en el orden inverso en el que los pedimos.
+
+_Por qué sucede esto?_
+
+Por el asincronismo de JS.
+No sabemos en qué orden nos llegarán las respuestas, esto depende del servidor y de cada uno de los requests.
+Iniciamos los requests en un determinado orden pero no sabemos en qué orden van a llegar.
+
+
 <br>
 <br>
 <br>
 
 ## <a name="clase33"></a> 33 - Manejando el Orden y el Asincronismo en JavaScript
+
+Una manera de asegurar que se respete la secuencia en que hemos realizado múltiples tareas es utilizando callbacks, con lo que se ejecutará luego, en cada llamada. Lo importante es que el llamado al callback se haga a través de una función anónima. 
+
+Para esto, agregamos primero otro parámetro a la función obtenerPersonaje(), verificamos si existe con un if y lo ejecutamos si así es.
+También reemplazamos la constante en el tercer parámetro del $.get por la función.
+
+```javascript
+
+	functionobtenerPersonaje(id, callback) {
+		consturl = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
+		$.get(url, opts, function(people){
+			console.log(people.name)
+		})
+		if(callback) {
+			callback()
+		}
+	}
+
+```
+
+Así podemos invocar la función del callback de la siguiente manera:
+
+
+```javascript
+
+	obtenerPersonaje(1, function(){
+		obtenerPersonaje(2, function(){
+			obtenerPersonaje(3, function(){
+				obtenerPersonaje(4, function(){
+					obtenerPersonaje(5, function(){
+						obtenerPersonaje(6, function(){
+							obtenerPersonaje(7)
+						})
+					})
+				})
+			})
+		})
+	})
+
+```
+
+Pero esto, como podemos ya ver, trae la problemática del anidamiento infinito llamado CallbackHell.
 
 
 <br>
