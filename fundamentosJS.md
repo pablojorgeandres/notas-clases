@@ -2829,8 +2829,8 @@ Para ejemplificar generemos una función que va a crear saludos. En este caso ha
 
 ```javascript
 
-	functioncrearSaludo(finalDeFrase){
-		returnfunction(nombre){
+	function crearSaludo(finalDeFrase){
+		return function(nombre){
 
 		}
 	}
@@ -2869,8 +2869,8 @@ Y agregamos la respuesta de la función (el console.log en este caso) en la que 
 
 ```javascript
 
-	functioncrearSaludo(finalDeFrase) {
-		returnfunction(nombre) {
+	function crearSaludo(finalDeFrase) {
+		return function(nombre) {
 			console.log(`Hola ${nombre}${finalDeFrase}`)
 		}
 	}
@@ -2900,9 +2900,9 @@ El código completo queda así:
 
 ```javascript
 
-	functioncrearSaludo(finalDeFrase) {
-		returnfunction(nombre) {
-			console.log(`Hola ${nombre}${finalDeFrase}`)
+	function crearSaludo(finalDeFrase) {
+		return function(nombre) {
+			console.log(`Hola ${nombre} ${finalDeFrase}`)
 		}
 	}
 
