@@ -2018,7 +2018,98 @@ El tiempo configurado para el setTimeout es de 2000 milisegundos, como mínimo 2
 
 ## <a name="clase31"></a> 31 - Callbacks
 
+_Qué son?_ 
+_Cómo son?_
+_Cómo los utilizo?_
 
+Utilizaremos una librería externa, _jQuery_, con un fin específico que es el de realizar un request y obtener datos de una API externa. Utilizamos la versión CDN de JQuery.
+  _Nota: un CDN es un Content Delivery Nerwork. Un servidor en el planeta que nos va a conectar con la versión de jQuery más cercana a nuestra locación._ 
+  
+La API que usaremos es la de Star Wars.
+Implementamos la llamada a la librería jquery.minified en el html antes de llamar nuestro archivo de funciones. Este lo usaremos para hacer requests a la api de 'swapi.co'.
+
+Realizamos el request. En este caso:
+
+
+```javascript
+
+	const API_URL = 'https://swapi.co/api/'
+	const PEOPLE_URL = 'people/:id'
+
+	$.get(URL, {crossDomain: true}, function(){ }) 
+
+```
+
+Donde:
+
++ API_URL es la URL de la api
++ PEOPLE_URL es un folder interno de la API, people/ en este caso y _':id'_ se escribe para después hacer un .replace() por cada id
++ $.get es el método de jQuery para realizar el callback. (_Referencia http://api.jquery.com/jQuery.get/_)
+
+Los parámetros del $.get son 3 separados por ',':
+
++ URL: es el URL completo, en este caso tenemos que encadenar API_URL con PEOPLE_URL y a esta segunda remmplazarle el :id por el id de cada personaje.
+
+	const URL = `${API_URL}${PEOPLE_URL.replace(':id', 1)}` // 1 es id de Luke
+
++ Este segundo parámetro es un objeto que le indica al método si el callback es local o remoto.
+
+	const opts = {crossDomain: true}
+
++ Y por último el callback. Es una función que será invocada en algún futuro por el método $.get cuando termine de establecer la conexión remota, el request a la URL. Es una función anónima nativa de jQuery. _Referencia: http://api.jquery.com/jQuery.get/_
+
+jQuery.get( url [, data ] [, success ] [, dataType ] )
+
+Los parámetros, a parte de la referencia de jQuery podemos verlos haciendo un console.log de _arguments_:
+
+	$.get( URL, opts, function(){
+		console.log(arguments)
+	})
+
+_arguments_ es una variable que nos va a dar un array con los parámetros que recibe la función.
+En este caso:
+
+
+	Arguments(3) [{…}, "success", {…}, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+	0: {name: "Luke Skywalker", height: "172", mass: "77", hair_color: "blond", skin_color: "fair", …}
+	1: "success"
+	2: {readyState: 4, getResponseHeader: ƒ, getAllResponseHeaders: ƒ, setRequestHeader: ƒ, overrideMimeType: ƒ, …}
+	callee: ƒ (persona)
+	length: 3
+	Symbol(Symbol.iterator): ƒ values()
+	__proto__: Object
+
+Vemos que el parámetro que nos devuelve los resultados de la API es el primero [,data].
+Entonces el callback quedaría así:
+
+
+```javascript
+	$.get( URL, opts, function(data){
+		console.log(data.name)
+	})
+	// Luke Skywalker
+```
+
+Donde 'data' puede ser reemplazado por el argumento que querramos 
+
+```javascript
+	$.get( URL, opts, function(personaje){
+		console.log(personaje.name)
+	})
+	// Luke Skywalker
+```
+
+Por último generamos una constante a partir de la función:
+
+```javascript
+
+	const onPeopleResponse = function (personaje) {
+		console.log(personaje.name)
+	}
+
+	$.get(URL, opts, onPeopleResponse)
+
+```
 
 
 <br>
