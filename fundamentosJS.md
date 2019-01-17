@@ -2479,6 +2479,61 @@ Código final completo:
 
 ## <a name="clase36"></a> 36 - Promesas Encadenadas
 
+Encadenar promesas es mucho más limpio que con el método anterior.
+Primero escribimos la invocación de la promesa con un arrow function:
+
+```javascript
+
+	obtenerPersonaje(1)
+	    .then( personaje => {
+		console.log(personaje.name)
+	    })
+	    .catch(onError)
+
+```
+<br>
+
+Al resolver esta promesa vamos a retornar otra promesa invocando dentro del .then nuevamente la función obtenerPersona() con el id del siguiente personaje:
+
+```javascript
+
+	obtenerPersonaje(1)
+	    .then( personaje => {
+		console.log(personaje.name)
+		return obtenerPersona(2)
+	    })
+	    .catch(onError)
+
+```
+<br>
+
+Y para obtener los valores de esta promesa encadenamos otro .then y copiamos la función parámetro cambiando el valor del id.
+
+```javascript
+
+	obtenerPersonaje(1)                                                                                                                                                            
+	    .then( personaje1 => {
+		console.log(personaje1.name)
+		return obtenerPersona(2)
+	    })
+	    .then( personaje2 => {
+		console.log(personaje2.name)
+		return obtenerPersona(3)
+	    })
+	    .then( personaje3 => {
+		console.log(personaje3.name)                                                                    
+		return obtenerPersona(4)
+	    })
+	    .
+	    .
+	    .
+	    .catch(onError)
+
+```
+
+Ahora es mucho más legible y si cualquiera de estas promesas da un error funciona el mismo .catch para todos.
+
+
 
 <br>
 <br>
@@ -2486,13 +2541,123 @@ Código final completo:
 
 ## <a name="clase37"></a> 37 - Múltiples promesas en paralelo
 
+Con promises podemos hacer los requests en paralelo sin alterar el orden de los objetos, lo que mejoraría mucho nuestro código y performance.
+
+Generamos un array con los ids de los personajes que queremos obtener. Y a partir de este vamos a generar otro array con múltiples promesas, donde cada elemento sea una promesa, la promesa de obtener un personaje con su id.
+Con el método map() vamos a recorrer el array ids y por cada elemento de este vamos a generar uno nuevo que va a ser una promesa.
+Estas promesas las guardamos en una variable ‘promesas’. A partir de cada objeto del array ids (de cada id) obtenemos una nueva promesa con la función _obtenerPersonaje(id).
+
+```javascript
+
+	var ids = [1, 2, 3, 4, 5, 6, 7]
+	var promesas = ids.map(function(id){
+	    return obtenerPersonaje(id)
+	})
+
+```
+
+Expresado en arrow function
+
+```javascript
+
+	var ids = [1, 2, 3, 4, 5, 6, 7]
+	var promesas = ids.map( id => obtenerPersonaje(id) )
+
+	// (7) [Promise, Promise, Promise, Promise, Promise, Promise, Promise]
+
+```
+
+_Cómo obtenemos los valores de estas promesas cuando se resuelvan?_
+
+Para esto podemos llamar a un método que tiene la clase de promesas llamado 'Promise.all()'
+A este le pasamos el array ‘promesas’, le encadenamos el .then()que nos entrega los objetos y depués encadenamos el .catch() que se va a ejecutar si cualquiera de las promesas que tenemos en el array falla.
+
+```javascript
+
+
+	Promise
+	    .all(promesas)
+	    .then( personajes => console.log(personajes))
+	    .catch(onError)
+
+	// (7) [{...}, {...}, {...}, {...}, {...}, {...}, {...}]
+	//Si lo desglosamos tenemos en orden las respuestas de cada una de las promesas.
+
+
+```
+
+Las promesas tienen un gran potencial por sobre los callBakc.
+El código queda mucho más prolijo y a demás podemos realizar promesas en paralelo.
+
+Código completo:
+
+```javascript
+
+	const API_URL = 'https://swapi.co/api/'
+	const PEOPLE_URL = 'people/:id'
+	const opts = { crossDomain: true}
+
+	functionobtenerPersonaje(id) {
+	    returnnew Promise((resolve, reject) => {
+		consturl = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
+		$
+		    .get(url, opts, function(data){
+			resolve(data)
+		    })
+		    .fail(() => reject(id))
+	    })
+	}
+
+	functiononError(id){
+	    console.log(`ERORRRRRRR!!!!!!!!!!! No se pudo obtener el personaje con id = ${id}.`)
+	}
+
+	var ids = []
+	for (let i = 1; i <= 10; i++) {
+	    ids.push(i)
+	}
+	console.log(ids.length)
+	var promesas = ids.map( id => obtenerPersonaje(id) )
+
+	Promise
+	    .all(promesas)
+	    .then(personajes => console.log(personajes))
+	    .catch(onError)
+
+
+```
+
+
+
 <br>
 <br>
 <br>
 
 ## <a name="clase38"></a> 38 - Async-await: lo último en asincronismo
 
+Async-await es la manera más sencilla y clara de realizar tareas asíncronas.
+Se parece mucho a la forma de escribir código hace unos años, de manera secuencial, desde arriba hacia abajo.
+Lo que sí, incluye algunas palabras clave.
 
+Como primer cambio a nuestro código anterior vamos a crear una función en la que incorporamos desde la declaración de la variable ‘ids’ hasta incluso el .catch.
+A continuación llamamos a la función:
+
+```javascript
+
+	functionobtenerPersonajes(){
+	    var ids = []
+	    for (let i = 1; i <= 10; i++) {
+		ids.push(i)
+	    }
+	    varpromesas = ids.map( id => obtenerPersonaje(id) )
+	    Promise
+		.all(promesas)
+		.then(personajes => console.log(personajes))
+		.catch(onError)
+	}
+	obtenerPersonajes()
+
+```
 
 
 <br>
