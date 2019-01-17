@@ -57,6 +57,14 @@
 #
 
 ## [Sección VIII - Complementos](#sec8)
+### [46 - var, let y const: las diferencias entre ellos](#clase46)
+### [47 - ¿Hace cuántos días naciste?](#clase47)
+### [48 - Funciones recursivas](#clase48)
+### [49 - Memoización: ahorrando cómputo](#clase49)
+### [50 - Entiende los closures de JavaScript](#clase50)
+### [51 - Estructuras de datos inmutables](#clase51)
+### [52 - Cambiando de contexto al llamar a una función](#clase52)
+### [53 - ¿Cuándo hace falta poner el punto y coma al final de la línea?](#clase53)
 
 
 <br>
@@ -2762,7 +2770,7 @@ La función:
 <br>
 <br> 
 
-## <a name="clase49"></a> 49 - Memoización: ahorrando cómputo
+## <a name="clase49"></a> 49 - Memorización: ahorrando cómputo
 
 Este proceso nos va a permitir ahorrar procesamiento, ahorrar cómputo, guardando ciertos resultados de algunas cuentas.
 
@@ -2811,28 +2819,373 @@ Ahora guardamos en una cache los resultados de las operaciones ya hechas.
 <br>
 <br> 
 
-## <a name="clase50"></a> 50 - 
+## <a name="clase50"></a> 50 - Closures
 
+Un closure es una función que recuerda el estado de las cosas cuando fue creada.
+Una función que devuelve otra función con parámetros invocados en dos veces; primero el de la función ‘padre’ y luego el de la función ‘hijo’.
+
+Para ejemplificar generemos una función que va a crear saludos. En este caso hagamos un saludo argentino, uno mexicano y otro para colombia.
+
+
+```javascript
+
+	functioncrearSaludo(finalDeFrase){
+		returnfunction(nombre){
+
+		}
+	}
+
+```
+
+La función ‘padre’ es generadora o creadora de otras funciones y la función ‘hijo’ es anónima, es la que nos va a devolver el resultado.
+Vamos a llamar esta función para crear constantes.
+
+```javascript
+
+	const saludoArgentino = crearSaludo('che')
+	const saludoMexicano = crearSaludo('wey')
+	const saludoColombiano = crearSaludo('amigo')
+
+```
+
+Entonces ahora podemos llamar a la función nuevamente a través de cada variable constante y pasando el parámetro de la función ‘hijo’ esta vez, el parámetro ‘nombre’ para generar el saludo de la siguiente manera.
+
+
+```javascript
+
+	saludoArgentino('Pablo')
+	// Hola Pablo che
+	
+	saludoMexicano('Pablo')
+	// Hola Pablo wey
+	
+	saludoColombiano('Pablo')
+	// Hola Pablo amigo
+
+
+```
+
+Y agregamos la respuesta de la función (el console.log en este caso) en la que accedemos a la variable ‘finalDeFrase’ generada en la declaración de los diferentes saludos
+
+```javascript
+
+	functioncrearSaludo(finalDeFrase) {
+		returnfunction(nombre) {
+			console.log(`Hola ${nombre}${finalDeFrase}`)
+		}
+	}
+
+```
+
+La variable ‘finalDeFrase’ es la generada en las constantes con el nombre mismo de la función, a partir del parámetro que le pasamos; ‘che’, ‘wey’ o ‘amigo’ en este caso.
+La función ‘hijo’ recuerda cada una de las variables generadas que se usó para crear el saludo.
+Y la función ‘hijo’ va a ser cada una de las constantes creadas; saludoArgentino, saludoMexicano o saludoColombiano en este mismo caso.
+
+```javascript
+
+	const saludoArgentino = crearSaludo('che')
+
+```
+
+Al invocar la función ‘hijo’ luego, le pasamos el parámetro ‘nombre’ y así la función se completa y nos imprime el saludo ‘Hola Pablo che’ en este caso.
+
+```javascript
+
+	saludoArgentino('Pablo')
+	// Hola Pablo che
+
+```
+
+El código completo queda así:
+
+```javascript
+
+	functioncrearSaludo(finalDeFrase) {
+		returnfunction(nombre) {
+			console.log(`Hola ${nombre}${finalDeFrase}`)
+		}
+	}
+
+	const saludoArgentino = crearSaludo('che')
+	const saludoMexicano = crearSaludo('wey')
+	const saludoColombiano = crearSaludo('amigo')
+
+	saludoArgentino('Pablo')  
+	// Hola Pablo che
+	
+	saludoMexicano('Pablo')   
+	// Hola Pablo wey
+	
+	saludoColombiano('Pablo') 
+	// Hola Pablo amigo
+
+
+```
+
+<br>
+<br>
+<br> 
+
+## <a name="clase51"></a> 51 - Estructuras de datos inmutables
+
+Las estructuras de datos inmutables nos van a permitir deshacernos de los “efectos colaterales” cuando estamos desarrollando (side effects; efecto de lado según Sacha).
+
+Dada el siguiente código:
+
+```javascript
+
+	const pablo = {
+		nombre: 'Pablo',
+		apellido: 'Andrés',
+		edad: 30
+	}
+
+	const cumpleanos = persona => persona.edad++
+
+```
+
+La función modificará la edad en el objeto cada vez que se ejecute:
+
+```javascript
+
+	pablo
+	//{nombre: "Pablo", apellido: "Andrés", edad: 30}
+
+	cumpleanos(pablo)
+	//30
+
+	pablo
+	//{nombre: "Pablo", apellido: "Andrés", edad: 31}
+
+	cumpleanos(pablo)
+	//31
+
+	pablo
+	//{nombre: "Pablo", apellido: "Andrés", edad: 32}
+
+	cumpleanos(pablo)
+	//32
+
+	pablo
+	//{nombre: "Pablo", apellido: "Andrés", edad: 33}
+
+
+```
+
+Este es el llamado side effect (efecto de lado). La función puede modificar el objeto sin que nosotros así lo queramos.
+Para evitar este efecto colateral definimos una función inmutable.
+
+```javascript
+
+	const cumpleanosInmutable = persona => ({
+		...persona,
+		edad: persona.edad + 1
+	})
+
+```
+Si le pasamos el objeto ‘pablo’ la función nos devolverá un nuevo objeto sin modificar el anterior.
+
+```javascript
+
+	pablo
+	// {nombre: "Pablo", apellido: "Andrés", edad: 33}
+
+	cumpleanosInmutable(pablo)
+	// {nombre: "Pablo", apellido: "Andrés", edad: 34}
+
+	cumpleanosInmutable(pablo)
+	// {nombre: "Pablo", apellido: "Andrés", edad: 34}
+
+	pablo
+	// {nombre: "Pablo", apellido: "Andrés", edad: 33}
+
+	cumpleanosInmutable(pablo)
+	// {nombre: "Pablo", apellido: "Andrés", edad: 34}
+
+	cumpleanosInmutable(pablo)
+	// {nombre: "Pablo", apellido: "Andrés", edad: 34}
+
+	pablo
+	// {nombre: "Pablo", apellido: "Andrés", edad: 33}
+
+```
+La “desventaja” que tendremos es que para guardar el valor de la función vamos a tener que generar una nueva variable.
+
+```javascript
+
+	const pabloViejo = cumpleanosInmutable(pablo)
+	const pabloMasViejo = cumpleanosInmutable(pabloViejo)
+
+```
+Utilizar estructuras de datos es parte de las buenas prácticas de javascript ya que nos permite deshacernos de los “efectos de lado” y no preocuparnos de modificar código inconscientemente y que se “rompa todo” en cualquier otro lado.
 
 
 <br>
 <br>
 <br> 
 
-## <a name="clase51"></a> 51 - 
+## <a name="clase52"></a> 52 - Cambiando de contexto al llamar a una función
 
+El contexto en javascript está definido por el objeto ‘this’ cuando se ejecuta un código.
+Es muy común el error: ‘No se puede ejecutar este método porque es indefinido’, esto sucede porque el ‘this’ no es quien esperamos que sea.
+
+Dado el siguiente código:
+
+```javascript
+
+	const pablo = {
+		nombre: 'Pablo',
+		apellido: 'Andrés',
+	}
+	const mariela = {
+		nombre: 'Mariela',
+		apellido: 'Riesnik',
+	}
+
+	functionsaludar() {
+		console.log(`Hola, mi nombre es ${this.nombre}`)
+	}
+
+	// Si ejecuto:
+
+	saludar()
+	// Hola, mi nombre es undefined
+
+	// Ya que tenemos la función definida dentro de un contexto global el 'this' en saludar() refiere al objeto 'window'. Por lo tanto es lo mismo que:
+
+	window.saludar()
+	// Hola, mi nombre es undefined
+
+```
+Cómo hacemos para cambiar ese ‘this’ de la función?
+El método ‘.bind()’ se usa justamente para cambiar en contexto, el ‘this’, en una función.
+
+```javascript
+
+	const saludarAPablo = saludar.bind(pablo)
+	const saludarAMariela = saludar.bind(mariela)
+
+```
+
+‘.bind()’ nos devuelve una nueva función atando el parámetro,_ ‘(pablo)’_ en este caso, al ‘this’ dentro de esa función, saludar en este caso.
+Este nunca modifica a la función original.
+
+
+```javascript
+
+	saludarAPablo()
+	// Hola, mi nombre es Pablo
+
+	saludarAMariela()
+	// Hola, mi nombre es Mariela
+
+```
+
+Otra forma de usarlo:
+
+```javascript
+
+	setTimeout( saludar.bind(pablo), 1000) == setTimeout(saludarAPablo, 1000)
+
+```
+
+Y otra, agregado un parámetro a la función:
+
+```javascript
+
+	functionsaludar(saludo = 'Hola') {
+		console.log(`${saludo}, mi nombre es ${this.nombre}`)
+	}
+	setTimeout( saludar.bind(pablo, 'Hola loco!'), 1000)
+	// Hola loco!, mi nombre es Pablo
+
+	//también se puede agragar en la declaración de la constante.
+	const saludarAPablo = saludar.bind(pablo, 'Hola loco!!')
+	// Hola loco!!, mi nombre es Pablo
+
+```
+
+El primer parámetro es el contexto y luego van los siguientes parámetros en el orden en el que aparezcan.
+
+IMPORTANTE!!!
+La función .bind() no ejecuta la función a la que se agrega, sino que simplemente nos retorna una nueva función con ese contexto cambiado.
+Usando el método .bind, enviamos la referencia a la función sin ejecutarla, pasando el contexto como parámetro.
+
+Otros dos métodos que nos sirven para cambiar el contexto son: .call y .apply.
+
+Usando el método .call, ejecutamos inmediatamente la función con el contexto indicado.
+
+```javascript
+
+	saludar.call(pablo)
+	// Hola, mi nombre es Pablo  -  se ejecuta inmediatamente
+
+	saludar.bind(pablo)
+	// no produce ningún resultado, nola ejecuta.
+
+```
+
+Al .call le pasamos los parámetros separados por ‘,’ igual que en el .bind.
+
+```javascript
+
+	saludar.call(pablo, 'Hola cheeee!!')
+	// Hola cheeee!!, mi nombre es Pablo
+
+```
+
+Usando el método .apply, es similar a .call pero los parámetros adicionales se pasan como un arreglo de valores.
+
+```javascript
+
+	saludar.apply(pablo, ['Hola mi querido'])
+	// Hola mi querido, mi nombre es Pablo
+
+```
+
+Manejar a dónde refiere el ‘.this’ es algo que tenemos que tener muy presente, sobretodo cuando escribimos en modo asíncrono, ya que siempre que ejecutemos una función de esta naturaleza el ‘.this’ siempre cambia y es muy importante atarlo a nuestra clase, objeto o función.
 
 
 <br>
 <br>
 <br> 
 
-## <a name="clase52"></a> 52 - 
+## <a name="clase53"></a> 53 - ¿Cuándo hace falta poner el punto y coma al final de la línea?
+
+En general javascript no necesita el “;” para funcionar correctamente. “Es opcional”.
+
+Hay dos situaciones donde si no lo usamos, el código nos va a arrojar un error.
+
++ Caso 1 - cuando comienzo una nueva línea escribiendo un array en la línea anterior va ";" si no da error
+
+	console.log('Lorem ipsum dolor...');
+	[1, 2, 3].forEach(n => {console.log(n * 2)} )
 
 
++ Caso 2 - Si comienzo una línea con comillas invertidas "`", en la línea anterior o al principio de la misma va ";". 
 
-<br>
-<br>
-<br> 
+	const pablo = 'Pablo'
+	console.log('Lorem ipsum dolor...');
+	`${nombre} es un desarrollador.`
 
-## <a name="clase53"></a> 53 - 
+
+Otra situación que puede dar problemas es el salto de línea con enter. Inmediatamente después de un ‘return’ un enter es interpretado como “;”. Si le doy un enter a la llave que viene después de este da error.
+
+```javascript
+
+	// Esta manera funciona
+	functioncalcularDoble(numero) {
+		return {
+			original: numero, doble: numero * 2
+		}
+	}
+
+	//Esta no, o sea, da ERROR
+	functioncalcularDoble(numero) {
+		return 
+		{
+			original: numero, doble: numero * 2
+		}
+	}
+
+```
