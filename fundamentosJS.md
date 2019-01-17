@@ -1,6 +1,6 @@
 # Índice
 
-## [Sección I - Primeros Pasos](#sec1)
+## [Sección II - Primeros Pasos](#sec2)
 ### [03 - Variables](#clase3)
 ### [04 - Variables - Strings](#clase4)
 ### [05 - Variables - Numbers](#clase5)
@@ -13,7 +13,7 @@
 
 # 
 
-## [Sección II - Estructuras de Control y Funciones](#sec2)
+## [Sección III - Estructuras de Control y Funciones](#sec3)
 ### [12 - Condicionales](#clase12)
 ### [13 - Funciones que retornan valores](#clase13)
 ### [14 - Arrow Functions](#clase14)
@@ -24,7 +24,7 @@
 
 # 
 
-## [Sección III - Arrays](#sec3)
+## [Sección IV - Arrays](#sec4)
 ### [19 - Introducción a los Arrays](#clase19)
 ### [20 - Filtrar un array](#clase20)
 ### [21 - Transformar un array](#clase21)
@@ -32,7 +32,7 @@
 
 # 
 
-## [Sección IV - Programación Orientada a Objetos en JavaScript (POO)](#sec4)
+## [Sección V - Programación Orientada a Objetos en JavaScript (POO)](#sec5)
 ### [23 - Como funcionan las clases en JavaScript](#clase23)
 ### [24 - Modificando un prototipo](#clase24)
 ### [25 - El contexto de las funciones: Quién es _this_?](#clase25)
@@ -41,7 +41,7 @@
 
 #
 
-## [Sección V - Asincronismo](#sec5)
+## [Sección VI - Asincronismo](#sec6)
 ### [28 - Funciones como parámetros](#clase28)
 ### [29 - Cómo funciona el asincronismo en JavaScript](#clase29)
 ### [30 - Cómo funciona el tiempo en JavaScript](#clase30)
@@ -54,6 +54,11 @@
 ### [37 - Múltiples promesas en paralelo](#clase37)
 ### [38 - Async-await: lo último en asincronismo](#clase38)
 
+#
+
+## [Sección VIII - Complementos](#sec8)
+
+
 <br>
 <br>
 <br>
@@ -62,7 +67,7 @@
 
 <br>
 
-# <a name="sec1"></a>Sección I - Primeros Pasos
+# <a name="sec2">Sección II - Primeros Pasos</a>
 
 ## <a name="clase3"> 03 - Variables </a>
 
@@ -608,7 +613,7 @@ Otra cosa a tener en cuenta es que si cambiamos el valor del atributo en la vari
 <br>
 <br>
 <br>
-# <a name="sec2"></a>Sección II - Estructuras de Control y Funciones
+# <a name="sec3"></a>Sección III - Estructuras de Control y Funciones
 <br>
 <br>
 
@@ -985,7 +990,7 @@ En este ejemplo le vamos a devolver el horozcopo del día al usuario de acuerdo 
 <br>
 <br>
 <br>
-# <a name="sec3"></a>Sección III - Arrays
+# <a name="sec4"></a>Sección IV - Arrays
 <br>
 <br>
 
@@ -1266,7 +1271,7 @@ Con el método .reduce():
 <br>
 <br>
 
-# <a name="sec4"> Sección IV - Programación Orientada a Objetos en JavaScript (POO)</a>
+# <a name="sec5"> Sección V - Programación Orientada a Objetos en JavaScript (POO)</a>
 
 <br>
 <br>
@@ -1747,7 +1752,7 @@ Notemos que _Persona.prototype_ en consola seguirá arrojando el objeto _prototy
 <br>
 <br>
 
-# <a name="sec5">Sección V - Asincronismo</a>
+# <a name="sec6"> Sección VI - Asincronismo</a>
 
 <br>
 <br>
@@ -2658,11 +2663,176 @@ A continuación llamamos a la función:
 	obtenerPersonajes()
 
 ```
-
-
 <br>
 <br>
 <br>
 
-## <a name="clase39"></a> 39 - 
+# <a name="sec8">Sección VIII - Complementos</a>
 
+<br>
+<br>
+
+## <a name="clase46"></a> 46 - var, let y const: las diferencias entre ellos
+
++ Cuando declaramos variables con ‘var’ siempre conviene declararlas ‘arriba’ del código en el que sea claro cuáles van a ser las variables que se van a usar dentro de nuestra función o programa.
+
++ Dentro de una función javascript detecta todas las variables declaradas con ‘var’ y las ‘declara’ por sí solo como si estuvieran ‘arriba’ en el código. Por lo que si se declara un var dentro de un bloque else y este no es accedido por el condicional, la variable ‘var’ declarada dentro de ese else existe de todas maneras.
+
++ Si utilizamos ‘let’, el alcance de esa variable se ve reducido únicamente al bloque de código donde es utilizado.
+
++ ‘const’ se comporta parecido a let sólo que no es posible reasignarlo.
+
++ Es posible modificar una variable ‘const’ en el caso de un array[ ] con el método push() por ejemplo.
+
++ Reducir siempre al mínimo el alcance de nuestras variables.
+
++ Utilizar 'let’ si tenemos que reasignar una variable.
+
++ Si nunca tenemos que reasignar una variable usamos ‘const’.
+
+<br>
+<br>
+<br> 
+
+## <a name="clase47"></a> 47 - Manejo de Fechas:
+
+¿Hace cuántos días naciste?
+
+Con variables de tipo Date, se pueden realizar operaciones de suma y resta similares a las que se realizan con números. El resultado que se obtiene está en milisegundos, por lo que luego hay que hacer algunas operaciones adicionales para llevarlos a días, meses o años según queramos. También aplica para Horas, Minutos, Segundos y Milisegundos.
+
+Math.abs() nos permite poner cualquier fecha en el primer orden de tal manera que el resultado siempre sea positivo o ‘absoluto’’.
+La suma o resta nos da un número expresado en milisegundos.
+
+```javascript
+
+	functiondiasEntreFechas(fecha1, fecha2) {
+		const unDia = 1000 * 60 *60 * 24	//1000ms x 60sec x 60min x 24hs
+		const diferencia = Math.abs(fecha1 - fecha2)
+
+		returnMath.floor(diferencia / unDia)
+	}
+
+	const hoy = newDate()   // fecha actual por defecto
+	const nacimiento = newDate(1981, 08, 12)   // el constructor de new Date() recibe año, mes (enero=00) y el día.
+
+	diasEntreFechas(hoy, nacimiento)  // == 13638   si divido esta cantidad de días por 365 obtendré la edad en años. 
+
+```
+
+
+<br>
+<br>
+<br> 
+
+## <a name="clase48"></a> 48 - Funciones Recursivas
+
+La recursividad es un concepto muy importante en cualquier lenguaje de programación. Una función recursiva es básicamente aquella que se llama (o se ejecuta) a sí misma de forma controlada, hasta que sucede una condición base.
+
+Para realizar recursividad necesitamos 2 cosa; 1 caso base y 1 caso recursivo.
+Usaremos una división para mostrar las funciones recursivas.
+
+Algoritmo de nuestro ejercicio:
+
+	13 /4___
+
+	13 - 4 = 9 		1	=> caso recursivo
+	9 - 4 = 5		1	=> caso recursivo
+	5 - 4 = 1 		1	=> caso recursivo
+	1 - 4 = -3		0 	=> caso base
+
+La función:
+
+```javascript
+
+	function divisionEntera(dividendo, divisor) {
+		if (dividendo < divisor) {
+			return 0
+		}
+		return 1 + divisionEntera(dividendo - divisor, divisor)  
+	}
+
+```
+
+‘dividendo - divisor’ en el primer parámetro de nuestra función recursiva invocada dentro de sí misma sería el ‘caso recursivo’ que se repetirá mientras la condición no se cumpla. Cuando la función se cumple, ‘caso base’ termina la recursividad, termina la operación y nos entrega el resultado de la división en valor entero.
+
+
+
+
+<br>
+<br>
+<br> 
+
+## <a name="clase49"></a> 49 - Memoización: ahorrando cómputo
+
+Este proceso nos va a permitir ahorrar procesamiento, ahorrar cómputo, guardando ciertos resultados de algunas cuentas.
+
+Usaremos otro ejemplo de recursividad:
+
+Factoriales:
+!6 = 6* 5 * 4 * 3 * 2 * 1 = 720
+!12 = 12 * 11 * 10 * 9 * … * 1 == 12 * 11 * 10 * 9 * 8 * 7 * !6
+
+Cómo guardamos los resultados para no tener que volver a realizar cuentas ya hechas.
+
+```javascript
+
+	function factorial(n) {
+		if(n ===1) {
+			return 1
+		}
+		returnn * factorial(n - 1)
+	}
+
+```
+<br>
+
+Ahora guardamos en una cache los resultados de las operaciones ya hechas.
+
+
+```javascript
+
+	function factorial(n) {
+		if(!this.cache) {
+			this.cache = {}
+		}
+		if (this.cache[n]){
+			return this.cache[n]
+		}
+		if(n === 1) {
+			return 1
+		}
+		this.cache[n] = n * factorial(n - 1)
+		return this.cache[n]
+	}
+
+```
+
+<br>
+<br>
+<br> 
+
+## <a name="clase50"></a> 50 - 
+
+
+
+<br>
+<br>
+<br> 
+
+## <a name="clase51"></a> 51 - 
+
+
+
+<br>
+<br>
+<br> 
+
+## <a name="clase52"></a> 52 - 
+
+
+
+<br>
+<br>
+<br> 
+
+## <a name="clase53"></a> 53 - 
