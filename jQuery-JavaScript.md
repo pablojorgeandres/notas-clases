@@ -45,6 +45,46 @@
 
 ## <a name="clase2"> 02 - La historia de jQuery </a>
 
+jQuery es una librería de JavaScript.
+Las librerías resuelven un problema específico.
+
++ Una única forma de acceder al DOM de manera omogenea;
+
+    Anteriormente se accedía al DOM por medio de selectores. Pero en esta época de incompatibilidad de browser y de Internet Explorer las formas de embeber JavaScript en nuestro código era diferente para cada browser.
+    jQuery unificaba esta forma.
+  
+        $.('selector')
+
+
++ Interactuar con datos del servidor
+
+    jQuery implementa Ajax (XML-HTTP-Request) para interactuar con servidores. 
+    También ayudó a trabajar con la incompatibilidad de los selectores.
+    
+        $.ajax()
+
+
++ Animaciones
+
+    Hacer animaciones era algo muy complejo también por la incompatibilidad de browsers y css tampoco tenía todas las funcionalidades que hoy tiene.
+
+        $.animate()
+
+
+    Con el paso del tiempo y de la implementación de jQuery comenzaron a aparecer "plugins" para esta librería que todavía facilitaban más las cosas.
+    Pero esto trajo la complicación de que nuestro código se mezclaba a tal punto que no se entendía qué era jQuery y qué era JavaScript.
+    
+    Luego de esto aparecieron librerías para problemas específicos como **BackBone.js** que se apollaba sobre **underscores.js** para la funcionalidad y sobre **jQuery** para otras cosas. 
+    Actualmente han aparecido otros frameworks y ecosistemas más robustos como _REACT, ANGULAR o VUE_.
+    
+    Pero al fin y al cabo todo este sistema y nuevas tecnologías se apoyan en JavaScript Vanilla o en puro JavaScript.
+    
+    **Ventajas de Aprende JavaScript**
+    
+    + Reutilizar conocimiento en otros lados de tu aplicación
+    + Poder implementar soluciones sin depender de una librería
+    + Estar más capacitado para las grandes empresas
+
 <br>
 <br>
 <br>
