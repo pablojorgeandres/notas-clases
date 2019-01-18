@@ -116,22 +116,29 @@ Para traer datos de un servicio externo vamos a usar en combinación:
   + ajax/fetch
   + funciones asíncronas
  
-Pero antes de implementar una Promesa demos tener en claro dos cosas necesarias: Variables y Funciones.
-
-Dentro de JavaScript tenemos tres formas de declarar una variable las cuales son:
-
-  + var - ECMAScript 5
-  + let - A partir de ECMAScript 6      - Para declarar variables que pueden ser modificadas
-  + const - A partir de ECMAScript 6    - Para declarar variables que no pueden ser modificadas
-
 **Procesos Asíncronos**
 
-Un proceso asíncrono es una petición que hace javaScript al browser y este la devuelve una vez cumplida a la _cola de tareas_ que será ejecutada al final del EventLoop o del flujo de funciones síncronas dentro de nuestro código.
+  Un proceso asíncrono es una petición que hace javaScript al browser y este la devuelve una vez cumplida a la _cola de tareas_ que será ejecutada al final del EventLoop o del flujo de funciones síncronas dentro de nuestro código.
+  Por ejemplo cargar la página mientras pido al browser que obtenga todos los usuarios y los devuelva una vez cargado el sitio y cuándo esté listo.
 
 
+Pero antes de implementar una Promesa demos tener en claro dos cosas necesarias: Variables y Funciones.
+
+**Variables**
+
+Dentro de JavaScript tenemos tres formas de declarar una **variable** las cuales son:
+
+  + _var_ - ECMAScript 5
+  + _let_ - A partir de ECMAScript 6      - Para declarar variables que pueden ser modificadas
+  + _const_ - A partir de ECMAScript 6    - Para declarar variables que no pueden ser modificadas
+  
+**Funciones**
 
 Las funciones son piezas de código que puedes reutilizar y se declaran con la palabra function.
 
+    function estaEsMiFuncion(string){
+        console.log(string)
+    }
 
 
 <br>
