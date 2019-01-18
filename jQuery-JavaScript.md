@@ -287,13 +287,57 @@ Otro método usual con _Promesas_ es .race(). Este dara resultados a partir de l
 ```
 
 
-
 <br>
 <br>
 <br>
 
-## <a name="clase6"> 06 - Tutorial de Ajax en jQeury y Javascript </a
+## <a name="clase6"> 06 - Tutorial de Ajax en jQuery y Javascript </a
 
+ Una característica muy solicitada en cualquier sitio dinámico es solicitar datos a un servidor, denominado API.
+ 
+ Para hacer esto tenemos dos opciones:
+ 
+   + Ajax con jQuery
+   + fetch con Vanilla JS
+   
+**Ajax jQuery**
+
+Ajax recibe dos parámetros los cuales son la url de la API y un objeto donde pondrás la configuración que se usara para realizar la petición. En la configuración se añaden dos funciones para manejar cuando la petición se realizo correctamente y cuando falla.
+
+  _Referencia: http://api.jquery.com/jquery.ajax/_
+
+```javascript
+
+	$.ajax('htpps://randomuser.me/api/', {
+		method: 'GET',
+		success: function (data){
+			console.log(data)
+		},
+		error: function (error) {
+			console.log(error)
+		}
+	})
+
+```
+<br>
+
+**JavaScript**
+
+JavaScript internamente cuenta con una función llamada _fetch_ que también realiza peticiones a una API. 
+Al igual que Ajax necesita dos parámetros, una url y una configuración, pero si solo le mandas la url fetch usará una configuración por defecto donde el método HTTP será GET.
+_fetch_ te regresa una promesa, esa promesa al resolverse te da los datos de respuesta y tiene un método llamado _json()_ que te regresa otra promesa con los datos en formato JSON.
+
+```javascript
+
+	fetch("url")
+	  .then( response => return response.json() )
+	  .then( user => console.log(user) ) // datos en formato JSON
+	  .catch( error => console.log(error) )
+
+```
+<br>
+
+Las promesas resuelven el problema del Callback Hell haciendo que una promesa pueda devolver otra promesa y en lugar de ser anidadas como los callback, estas promesas son encadenadas.
 
 
 <br>
@@ -302,9 +346,79 @@ Otro método usual con _Promesas_ es .race(). Este dara resultados a partir de l
 
 ## <a name="clase7"> 07 - Funciones Asíncronas </a>
 
+Una función asíncrona va a ser como una función normal, pero poniendo código asíncrono de forma que sea más fácil de leer de forma síncrona.
+
+Para declarar una función asíncrona se usa la palabra reservada _**async**_. Luego se declara la función de forma normal.
+Dentro de una función asíncrona se usa otra palabra reservada llamada _**await**_, lo que hará este comando es indicar que se debe esperar a que termine de ejecutarse ese fragmento de código antes de continuar.
 
 
+```javascript
 
+	async function load() {
+		await 
+	}
+	
+```
+
+Puedo llamar la función de manera normal:
+
+```javascript
+
+	async function load() {
+		await 
+	}
+	load()
+
+```
+
+O puedo hacer que se autoejecute envolviéndola entre paréntesis:
+
+
+```javascript
+
+	(async function load() {
+		await 
+	})()
+
+```
+
+Para comenzar a trabajar en el ejercicio del curso usaremos la API de https://yts.am/api.
+Genero un _fetch_ con la URL que necesito y lo guardo en una constante bajo el comando _**await**_
+El código allí se detiene hasta que la promesa es devuelta y continúa con el código. 
+Llamamos entonces al método _json()_ para obtener el objeto Promise con la 'data'.
+
+```javascript
+
+	(async function load(){
+		const result = await fetch('https://yts.am/api/v2/list_movies.json?genre=action')
+		const data = await result.json()
+		console.log(data)
+	})()
+
+```
+
+Ahora quiero traer tres promesas que corresponden a tres géneros diferentes de películas:
+
+```javascript
+
+	(async function load(){
+		
+		async function getData(url) {
+			const result = await fetch(url)
+			const data = await result.json()
+			return data
+		}
+		
+		const URLroot = 'https://yts.am/api/v2/list_movies.json?genre='
+		
+		const actionList = await getData(`${URLroot}action`)
+		const horrorList = await getData(`${URLroot}horror`)
+		const animationList = await getData(`${URLroot}animation`)
+		
+		console.log(actionList, horrorList, animationList)
+	})()
+
+```
 
 <br>
 <br>
