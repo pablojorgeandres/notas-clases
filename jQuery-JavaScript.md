@@ -45,8 +45,11 @@
 
 ## <a name="clase2"> 02 - La historia de jQuery </a>
 
+
 jQuery es una librería de JavaScript.
-Las librerías resuelven un problema específico.
+Cada librería resuelve un problema específico.
+
+Las ventajas de jQuery fueron:
 
 + Una única forma de acceder al DOM de manera omogenea;
 
@@ -71,10 +74,11 @@ Las librerías resuelven un problema específico.
         $.animate()
 
 
-    Con el paso del tiempo y de la implementación de jQuery comenzaron a aparecer "plugins" para esta librería que todavía facilitaban más las cosas.
-    Pero esto trajo la complicación de que nuestro código se mezclaba a tal punto que no se entendía qué era jQuery y qué era JavaScript.
+    Con el paso del tiempo y de la implementación de jQuery comenzaron a aparecer "plugins" para esta librería que todavía facilitaban más las cosas.    
+    Pero esto trajo la complicación de que nuestro código se mezclaba a tal punto que no se entendía qué era jQuery y qué era JavaScript, y con esto, la dificultad de hacer modificaciones en el mismo.
     
-    Luego de esto aparecieron librerías para problemas específicos como **BackBone.js** que se apollaba sobre **underscores.js** para la funcionalidad y sobre **jQuery** para otras cosas. 
+    Luego de esto aparecieron librerías para problemas específicos como **BackBone.js** que se apollaba sobre **underscores.js** para la funcionalidad y sobre **jQuery** para otras cosas.
+    Las tecnologías evolucionaron.
     Actualmente han aparecido otros frameworks y ecosistemas más robustos como _REACT, ANGULAR o VUE_.
     
     Pero al fin y al cabo todo este sistema y nuevas tecnologías se apoyan en JavaScript Vanilla o en puro JavaScript.
