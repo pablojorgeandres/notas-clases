@@ -147,6 +147,145 @@ Las funciones son piezas de código que puedes reutilizar y se declaran con la p
 
 ## <a name="clase5"> 05 - Promesas </a>
 
+“Una Promesa es un objeto que representa la terminación o el fracaso eventual de una operación asíncrona”, o dicho de forma más cotidiana, se va a mandar (a dónde?) una función para ver si falla o se ejecuta con éxito.
+
+Para crear una promesa:
+
+    new Promise()
+    
+La guardamos en una nueva variable:
+
+    const getUser = new Promise()
+   
+Las _Promesas_ reciben un argumento; este argumento es una función:
+
+    const getUser = new Promise(function(){ })
+
+Esta función que va a recibir como parámetro, a su vez recibe dos parámetros que son dos objetos; resolve y reject que nos van a indicar si nuestra _Promesa_ funcionó y no. 
+El primero (resolve) será el que nos informe del resultado positivo y viceversa.
+A estos los podemos llamar de otra manera:
+
+    const getUser = new Promise( function(todoBien, todoMal) { })
+
+Si mi request a una cierta API o de cualquier otro tipo es exitoso, la función parámetro de nuestra promesa devolverá el primer parámetro, si no el segundo.
+Para ver cómo se comporta forzaremos la respuesta de esta función:
+
+    const getUser = new Promise(function(todoBien, todoMal) {
+        todoBien()
+    })
+
+Y para invocar a la promesa invoco a la variable _getUser_ encadenada al método _.then()_ que también recibe una función como variable
+
+    getUser.then(function(){
+        console.log(`El resultado de tu promesa es positivo.`)
+    })
+    
+Para simular un delay en la _Promesa_ vamos a usar un _setTimeout()_. _**setTimeout()**_ es un método de JS que ejecuta una función después de un tiempo establecido. Y justamente recibe 2 parámetros; una función y una cantidad de tiempo en milisegundos.
+
+```javascript
+
+    const getUser = new Promise(function(todoBien, todoMal) {
+        setTimeout(function(){
+           todoBien()
+        }, 3000)
+    })
+    
+    getUser.then(function(){
+        console.log(`El resultado de tu promesa es positivo.`)
+    })
+    // 3 seg. después:  El resultado de tu promesa es positivo.
+    
+```
+
+Si el resultado de la _Promesa_ por cualquier cosa da un error o no funciona, llamamos al método _.catch()_ para capturar ese estado y al igual que con _.then()_ pasando una función como parámetro podemos manejar este error:
+
+
+```javascript
+
+    const getUser = new Promise(function(todoBien, todoMal) {
+        setTimeout(function(){
+           todoMal()
+        }, 3000)
+    })
+
+    getUser
+		.then(function(){
+     	   console.log(`El resultado de tu promesa es positivo.`)
+    	})
+		.catch(function(){
+        	console.log(`El resultado de tu promesa es negativo.`)
+    	})
+    
+
+```
+
+También podemos enviar parámetros a través de _todoBien()_ y _todoMal()_:
+
+
+```javascript
+
+    const getUser = new Promise(function(todoBien, todoMal) {
+        setTimeout(function(){
+           todoMal(`El resultado de tu promesa es negativo.`)  // paso el texto como parámetro
+        }, 3000)
+    })
+
+    getUser
+		.then(function(){
+     	   console.log(`El resultado de tu promesa es positivo.`)
+    	})
+		.catch(function(message){  // recibo con 'message' el parámetro
+        	console.log(message)
+    	})
+    
+
+```
+
+Si quiero eniar varias _Promesas_ de forma paralela?
+Para esto uso el método .all() de _Promise_ que va a recibir un _'objeto[]'_ con todas las _Promesas_ previamente declaradas:
+
+
+```javascript
+
+    const getUser = new Promise ( (todoBien, todoMal) => setTimeout( () => todoBien(`El resultado de tu promesa es positivo.`), 1000 ))
+    const getUser1 = new Promise((todoBien, todoMal) => setTimeout(() => todoBien(`El resultado de tu promesa es positivo II.`), 2000))
+    const getUser2 = new Promise( (todoBien, todoMal) => setTimeout( () => todoBien(`El resultado de tu promesa es positivo III.`), 3000 ) )
+
+    Promise.all([
+        getUser,
+        getUser1,
+        getUser2
+    ])
+        .then( message => console.log(message))
+        .catch( message => console.log(message))
+
+    //depués de 3sec: (3) ["El resultado de tu promesa es positivo.", "El resultado de tu promesa es positivo II.", "El resultado de tu promesa es positivo III."]
+
+```
+
+Si aunque sea 1 de los Promises da error saldrá por .catch() y ninguna de las promesas funcionará.
+
+Otro método usual con _Promesas_ es .race(). Este dara resultados a partir de la promesa que primero se resuelva.
+
+```javascript
+
+    const getUser = new Promise ( (todoBien, todoMal) => setTimeout( () => todoBien(`El resultado de tu promesa es positivo.`), 1000 ))
+    const getUser1 = new Promise((todoBien, todoMal) => setTimeout(() => todoBien(`El resultado de tu promesa es positivo II.`), 2000))
+    const getUser2 = new Promise( (todoBien, todoMal) => setTimeout( () => todoMal(`El resultado de tu promesa es negativo.`), 3000 ) )
+
+    Promise.race([
+        getUser,
+        getUser1,
+        getUser2
+    ])
+        .then( message => console.log(message))
+        .catch( message => console.log(message))
+
+    // El resultado de tu promesa es positivo.
+
+
+```
+
 
 
 <br>
