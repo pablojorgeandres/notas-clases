@@ -1,2 +1,4 @@
-# fundamentosDeJS-
-Resumen del curso de Fundamentos de JavaScript de Platzi
+# notas-clases
+
+Notas y resumenes o referencias de las clases de Platzi.
+
