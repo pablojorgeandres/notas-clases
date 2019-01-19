@@ -428,7 +428,9 @@ Ahora quiero traer tres promesas que corresponden a tres géneros diferentes de 
 
 
 Los selectores sirven para seleccionar objetos del DOM con el fin de manipularlos.
-Una buena práctica es asignar una constante _const_ con cada uno de ellos.
+
+Una buena práctica es asignar una constante _const_ con cada uno de ellos, listarlos al inicio del código.
+
 Una convención entre algunos programadores es agregarle a estas constantes un signo _**$**_ al comienzo de su nombre para diferenciarlas del resto de las variables del código.
 	
 	const $selector
@@ -447,7 +449,7 @@ Dentro de **JavaScript** existen distintas funciones para generar selectores:
 
   + **getElementById**: recibe como parámetro el **id** del objeto. Regresa un solo objeto.
   
-  	document.getElementById('home')
+  		document.getElementById('home')
 
   
   + **getElementByTagName**: recibe como parámetro el **tag** que estas buscando y te regresa una colección html de los elementos que tengan ese tag.
