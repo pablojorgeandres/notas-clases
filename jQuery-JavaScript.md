@@ -427,6 +427,54 @@ Ahora quiero traer tres promesas que corresponden a tres géneros diferentes de 
 ## <a name="clase8"> 08 - Selectores </a>
 
 
+Los selectores sirven para seleccionar objetos del DOM con el fin de manipularlos.
+Una buena práctica es asignar una constante _const_ con cada uno de ellos.
+Una convención entre algunos programadores es agregarle a estas constantes un signo _**$**_ al comienzo de su nombre para diferenciarlas del resto de las variables del código.
+	
+	const $selector
+
+
+
+En **jQuery** generamos un selector de la siguiente forma:
+
+	$('.home') // class
+	$('#home') // id
+	$('div')  // HTML tag
+
+
+
+Dentro de **JavaScript** existen distintas funciones para generar selectores:
+
+  + **getElementById**: recibe como parámetro el **id** del objeto. Regresa un solo objeto.
+  
+  	document.getElementById('home')
+
+  
+  + **getElementByTagName**: recibe como parámetro el **tag** que estas buscando y te regresa una colección html de los elementos que tengan ese tag.
+  
+		document.getElementByTagName('span')[0] // traerá el primer span del código html
+	
+
+  + **getElementByClassName**: recibe como parámetro la **clase** y te **regresa una colección** html de los elementos que tengan esa clase.
+  
+
+		document.getElementByClassName('home')
+
+
+  + **querySelector**: va a buscar **el primer elemento que coincida con el selector** que le pases como parámetro.
+  
+  
+  		document.querySelector('#container > h2')
+  
+  
+  + **querySelectorAll**: va a buscar **todos los elementos** que coincidan con el selector que le pases como parámetro.
+
+		document.querySelectorAll('#video-content > div > div > div.VideoMaterialLayout-timeline > span > div > aside > section > div.TimelineNav-materials > a')
+		
+		// En la página de una clase de Platzi arroja:
+
+		// NodeList(10) [a.TimelineNav-material, a.TimelineNav-material, a.TimelineNav-material, a.TimelineNav-material, a.TimelineNav-material.is-active, a.TimelineNav-material, a.TimelineNav-material, a.TimelineNav-material, a.TimelineNav-material, a.TimelineNav-material]
+
 
 <br>
 <br>
