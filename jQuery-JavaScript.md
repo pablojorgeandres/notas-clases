@@ -435,7 +435,7 @@ Una convención entre algunos programadores es agregarle a estas constantes un s
 	
 	const $selector
 
-
+<br>
 
 En **jQuery** generamos un selector de la siguiente forma:
 
@@ -444,6 +444,7 @@ En **jQuery** generamos un selector de la siguiente forma:
 	$('div')  // HTML tag
 
 
+<br>
 
 Dentro de **JavaScript** existen distintas funciones para generar selectores:
 
@@ -485,6 +486,23 @@ Dentro de **JavaScript** existen distintas funciones para generar selectores:
 ## <a name="clase9"> 09 - Creación de templates </a>
 
 
+Con JavaScript es posible crear templates insertando código HTML en el DOM a través de los selectores. Dentro de este código puedo insertar datos dinámicos de acuerdo a la necesidad.
+
+Con una característica de ES6, "_template literals_" (que son estas comillas invertidas '`', o acento grave) puedo generar este código, tanto en javascript como con jQuery:
+
+```javascript
+
+
+	function template(someTitle, someContent) {
+		return(`<div class="Description">
+			<div class="Description-title"> ${someTitle} </div>
+			<div class="Description-agenda">
+				<p> ${someContent} </p>
+			</div>
+		</div>`)
+	}
+
+```
 
 
 <br>
@@ -493,6 +511,48 @@ Dentro de **JavaScript** existen distintas funciones para generar selectores:
 
 ## <a name="clase10"> 10 - Creación de DOM </a>
 
+
+Para imprimir nuestro código del template en el documento primero lo transformamos en código HTML, de otra manera se imprimiría sólo texto y se mostraría el código como texto en nuestra página.
+
+Para esto primero creamos un elemento HTML que nos arroja un documento html básico(esta parte del proceso es sobre todo para mostrar el mecanismo de algunos frames y librerías):
+
+
+```javascript
+
+	const html = document.implementation.createHTMLDocument()
+	
+	// #document
+	// <!doctype html>
+	//   <head>
+	//   </head>
+	//   <body>
+	//   </body>
+	// </html>
+
+```
+
+Y con el método _.innerHTML_ genero el código a partir de nuestro string estructurado:
+
+```javascript
+
+	const html = document.implementation.createHTMLDocument()
+	html.body.innerHTML = HTMLString
+
+```
+
+Y ahora sí podemos insertar este código generado en nuestro documento con el método _.children_:
+
+```javascript
+
+	$actionContainer.append(html.body.children[0])
+
+```
+
+Este flujo se parece mucho a lo que hacemos con librerías o frameworks de JavaScrip; lo que haría backBone, Angular, Vue, React. Con estos sólo pasamos unas propiedades, declaramos unos componentes que sería lo más parecido a nuestro template, y luego de eso se imprime en nuestra página. También nos dan características especiales; como por ejemplo si actualizamos alguna propiedad, esta se autoactualiza dentro de ese elemento, dentro de ese HTML sin tener que hacerlo a mano.
+Con este proceso hemos aprendido la forma de hacerlo con Vanilla JS para poder comprender todo el background detras de estas librerías y frames.
+
+Hay otras formas de hacer este proceso en Vanilla JS. 
+Notese por ejemplo que el método _.append_ es nativo de jQuery y no de JS. Con Vanilla JS usaríamos _.appendChild()_ por ejemplo.
 
 
 
@@ -503,7 +563,8 @@ Dentro de **JavaScript** existen distintas funciones para generar selectores:
 ## <a name="clase11"> 11 - Reutilizando Funciones </a>
 
 
-
+Las funciones son esas porciones de código que vamos a poder declarar y reutilizar a lo largo de toda nuestra aplicación según nos convenga. 
+Es bueno que sepamos usar funciones y nombrarlas lo más específicas posible para así poder reutilizarlas libremente.  
 
 <br>
 <br>
