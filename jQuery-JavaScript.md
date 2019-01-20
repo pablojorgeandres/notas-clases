@@ -46,10 +46,10 @@
 ## <a name="clase2"> 02 - La historia de jQuery </a>
 
 
-jQuery es una librería de JavaScript.
+_jQuery_ es una librería de JavaScript.
 Cada librería resuelve un problema específico.
 
-Las ventajas de jQuery fueron:
+Las ventajas de _jQuery_ fueron:
 
 + Una única forma de acceder al DOM de manera omogenea;
 
@@ -147,32 +147,40 @@ Las funciones son piezas de código que puedes reutilizar y se declaran con la p
 
 ## <a name="clase5"> 05 - Promesas </a>
 
-“Una Promesa es un objeto que representa la terminación o el fracaso eventual de una operación asíncrona”, o dicho de forma más cotidiana, se va a mandar (a dónde?) una función para ver si falla o se ejecuta con éxito.
+“Una _Promesa_ es un objeto que representa la terminación o el fracaso eventual de una operación asíncrona”, o dicho de forma más cotidiana, se va a delegar en el navegador una función pero antes nos va a decir si falla o se ejecuta con éxito.
 
 Para crear una promesa:
 
     new Promise()
-    
+
+
 La guardamos en una nueva variable:
 
     const getUser = new Promise()
    
+
 Las _Promesas_ reciben un argumento; este argumento es una función:
 
     const getUser = new Promise(function(){ })
 
-Esta función que va a recibir como parámetro, a su vez recibe dos parámetros que son dos objetos; resolve y reject que nos van a indicar si nuestra _Promesa_ funcionó y no. 
-El primero (resolve) será el que nos informe del resultado positivo y viceversa.
-A estos los podemos llamar de otra manera:
+
+Esta función que va a recibir como parámetro, a su vez recibe dos parámetros que son dos objetos; _resolve_ y _reject_ que nos van a indicar si nuestra _Promesa_ funcionó y no. 
+El primero (_resolve_) será el que nos informe del resultado positivo y viceversa.
+A estos dos parámetros los podemos nombrar de cualquier otra manera:
 
     const getUser = new Promise( function(todoBien, todoMal) { })
 
+<br>
+
 Si mi request a una cierta API o de cualquier otro tipo es exitoso, la función parámetro de nuestra promesa devolverá el primer parámetro, si no el segundo.
+
 Para ver cómo se comporta forzaremos la respuesta de esta función:
 
     const getUser = new Promise(function(todoBien, todoMal) {
         todoBien()
     })
+
+<br>
 
 Y para invocar a la promesa invoco a la variable _getUser_ encadenada al método _.then()_ que también recibe una función como variable
 
@@ -242,7 +250,7 @@ También podemos enviar parámetros a través de _todoBien()_ y _todoMal()_:
 ```
 
 Si quiero eniar varias _Promesas_ de forma paralela?
-Para esto uso el método .all() de _Promise_ que va a recibir un _'objeto[]'_ con todas las _Promesas_ previamente declaradas:
+Para iterar por las promesas uso el método _.all()_ de _Promise_ que va a recibir un _'objeto[]'_ con todas las _Promesas_ previamente declaradas:
 
 
 ```javascript
@@ -263,9 +271,9 @@ Para esto uso el método .all() de _Promise_ que va a recibir un _'objeto[]'_ co
 
 ```
 
-Si aunque sea 1 de los Promises da error saldrá por .catch() y ninguna de las promesas funcionará.
+Si aunque sea 1 de los _Promises_ da error saldrá por .catch() y ninguna de las promesas funcionará.
 
-Otro método usual con _Promesas_ es .race(). Este dara resultados a partir de la promesa que primero se resuelva.
+Otro método usual con _Promisas_ es _.race()_. Este dara resultados a partir de la promesa que primero se resuelva.
 
 ```javascript
 
@@ -291,14 +299,14 @@ Otro método usual con _Promesas_ es .race(). Este dara resultados a partir de l
 <br>
 <br>
 
-## <a name="clase6"> 06 - Tutorial de Ajax en jQuery y Javascript </a
+## <a name="clase6"> 06 - Tutorial de Ajax en jQuery y Javascript </a>
 
- Una característica muy solicitada en cualquier sitio dinámico es solicitar datos a un servidor, denominado API.
+ Una característica muy solicitada en cualquier sitio dinámico es solicitar datos a un servidor, denominado _API_.
  
  Para hacer esto tenemos dos opciones:
  
-   + Ajax con jQuery
-   + fetch con Vanilla JS
+   + _Ajax_ con jQuery
+   + _fetch_ con Vanilla JS
    
 **Ajax jQuery**
 
