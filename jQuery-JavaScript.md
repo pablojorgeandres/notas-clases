@@ -757,7 +757,14 @@ Para generar estilos inline usamos el método _.style_:
 
 ## <a name="clase14"> 14 - Creación de elementos y asignación de atributos </a>
 
+Es posible crear elementos independientes en el DOM a partir de JavaScript con el método _setAttribute()_.
 
+	const $element = document.createElement('img')
+	
+
+Para asignar atributos al elemento creado podemos usar _setAttribute()_
+
+	$element.setAttribute("src", "img/foto.png");
 
 
 <br>
