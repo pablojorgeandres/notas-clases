@@ -269,6 +269,30 @@ _How can you improve your profile?_
 
 ## <a name="clase3"> 03 - Using specific vocabulary for careers in IT </a>
 
+Hi again,
+As I told you we are going to be working in your professional profile.
+To do this, we need to know what type of careers are there in the tech world.
+
+There are many different careers in the tech world. If you don't know what you want to do yet, you can answer the following questions to have an idea or a hint about what is it that you want to do.
+
+So answer the following questions:
+
+  + Do you like numbers and logic?
+  + Do you like sales, communications and strategy?
+  + Do you like to draw and design?
+  + Do you like business and social relationships?
+  + Do you like projects?
+  
+Take a minute to answer this questions. You can leave your answers in the discussion board and then we will all revise them together.
+
+Now, if you like logics and numbers probably you can be a _Programmer_ and work in computer science.
+If you like sales, communications and strategy you can be a _Marketing Professional_ and work in the _Growth Team_.
+If you like to draw and you have a talent for it, you can work in _Design_ or in a _Product Team_.
+Also if you like business and social relationships you can be an _Entrepreneur_ and create your own _Start-Up_.
+Also if you like projects you can be a _Project Manager_ and work in project areas.
+
+1:40"
+
 
 
 <br>
