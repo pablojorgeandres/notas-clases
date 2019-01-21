@@ -54,12 +54,213 @@
 
 ## <a name="clase1"> 01 - Why is it important to work on our professional profile? </a>
 
+Topics of this course:
+
+  + Why is it important to work on your professional profile.
+  + How to create your CV
+  + Perform in job interviews
+  + Crete content for your workplace
+  + Create content for your social networks
+  
+> ..."I recommend to you to pay special attention to the vocabulary that you are going to learn in this course and then adapt it to your own personal needs."...
+ 
+**What are you going to learn in this course?**
+
+We are going to be working on:
+  
+  + Your professional profile
+  + How to communicate in your workplace
+  + How to deal with the tech world industry (you are going to be lerning a lot of vocabulary about the tech world industry.     + How to create content for your personal uses.
+  
+_Why is it important to work on our professional profile?_
+
+There are different reazons for this:
+
+  + if you work in your proffesional profile you may have a better job;
+  + you maybe offered better salaries;
+  + you can create a position and recognition from your colleges in your industry.
+
+_How can you improve your profile?_
+
+  + Writting a good and descriptive professional profile;
+  + Creating a new or updationg your CV;
+  + Preparing yourself for an interview;
+  + Being able to communicate in your workplace: emails, reports, presentations, etc;
+  + Create content for your social networs;
+  + Creating a professional portfolio;
+  + Participating in events.
+  
+
 
 <br>
 <br>
 <br>
 
 ## <a name="clase2"> 02 - Glossary - How to create a professional profile? </a>
+
+**Analysis:** Detailed examination of something
+
+**Bachelor degree:** Is an undergraduate degree awarded by universities
+
+**Backend developer:** A programmer who creates the backend of a website, software or information system
+
+**Business:** A commercial activity
+
+**Careers:** An occupation undertaken for a significant period of time
+
+**CEO - Chief executive officer:** The highest ranking person in a company or other institution
+
+**Cheerful:** Happy and optimistic
+
+**City of residence:** The city where a person lives
+
+**Collaborate:** To work jointly with someone
+
+**Colleagues:** A person with whom you work
+
+**Communications:** The act of exchanging information
+
+**Company:** A commercial business
+
+**Confident:** Feeling or believing trust in oneself
+
+**Content marketing:** A type of marketing which is focused on creating content to attract clients
+
+**Copy-writing:** Act of writing text for advertising purposes
+
+**Curriculum Vitae - CV:** A brief account of a person’s, qualifications, and previous occupations
+
+**Curious:** Eager to know and learn things
+
+**CTO - Chief technology officer:** The person in charge of technology operations within a company
+
+**Descriptive:** A detailed characterization of something
+
+**Design:** A plan or drawing that shows the functionalities of something
+
+**Designer:** A person who plans the functionalities of something
+
+**Determined:** Having a firm decision or thought about something
+
+**Draw:** Produce a diagram of a person, an animal or an object
+
+**Entrepreneur:** A person who owns a business or company
+
+**Experience:** The events a person has lived and that has left impression
+
+**Event:** A thing that happens or takes place
+
+**Feedback:** Information about the performance of a person in a given task
+
+**Fields:** A particular branch of study
+
+**Frontend developer:** A developer who creates websites or web applications with which the user can interact directly
+
+**Goal-oriented:** Focused on achieving one objective only
+
+**Graduate education:** Degrees obtained after the bachelor education
+
+**Growth:** Something that has grown over time
+
+**Growth team:** The team that is in charge of expanding the value of a company
+
+**Job:** A paid position of regular employment
+
+**Junior:** Low or lower in rank and status
+
+**Illustrator:** A person who draws and creates pictures
+
+**Improve:** To make or become better
+
+**Interview:** A meeting of people face to face
+
+**Leader:** A person who commands a group
+
+**Logic:** Reasoning conducted according to strict parameters of validity
+
+**Marketing professional:** A person who is in charge of running marketing campaigns
+
+**Master’s degree:** A degree awarded by university upon the completion of a course of study demonstrating master knowledge of a field
+
+**Portfolio:** A folder which contains samples of work, like drawings, projects and outcomes
+
+**Position:** The role that a person assumes in a company
+
+**Product areas:** The area in charge of developing a product
+
+**Proactive:** Controlling the situation and proposing new solutions
+
+**Professional profile:** A short description of a person in their professional dimension
+
+**Programmer:** A person who writes computer programs
+
+**Project:** An enterprise that is planned to achieve a goal
+
+**Project Manager:** The person in charge of a project
+
+**Organize:** Arrange something systematically
+
+**Outgoing:** Friendly and sociable
+
+**Outstanding:** Exceptionally good
+
+**Recognition:** The acknowledgement of a person within a given field
+
+**Research:** The systematic study of a field
+
+**Sales:** The exchange of commodities for money
+
+**Sensitive:** Highly responsive or susceptible
+
+**Senior:** With high or higher rank
+
+**Skill:** The ability to do something
+
+**Speciality:** A subject of study or line of work
+
+**Social networks:** A network of social interactions. A website dedicated to social interactions
+
+**Social relationships:** Any relation between two individuals
+
+**Sociable:** Willing to talk, interact with others and engage in social activities
+
+**Software:** Programs used by a computer
+
+**Start-up:** A newly established business
+
+**Strategy:** A plan to achieve a specific goal
+
+**Strengths:** The things a person considers his or her qualities
+
+**Stress:** The state of mental tension
+
+**Support professional:** A professional in charge of assisting customers
+
+**Talent:** Natural aptitude or skill
+
+**Task:** An activity to be done
+
+**Teamwork:** The action of a group, especially when is effective
+
+**Tech-world:** Industry of technology
+
+**UI designer:** The person in charge of designing the interface for the user
+
+**Update:** Bring something to a new version
+
+**UX designer:** The person in charge of designing the user experience
+
+**Visualize:** Form a mental image of a person, an object or an event
+
+**Wardrobe:** A person’s entire collection of clothes
+
+**Weaknesses:** The things that a person considers he or she needs to work on
+
+**Webinars:** A seminar conducted over the internet
+
+**Workflows:** A sequence of processes to complete a specific task
+
+**Workplace:** The physical place in which a person performs his or her work
 
 
 <br>
