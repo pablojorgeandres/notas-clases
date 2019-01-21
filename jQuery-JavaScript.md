@@ -574,13 +574,146 @@ Notese por ejemplo que el método _.append_ es nativo de jQuery y no de JS. Con 
 Las funciones son esas porciones de código que vamos a poder declarar y reutilizar a lo largo de toda nuestra aplicación según nos convenga. 
 Es bueno que sepamos usar funciones y nombrarlas lo más específicas posible para así poder reutilizarlas libremente.  
 
+Código del curso hasta esta clase:
+
+
+```javascript
+
+(async function load(){
+    //root de la url de la API
+    const moviesURL = `https://yts.am/api/v2/list_movies.json?genre=`;
+
+    //=== Selectores Varios ===//
+    // contenedor de películas por género
+    const $actionContainer = document.getElementById(`action`)
+    const $dramaContainer = document.getElementById(`drama`)
+    const $animationContainer = document.getElementById(`animation`)
+
+    // otros contenedores
+    const $featuringContainer = document.getElementById(`featuring`)
+    const $form = document.getElementById(`form`)
+    const $home = document.getElementById(`home`)
+
+    // otros elementos del DOM
+    const $modal = document.getElementById(`modal`)
+    const $overlay = document.getElementById(`overlay`)
+    const $hideModal = document.getElementById(`hide-modal`)
+
+    // elementos dentro del modal
+    const $modalTitle = $modal.querySelector(`h1`)
+    const $modalImg = $modal.querySelector(`img`)
+    const $modalDescription = $modal.querySelector(`p`)
+    //=== Selectores Varios ===//
+
+    //-- función para hacer el request a la API --//
+    async function getMovies (url) {
+        const response = await fetch(url)
+        const data = await response.json()
+        return data
+    }
+
+    // listas de objetos-películas por género traidos desde la API (request)
+    const actionList = await getMovies(`${moviesURL}action`)
+    const dramaList = await getMovies(`${moviesURL}drama`)
+    const animationList = await getMovies(`${moviesURL}animation`)
+
+    // listas de películas por género
+    const actionMovies = actionList.data.movies
+    const dramaMovies = dramaList.data.movies
+    const animationMovies = animationList.data.movies
+
+    //-- función para generar el código HTML por cada película --//
+    function videoTemplate(img, title) {    
+        return(
+            `<div class="primaryPlaylistItem"}>
+                <div class="primaryPlaylistItem-image">
+                <img src="${img}">
+                </div>
+                <h4 class="primaryPlaylistItem-title">
+                ${title}
+                </h4>
+            </div>`
+        )
+    }
+
+    //-- función para imprimir código html por cada película --//
+    function printMoviesByGenre(genre, container){
+        container.children[0].style = `display: none`
+        genre.forEach( movie => {
+            container.innerHTML += videoTemplate(movie.medium_cover_image, movie.title)
+        })
+    }
+
+    // imprimir cada película por género en la página
+    const actionMoviesPrinted = printMoviesByGenre(actionMovies, $actionContainer)
+    const dramaMoviesPrinted = printMoviesByGenre(dramaMovies, $dramaContainer)
+    const animationMoviesPrinted = printMoviesByGenre(animationMovies, $animationContainer)
+})()
+
+
+```
+
 <br>
 <br>
 <br>
 
 ## <a name="clase12"> 12 - Eventos </a>
 
+Los eventos del DOM son enviados para notificar al código de cosas interesantes que han sucedido o están sucediendo. 
+Cada evento está representado por un objeto que se basa en la Interfaz _Event_, e incluso puede contener campos y/o funciones adicionales personalizadas para obtener más información a cerca de lo 'sucedido'. Los eventos pueden representar cualquier cosa, desde las interacciones básicas del usuario hasta notificaciones automatizadas de las cosas que suceden en el modelo de representación.
 
+_Referencia jQ: http://api.jquery.com/on/_
+
+_Referencia JS: http://bibliotecadigital.tamaulipas.gob.mx/archivos/descargas/b716d48a5_evolucion.pdf_
+
+Con vanilla JS, el método _addEventListener()_ se utiliza para invocar cualquier evento. 
+Este método recibe dos parámetros; (evento, function)
+
+	$element.addEventListener('event', () => {})
+	
+Con jQuery:
+
+	$element.on( events, handler )
+
+
+Llamando al método del event .preventDefault() evitamos que el sitio se recargue cada vez que usamos el formulario.
+
+
+```javascript
+
+	    $form.addEventListener('submit', event => event.preventDefault())
+
+
+
+El método .addEventListener() no acepta más de un elemento. Entonces, cuando necesito agregar el mismo _listener_ a varios elementos puedo usar dos opciones:
+
+  + Un array y un for:
+
+```javascript
+
+	const arrayDeElementos = document.querySelectorAll('div');
+	arrayDeElementos.forEach( (elem) => {
+	    elem.addEventListener( ' click', () => {
+	        // lo que quieras hacer ...
+	    });
+	});
+
+```
+
+  + **Event Bubbling** que es básicamente escuchar todos los eventos de la página agregando el listener al _document_ y luego generar un if o un switch con los elementos que necesitamos puntualmente:
+  
+  
+```javascript
+
+	document.addEventListener('click', (event) => {
+	    if ( event.target.classList.contains( 'classX' ) ) {
+		// lo que quieras hacer ...
+	    } elseif (event.target.classList.contains( 'classZ' ) ) {
+		// lo que quieras hacer ...
+	    }
+	}, false);
+
+```
 
 
 <br>
@@ -589,8 +722,34 @@ Es bueno que sepamos usar funciones y nombrarlas lo más específicas posible pa
 
 ## <a name="clase13"> 13 - Clases y estilos CSS </a>
 
+HTML se va a encargar de la estructura de nuestro proyecto. CSS de nuestros estilos y JS de la interactividad.
+Convinando CSS con JS podemos generar una interfaz muy rica e interactiva.
 
+Una herramienta útil para este trabajo es el **Chrome Dev Tool**. En el console, el comando _$0_ se refiere al elemento seleccionado.
 
+Cada elemento del DOM tiene un _classList_ como propiedad en JavaScript. Este _classList_ contiene propiedades.
+Por ejemplo nos pueden ser útil: 
+ 
+ + _add_: agrega una clase, 
+ + _remove_: quita una clase, 
+ + _toogle_: agregarla si no está y quitarla si está.
+
+```javascript
+
+	$element.classList.add('class')
+	$element.classList.remove('class')
+	$element.classList.toggle('class')
+
+```
+
+Para generar estilos inline usamos el método _.style_:
+
+```javascript
+
+	$element.style.animation = "modalIn .8s forwards";
+	$element.style = 'display: none'
+
+```
 
 <br>
 <br>
