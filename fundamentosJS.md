@@ -3197,7 +3197,7 @@ Otra situación que puede dar problemas es el salto de línea con enter. Inmedia
 
 ```
 
-Y todavía otra (que me crucé al inicio del 'Curso de jQuery a JavaScript'); es al llamar una función que se auto-ejecute _(function myFunction(){} )()_ después de un string con acento grave o comillas invertidas _" ` "_.
+Y todavía otra (que me crucé al inicio del 'Curso de jQuery a JavaScript'); es al llamar una función que se auto-ejecute _(function myFunction(){} )()_ después de un string declarado con cualquier tipo de comillas; dobles, simples o invertidas; | " | ' | ` |.
 
 
 ```javascript
