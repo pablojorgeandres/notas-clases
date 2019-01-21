@@ -3158,34 +3158,73 @@ Hay dos situaciones donde si no lo usamos, el código nos va a arrojar un error.
 
 + Caso 1 - cuando comienzo una nueva línea escribiendo un array en la línea anterior va ";" si no da error
 
-	console.log('Lorem ipsum dolor...');
-	[1, 2, 3].forEach(n => {console.log(n * 2)} )
+```javascript
 
+	console.log('Lorem ipsum dolor...') ;
+	[1, 2, 3].forEach( n => {console.log(n * 2)} )
+	
+```
 
 + Caso 2 - Si comienzo una línea con comillas invertidas "`", en la línea anterior o al principio de la misma va ";". 
 
-	const pablo = 'Pablo'
-	console.log('Lorem ipsum dolor...');
-	`${nombre} es un desarrollador.`
+```javascript
 
+	const pablo = 'Pablo'
+	console.log('Lorem ipsum dolor...') ;
+	`${nombre} es un desarrollador.`
+	
+```
+<br>
 
 Otra situación que puede dar problemas es el salto de línea con enter. Inmediatamente después de un ‘return’ un enter es interpretado como “;”. Si le doy un enter a la llave que viene después de este da error.
 
 ```javascript
 
 	// Esta manera funciona
-	functioncalcularDoble(numero) {
+	function calcularDoble(numero) {
 		return {
 			original: numero, doble: numero * 2
 		}
 	}
 
-	//Esta no, o sea, da ERROR
-	functioncalcularDoble(numero) {
-		return 
+	// ERROR
+	function calcularDoble(numero) {
+		return // ...enter aquí...
 		{
 			original: numero, doble: numero * 2
 		}
 	}
+
+```
+
+Y todavía otra (que me crucé al inicio del 'Curso de jQuery a JavaScript'); es al llamar una función que se auto-ejecute _(function myFunction(){} )()_ después de un string con acento grave o comillas invertidas _" ` "_.
+
+
+```javascript
+
+	const str = `lorem ipsum dolor`
+
+	( function myFunction(){
+		alert('Si usas ";" sí funciono!')
+	})()
+	
+	// Uncaught TypeError: "lorem ipsum dolor" is not a function at <anonymous>:4:2
+
+```
+
+La forma correcta sería:
+
+```javascript
+
+	const str = `lorem ipsum dolor` ;
+	( function myFunction(){
+		alert('Si usas ";" sí funciono!')
+	})()
+
+	// ó
+	const str = `lorem ipsum dolor`
+	; ( function myFunction(){
+		alert('Si usas ";" sí funciono!')
+	})()
 
 ```
