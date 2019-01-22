@@ -794,6 +794,35 @@ Para agregarlo al lugar del código que quiero:
 
 ## <a name="clase15"> 15 - Formularios </a>
 
+Para obtener los datos de un formulario con Vanilla JS usamos el constructor _FormData()_ que recibe como parámetro el formulario HTML al que queramos acceder:
+
+
+	const formData = new FormData($form)
+
+ 
+ A este nuevo objeto podemos setearle datos nuevos y también pedirle:
+ 
+ 
+ 	// agregar
+ 		formData.set('serie', 'Mr. Robot')
+	
+	// pedir
+		formData.get('serie')
+		// "Mr. Robot"
+
+Para obtener el input del formulario al que quiero acceder utilizo el valor del atributo _'name'_ previamente seteado en el tag html.
+
+```html
+
+	<form action="" class="search" id="form">
+            <input type="text" name="search-this" placeholder="Buscar un artista o tema favorito"/>
+        </form>
+
+	<script>
+	    formData.get('search-this')
+	</script>
+
+```
 
 
 
@@ -803,6 +832,38 @@ Para agregarlo al lugar del código que quiero:
 
 ## <a name="clase16"> 16 - Desestructuración de objetos </a>
 
+Destructuring assignment o asignación por desestructuración nos permite introducirnos en un objeto para así extraer un dato para asignarlo a otra variable y así limpiar nuestro código.
+Esto se hace usando llaves; '{}' y ':'.
+
+Ej. dónde podríamos aplicar esto:
+
+```javascript
+
+	// ...
+        const peliculaBuscada = await getMovies(`${finder_API}${data.get('name')}`)
+        $featuringContainer.innerHTML = featuringTemplate(peliculaBuscada.data.movies[0])
+	// ...
+
+```
+
+El objeto que nos arroja la función asíncrona del ejemplo nos obliga a entrar en el sub-objeto _'data'_ y este a la vez en _'movies'_, lo que nos hace usar esta declaración para acceder a los datos que necesitamos:
+
+	peliculaBuscada.data.movies[0]
+
+Desestructurando la variable en la que voy a guardar el resultado de la función asíncrona que nos arroja el objeto nuestra variable se vería más limpia y el código quedaría así:
+
+```javascript
+
+	// ...
+        const { 
+	    data: {
+	    	movies: peliculaBuscada 
+	    }
+	} = await getMovies(`${finder_API}${data.get('name')}`)
+        $featuringContainer.innerHTML = featuringTemplate(peliculaBuscada[0])
+	// ...
+
+```
 
 
 
