@@ -271,7 +271,7 @@ _How can you improve your profile?_
 
 Hi again,
 As I told you we are going to be working in your professional profile.
-To do this, we need to know what type of careers are there in the tech world.
+To do this, we need to know what types of careers are there in the tech world.
 
 There are many different careers in the tech world. If you don't know what you want to do yet, you can answer the following questions to have an idea or a hint about what is it that you want to do.
 
@@ -301,8 +301,8 @@ Some of there are:
   + Growth expert
   + Communications leader
   + Programmer / Dev / Coder (Junior/Senior)
-  + CEO - Chief executive officer
-  + CTO - Chief executive officer
+  + CEO - Chief Executive Officer
+  + CTO - Chief Technology Officer
   + Frontend programmer
   + Backend programmer
   + UX/UI designer
@@ -313,14 +313,14 @@ Some of there are:
   + Illustrator
   + Support Professional
   
-Here at Platzi we have all of this job positions. I just picked some special profiles so you can have an idea of who they are and what they do at Platzi.
+Here at Platzi we have all this job positions. I just picked some special profiles so you can have an idea of who they are and what they do at Platzi.
 
 The first one is Juan Pablo Rojas. He is the leader of Growth and he specialises in Marketing.
 Leonidas Esteban, most of you know him. He is a Frontend developer and he works here in our team.
 Tyfis is in charge of communications, so she can be a communications leader.
 You know Fredy. Fredy is our CEO.
 And Christian is our COO, Cheaf Operations Oficer.
-Also we have Sergio Safra who is in charge of Developing Busines or Buss Dev.
+Also we have Sergio Safra who is in charge of Developing Businesses or Buss Dev.
 
 So here you have some of the job positions and profiles that we have here at Platzi, so think about your own position and what is it that you want to achieve in your professional life.
 
