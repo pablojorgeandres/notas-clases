@@ -291,8 +291,67 @@ If you like to draw and you have a talent for it, you can work in _Design_ or in
 Also if you like business and social relationships you can be an _Entrepreneur_ and create your own _Start-Up_.
 Also if you like projects you can be a _Project Manager_ and work in project areas.
 
-1:40"
+There are different job positions in the tech world.
+Here I present you a list of the most commun job positions you can find.
 
+Some of there are: 
+
+  + Designer
+  + Marketing professional
+  + Growth expert
+  + Communications leader
+  + Programmer / Dev / Coder (Junior/Senior)
+  + CEO - Chief executive officer
+  + CTO - Chief executive officer
+  + Frontend programmer
+  + Backend programmer
+  + UX/UI designer
+  + Support expert
+  + Business developer
+  + Product Manager
+  + Project Manager
+  + Illustrator
+  + Support Professional
+  
+Here at Platzi we have all of this job positions. I just picked some special profiles so you can have an idea of who they are and what they do at Platzi.
+
+The first one is Juan Pablo Rojas. He is the leader of Growth and he specialises in Marketing.
+Leonidas Esteban, most of you know him. He is a Frontend developer and he works here in our team.
+Tyfis is in charge of communications, so she can be a communications leader.
+You know Fredy. Fredy is our CEO.
+And Christian is our COO, Cheaf Operations Oficer.
+Also we have Sergio Safra who is in charge of Developing Busines or Buss Dev.
+
+So here you have some of the job positions and profiles that we have here at Platzi, so think about your own position and what is it that you want to achieve in your professional life.
+
+To do this I ask you to answer the following questions.
+
+  + What fields do you like?
+  + What is your position in this moment?
+  + What do you want to be in the future?
+  
+I am going to give you my example so you can have a model and then answer in the discussion board.
+
+> I like education, marketing and sales. In this moment I am an education analyst at Platzi. In the future I want to have a job in business education.
+
+So, think about yourself and answer the questions in the discussion board.
+
+Ok! So, remember, your task is to answer the questions that I'll post here.
+First:
+  + What fields do you like?
+  
+Second:
+  + What is your position at the moment?
+
+And third:
+  + What is it that you want to be in the future?
+  
+Use the model that I posted here with my own answers. This you are going to find in the files section here.
+And then you can answer your questions in the discussion board.
+Remember that everyone is going to see your answers and I personally will be checking your answers to see if they're correct.
+
+In the next video I am going to tell you how to create your professional profile.
+So, I'll see you there.
 
 
 <br>
