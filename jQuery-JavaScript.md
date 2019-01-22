@@ -873,6 +873,40 @@ Desestructurando la variable en la que voy a guardar el resultado de la función
 
 ## <a name="clase17"> 17 - DataSet </a>
 
+Con DataSet puedo agregar datos a los tags HTML para luego usarlos de cualquier forma necesaria en JavaScript.
+La forma de hacerlo es agregar un atributo _"data-nombre"_ a cualquier tag html.
+
+Ej:
+
+	En el template agrego _data-id="${movie.id}"_ y _data-category="${category}"_
+
+```javascript
+
+	function videoTemplate(movie, category) {    
+		return(
+		    `<div class="primaryPlaylistItem" data-id="${movie.id}" data-category="${category}" >
+			<div class="primaryPlaylistItem-image">
+			<img src="${movie.medium_cover_image}">
+			</div>
+			<h4 class="primaryPlaylistItem-title">
+			    ${movie.title}
+			</h4>
+		    </div>`
+		)
+	}
+	
+
+```
+
+A los que después puedo acceder desde JS con el método _.dataset.nombre_.
+En este caso: 
+
+```javascript
+
+	$element.dataset.id
+	$element.dataset.category
+
+```
 
 
 
