@@ -916,14 +916,17 @@ En este caso:
 
 ## <a name="clase18"> 18 - Encontrando elementos en la lista </a>
 
-Para seleccionar los elementos de una lista o array usamos el método _find()_.
+### [Find](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/find)
 
-El método _find()_ itera por los elementos de un array y devuelve el valor del primer elemento que cumple con la condición que le pasamos a travéz de la función parámetro que recibe. Si ningún valor coincide con la condición de búsqueda devuelve _undefined_. Vale remarcar que no itera por todos los elementos del array, sino sólo hasta el elemento que devuelve.
+Para seleccionar un elemento particular de un array usamos el método [_find()_](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/find).
+
+El método [_find()_](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/find) itera por los elementos de un array y devuelve el valor del primer elemento que cumple con la condición que le pasamos a travéz de la función parámetro que recibe. Si ningún valor coincide con la condición de búsqueda devuelve _undefined_. Vale remarcar que no itera por todos los elementos del array, sino sólo hasta el elemento que devuelve.
 Recibe una función de parámetro y esta a su vez un parámetro _this_ que referencia a  mismo array.
 
 ```javascript
 
 	var arrayX = [5, 12, 8, 130, 44, 180]
+	
 	var found = arrayX.find( e => e > 10 )
 	var found2 = arrayX.find( e => e < 190 )
 
@@ -935,7 +938,35 @@ Recibe una función de parámetro y esta a su vez un parámetro _this_ que refer
 
 ```
 
+### [Switch](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/switch)
 
+Otra estructura usual de datos es el [_switch_](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/switch).
+Es una estructura multiple-condicional y se utiliza normalmente cuando los condicionales son 3 o más. 
+Su funcionamiento es similar a un if- else if - else.
+
+Este evalúa una expresión y la compara con el valor que asignamos en cada _case_, si coincide con alguno ejecuta el código dentro de ese _case_, sino sale por el _default_ case.
+
+Sintaxis:
+
+```javascript
+
+	var frut = 'Papayas';
+	
+	switch (frut) {
+	  case 'Oranges':
+	    console.log('Oranges are $0.59 a pound.')
+	    break
+	  case 'Mangoes':
+	  case 'Papayas':
+	    console.log('Mangoes and papayas are $2.79 a pound.')
+	    break
+	  default:
+	    console.log('Sorry, we are out of ' + expr + '.')
+	}
+	
+	// "Mangoes and papayas are $2.79 a pound."
+
+```
 
 <br>
 <br>
