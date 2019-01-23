@@ -916,7 +916,24 @@ En este caso:
 
 ## <a name="clase18"> 18 - Encontrando elementos en la lista </a>
 
+Para seleccionar los elementos de una lista o array usamos el método _find()_.
 
+El método _find()_ itera por los elementos de un array y devuelve el valor del primer elemento que cumple con la condición que le pasamos a travéz de la función parámetro que recibe. Si ningún valor coincide con la condición de búsqueda devuelve _undefined_. Vale remarcar que no itera por todos los elementos del array, sino sólo hasta el elemento que devuelve.
+Recibe una función de parámetro y esta a su vez un parámetro _this_ que referencia a  mismo array.
+
+```javascript
+
+	var arrayX = [5, 12, 8, 130, 44, 180]
+	var found = arrayX.find( e => e > 10 )
+	var found2 = arrayX.find( e => e < 190 )
+
+	console.log(found)
+	// 12
+
+	console.log(found2)
+	// 5
+
+```
 
 
 
