@@ -974,6 +974,39 @@ Sintaxis:
 
 ## <a name="clase19"> 19 - Animaciones </a>
 
+Tanto como en CSS puro, con javaScript también podemos hacer efectos de fade con CSS.
+
+En esta clase obtenemos el objeto _image_ del template que generamos para cada película y le agregamos una clase previamente declarada en nuestro CSS. 
+Usamos el eventListener _'load'_ para imprimir todas las imágenes juntas una vez traidas de la API.
+
+
+```CSS
+
+	.fadeIn {
+	  animation: 2000ms fadeIn;
+	}
+
+	@keyframes fadeIn {
+	  0% {
+	    opacity: 0;
+	  }
+
+	  100% {
+	    opacity: 1;
+	  }
+	}
+
+```
+
+```javascript
+
+	const image = movieElement.querySelector('img')
+        image.addEventListener( 'load', event => event.srcElement.classList.add('fadeIn') )
+
+```
+
+También separamos el código de los llamados asíncronos a la API para que al obtener un género de películas las imprima directamente. Esto va a ayudar a optimizar nuestra aplicación en cuanto a tiempo de carga.
+
 
 
 
