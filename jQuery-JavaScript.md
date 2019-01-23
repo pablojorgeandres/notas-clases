@@ -1017,6 +1017,29 @@ También separamos el código de los llamados asíncronos a la API para que al o
 
 ## <a name="clase20"> 20 - Manejo de errores </a>
 
+Para poder manipular situaciones en las que la conexión a la API por cualquier cosa de un error utilizamos la estructura [_**try...catch**_](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/try...catch).
+
+
+```javascript
+
+	try {
+		// ejecuta si todo está bien en el callback
+	} catch(error) {
+		console.log(error)
+	}
+
+```
+
+Para manipular los errores en JS usamos el prototipo [Error()](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Error). Con este podemos crear nuestro propio _objeto error_ customizado.
+
+	new Error(message)
+	
+
+Y para mostrar el error se puede usar [_throw_](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/throw).
+
+	throw expresion;
+	
+
 
 
 
