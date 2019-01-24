@@ -360,7 +360,136 @@ So, I'll see you there.
 
 ## <a name="clase4"> 04 - How to create a successful profile? </a>
 
+In this video we are going to learn how to create your professional profile. But to do that you need to realize or identify what are your skills and abilities, what are the things that you can or can't do.
 
+For this I have created three maps. In this map you have the things that you _**can do**_, the things that you _**like to do**_ and the things that you are _**very good at**_.
+This information will help you create your professional profile and you will see how.
+
+In my personal case, what are the things that I can do. 
+Well, 
+
+I can:
+
+  + teach
+  + write
+  + create content
+  + and many others
+  
+But this things are not necessarily the things that I like to do, maybe there are other things that I like to do. And this ones are, for example.
+
+I like to:
+
+  + participate in events
+  + research
+  + work with students or 
+  + work with teams
+  
+Probably I'd like these things, but it doesn't really mean that I'm very good at those things.
+So, for these I decided to include this one too.
+
+What are the things that I'm very good at?:
+
+  + writing
+  + teaching
+  + creating content
+  
+With this information I am going to be able to create my professional profile.
+This is what is going to gide me through my professional description.
+
+And this is what you have to do right now; sit down and in a peace of paper write:
+
+  + the things that you can do;
+  + the things that you like to do;
+  + the things that you are very good at;
+
+And in the second part of this video I am going to show you how to use this information and put it in your real professional profile.
+
+> ### Task
+
+  + can do;
+
+    - frontend development
+    - wordpress sites from scratch
+    - find and solve errors
+
+  + the things that you like to do;
+
+    - always learn
+    - logic
+    - game programming
+    - AI
+
+  + the things that you are very good at;
+
+    - project managing
+    - find and solve errors
+
+
+
+Now that you know the things that you can do, that you like and that you are very good at, you can start working on your professional profile.
+Remember that a professional profile is a very short paragraph that describes you as a professional and also as a person.
+
+Here we are going to start by describing you as a professional, so we have some examples:
+
+  + Experienced UX designer
+  + Junior frontend programmer/ developer
+  + Senior backend developer/ programmer
+  + Growth and marketing expert
+  + Communications leader
+ 
+And with the vocabulary that we learned in the previous videos you can start thinking about your job position and how to describe it.
+
+In my personal case I am going to be 'an experienced education expert and instructional designer'.
+
+But that is not enough, you need to describe more, give more details.
+So here we are complementing that part with more information.
+
+  + Experienced UX designer with deep knoledge on user research and analysis
+  + Junior forntend developer with experience in Angular
+  + Senior backend developer with extensive experience in Python and Django
+  + Growth and marketing expert with experience in creation of inbound and outbound campaigns
+  + Communications leader with experience in copy-writing and content marketing strategies
+  
+So, think about yourself, describe yourself in the position that you are right now and also think about your experience, what is it that you know how to do very well.
+
+Here we have some examples of adjectives that can help you describe your personality, but remember that there are many others that you can find in the files system.
+
+We have:
+
+  + Outgoing
+  + Curious
+  + Proactive
+  + Sociable
+  + Goal-Oriented
+  + Cheerful
+  + and many many others...
+  
+So with this adjectives you can continue complementing your professional profile.
+So, here I show you my professional profile description:
+
+  > Experienced education expert and instructional designer with over 10 years of work in curriculum and pedagogical material design. Outgoing, determined and goal-oriented, very good at working and collaborating with people.
+  
+In the last part you can recycle the vocabulary that you listed when we did the maps, remember?
+
+After that you are going to include your academic achievements. It's important to include them because many employeers are looking for that information. So, at the end of your description you just include the title that you got.
+
+So, again:
+
+  > Experienced education expert and instructional designer with over 10 years of work in curriculum and pedagogical material design. Outgoing, determined and goal-oriented, very good at working and collaborating with people. Has a Master's Degree in Foreign Language Teaching.
+  
+If you have more or if you have less, it doesn't matter but is important that you include this information.
+
+Now it's your turn. You are going to write your own professional profile using this as a model for yourself as an example for yourself and recycling all the vocabulary that we have been using througout this lessons.
+
+Leave your professional profile in the discussion board and we all check it so you can identify what mistakes you have and how you can best correct them.
+
+This is just the begining of creating your professional profile.
+In the next video I will teach you how to create your CV and how to address the most important things that employeers want to see there.
+
+## Task
+
+  > Junior frontend developer with over 5 years of work in wordpress creating and administering sites and 1 year experience with javascript. Goal-oriented, determined and curious, very good at error solving and testing apps.
+  
 
 <br>
 <br>
