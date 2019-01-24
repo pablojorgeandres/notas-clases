@@ -1050,6 +1050,77 @@ Y para mostrar el error se puede usar [_throw_](https://developer.mozilla.org/es
 ## <a name="clase21"> 21 - LocalStorage </a>
 
 
+Para respaldar los datos que pedimos a la API utilizamos [_**localStorage**_](https://developer.mozilla.org/es/docs/Web/API/Window/localStorage) ó [_**sessionStorage**_](https://developer.mozilla.org/es/docs/Web/API/Window/localStorage). Son objetos nativos en javascript.
+
+[_**localStorage**_](https://developer.mozilla.org/es/docs/Web/API/Window/localStorage) nos permite guardar los datos sin un tiempo de expiración, es decir persisten entre ventanas/tabs con el mismo origen incluso al cerrar el navegador.
+
+[_**sessionStorage**_](https://developer.mozilla.org/es/docs/Web/API/Window/localStorage) nos permite guardar los datos con tiempo de expiración. Son eliminados cuando finaliza la sesion de navegación, lo que ocurre cuando se cierra el navegador.
+
+[_**localStorage**_](https://developer.mozilla.org/es/docs/Web/API/Window/localStorage) es un objeto dentro de window. 
+
+Para acceder:
+
+```javascript
+
+	window.localStorage
+	
+	// por defecto el navegador lo reconoce y no hace falta anteponer el 'window'
+	localStorage
+	
+```
+	
+Para limpiar/borrar datos:
+
+```javascript
+
+	window.localStorage.clear()
+
+```
+
+Setear un dato:
+
+
+```javascript
+
+	window.localStorage.setItem('item','value')
+
+```
+
+Obtener su valor:
+
+```javascript
+
+	window.localStorage.getItem('item')
+	// value
+	
+```
+
+En [_**localStorage**_](https://developer.mozilla.org/es/docs/Web/API/Window/localStorage) no puedo guardar objetos directamente. Para poder hacerlo, hay que previamente convertir el objeto en un string. 
+Esto puedo hacerlo con el método, también nativo de javascript, [_**JASON.stringify()**_](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/JSON/stringify):
+
+```javascript
+
+	var object = JSON.stringify({'flor': 'roja'})
+	window.localStorage.setItem('item', object)
+	window.localStorage.getItem('item')
+	// "{"flor":"roja"}"
+
+```
+
+Para re-convertirlo en objeto luego de obtenerlo puedo usar [_**JSON.parse**_](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/JSON/parse):
+
+
+```javascript
+	
+	const objectBack = window.localStorage.getItem('item')
+	
+	JSON.parse(objectBack)
+	// {flor: "roja"}
+	      flor: "roja"
+	      > __proto__: Object
+
+```
+
 <br>
 <br>
 <br>
