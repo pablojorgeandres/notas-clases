@@ -497,6 +497,88 @@ In the next video I will teach you how to create your CV and how to address the 
 
 ## <a name="clase5"> 05 - Creating your curriculum vitae </a>
 
+All right, we already have our professional profile created. 
+So, here we are going to learn how to create our curriculum vitae.
+
+There are many styles and designs for CVs. You can select the one that you like the most and that adjust better to your style. 
+
+Here we have one example. 
+This one is from Chris Walker, he is a photographer, and if you see here he doesn't have a description, but in many others we use this description to give a general overview of who we are as a professionals.
+
+We have a profile, we have education, skills, software, experience and general achievements.
+
+Here we have another one, that is Cesar Hernandez, he is a sales representative. And here as you can see, he has a very short description of himself. Then he uses education, skills, interests, work experience and some references for the possible employers to get some information about him.
+
+The first thing that you need to focus on is your _**experience**_.
+In here I show you two examples of the ones that I use in my personal CV.
+
+The first one is a very short and concise example from my experience at Platzi.
+
+```Platzi``` is the company and ```Educational Analyst``` is my job position.
+Here I wrote some of the tasks that I develop at Platzi.
+
+The first one; ```Curriculum Design```. 
+The second one; ```Create Courses Syllabus```.
+And also; ```I worked on designing courses```.
+
+So, as you can see this type of description is very adaptable to this type of CV which is very short and concise.
+
+On the second example you are going to find that is more descriptive.
+
+I also write the company; ```Universidad del Rosario```.
+The position, ```Associated Professor```.
+And then some of the tasks that I developed.
+
+As you can see, this are longer sentences, which are more descriptive of the tasks that I developed.
+You can use either one, but the important thing is that they adapt to this style that you are using.
+
+After this, you are going to need to put your personal information.
+
+```City of Residence```, in my case, Bogota, Colombia.
+your ```Telephone number```, this is of course not a real telephone number.
+Then your ```facebook account```. Remember that a lot of employers check your social media to check that you are not a psyco.
+```Twitter```, and of course, your
+```LinkedIn profile```.
+
+After that, you can include your education.
+In english is very common to use short names for the programs that you coursed. 
+
+So the first one is Bachelor, BA stands for Bachelor. In this case ```Bachelor in teaching english as a foreign language```.
+Then the institution and then when you finished it.
+Then MA stands for ```Masters Degree. Masters Degree in foreign Language```.
+Again the ```institution``` and the ```year```.
+And againg MA in whatever field that is that you are studiying.
+
+It is important to include ```software```. 
+Most companies are pending on how capable you are to use different types of software.
+Here I put some of the ones that I know how to use and that mayght be useful for the position that I am performing in.
+
+```In Design and Development:```
+```Illustrator, Sketch, Adobe XD, Sublime, Atom```
+
+```Marketing and Business:```
+```Google Analytics, Google Adwords, Facebook Ads```
+
+```Project Manajement:```
+```Slack, Dropbox, Google Suit, Telegram, Timely```
+
+Aditionally you need to include your ```skills```.
+Why is it important to describe your skills?
+
+Employeers are going to look for particular things that you can do. In my case I have ```hi skills in teaching```, also in ```participating conferences and events```, in ```curricular design```, project managmement, digital marketing, inbound and outbound, is not as much as the others but I still have this skills; and finally ```writting```.
+
+So think about your skills and assign a score for each one of the skills.
+For instance if you are very good at designing you can have five stars or five pluses in your designing skill.
+
+So, make a list of your skills and then score them to see how good you are in this skills.
+
+Now is your turn to start creating your own CV.
+So, in this moment, use all the information that you wrote about yourself and create this curriculum vitae. You can share in the discussion board your image of your curriculum vitae and remember that at this point you can start working on your professional portfolio.
+Professional portfolios are made of all the projects that you have created, so this ones show everyone everything that you can do and your skills.
+
+So, in the next video I'm going to start showing you how to prepare yourself for a job interview.
+
+
 
 
 <br>
