@@ -113,9 +113,14 @@ La especificación de CSS 3 nos trae:
 
 # <a name="sec2">Transiciones</a>
 
+<br>
+<br>
+
+## <a name="clase3">Sintaxis de transiciones</a>
+
 ### Transitions
 
-_**transition**_ es una propiedad de CSS3 que sirve para 
+_**transition**_ es una propiedad de CSS3 para crear animaciones. 
 
 > ...a partir de un evento en el navegador es posible hacer que las propiedades CSS de un elemento en el DOM cambien de forma continua. Por ejemplo un elemento de tamaño 'x' a tamaño 'y' en una determinada cantidad de tiempo, o de un color a otro, etc.
 
@@ -173,12 +178,6 @@ Ej:
 
 
 ```
-
-
-<br>
-<br>
-
-## <a name="clase3">Sintaxis de transiciones</a>
 
 <br>
 <br>
