@@ -83,6 +83,15 @@
 
 ## <a name="clase1">Bienvenido al curso</a>
 
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase2">Introducción a las animaciones y micro interacciones en la web</a>
+
+
 Las animaciones son simplemente generar sensación de movimiento de algo.
 Es la transición de un punto 'a' a un punto 'b'.
 
@@ -102,7 +111,7 @@ La especificación de CSS 3 nos trae:
 <br>
 <br>
 
-## <a name="clase2">Introducción a las animaciones y micro interacciones en la web</a>
+# <a name="sec2">Transiciones</a>
 
 ### Transitions
 
@@ -165,12 +174,6 @@ Ej:
 
 ```
 
-
-<br>
-<br>
-<br>
-
-# <a name="sec2">Transiciones</a>
 
 <br>
 <br>
