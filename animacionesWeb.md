@@ -185,6 +185,16 @@ Ej:
 
 ## <a name="clase4">Transiciones de interacción</a>
 
+Para aplicar transiciones a múltiples elementos utilizo un elemento padre.
+
+```html
+
+  <div class="canasta">
+    <div class="pelota a">
+    <div class="pelota b">
+  </div>
+
+```
 
 <br>
 <br>
