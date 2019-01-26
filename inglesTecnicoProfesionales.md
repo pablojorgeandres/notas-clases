@@ -587,6 +587,101 @@ So, in the next video I'm going to start showing you how to prepare yourself for
 
 ## <a name="clase6"> 06 - Preparing yourself for a job interview </a>
 
+Hello again.
+In the last video, we created your CV. Now it's time to start prepering for a job interview.
+And it's true that sometimes interviews can be a little scary and intimidating. But if you prepare yourself you are going to find this task a lot more easier.
+
+This video has a listening exercise, so be prepared to take notes and answer some questions.
+
+For the first part you need to be aware of your strengths and your weaknesses. 
+Also you need to prepare your wardrove and you need to visualize your self in the job interview.
+
+So, the first thing that we are going to do is to create the list of strnghts and weaknesses.
+
+In my personal case, my ```strengths``` are:
+
+  + **Teamwork**
+  + **Sociable**
+  + **Organized**
+  + **Goal-oriented**
+  + **Creative**
+  
+And my ```weaknesses``` are:
+
+  + **Details**
+  + **Too many tasks**
+  + **Sensitive**
+  
+But is necessary for us to explain in more detail what this means.
+So, prepare for the listening exercises.
+
+So, here are the instructions for this listening exercise. 
+
+First, you need to:
+
+  + Listen and take notes
+  + Read and compare it with your notes
+  
+There are two parts in this listenig exercise. The first one is concentrated on stengths and the second one on weaknesses.
+
+## Strength Exercisse:
+  
+My notes: 
+  
+  > I think one of my strengths is that I am very good at teamwork. I can help people be organized, I support my team and I make sure everyone does their its task.
+  
+  > I think one of my strengths is that I am very sociable. I get along with people and they feel confortable with me.
+  
+  > I consider that I am very organized. I know the tasks that are pending, I organize my days with my tasks in mind. I try to keep lists of the things I need to do.
+
+Here you have the text for the listening exercise. Compare it to the notes that you took.
+
+  > I think one of my strengths is that I am very good at teamwork. I can help people be organized, I support my team and I make sure everyone does their its task.
+  
+  > I think one of my strengths is that I am very sociable. I get along with people and they feel confortable with me.
+  
+  > I consider that I am very organized. I know the tasks that are pending, I organize my days with my tasks in mind. I try to keep lists of the things I need to do.
+  
+Ok, so now, lets go to the second part of this listening exercise. Remember that this one is focused in my weaknesses, so again, listen and take notes. And then, read and compare.
+
+For weaknesses:
+
+  > I consider that sometimes, details can be difficult, especially when I have long workflows. 
+  
+  > Sometimes I work on too many things at the same time, and it becomes hard.
+  
+  > When I have too much stress, I sometimes get too sensitive.
+
+Now, read and compare your notes with the text.
+
+All right, now you know what your strengths and weaknesses are. It is time for you to visualize yourself in your job interview.
+So here I give you some questions that you can answer to prepare for this job interview:
+
+  + When do you feel confident?
+    + In my case I feel confident when I know about the topic.
+
+  + What are your qualities?
+     + In my case, my qualities are; I am very sociable, I am creative and I am very proactive.
+
+  + Why do you think this company needs you?
+    + In my case I think the company needs me because I know about pedagogy and curricular design.
+ 
+  + How can you exceed the position expectations?
+    + I think that I can exceed the position expectations because I know a lot about pedagogy and I can teach a lot of people to replicate those things.
+    
+So, the task for this video is going to have two parts:
+
+  + Create your own list of strengths and weaknesses. 
+    - Remember to be descriptive; tell us why do you think this are your strengths and you weaknesses.
+  
+  + Answer the questions:
+
+    - _When do you feel confident?_
+    - _What are your qualities?_
+    - _Why do you think this company needs you?_
+    - _How can you exceed the position expectations?_
+    
+Live your answers in the discussion board and remember that everyone is going to give you feedback.
 
 
 <br>
