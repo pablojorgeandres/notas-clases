@@ -588,15 +588,15 @@ So, in the next video I'm going to start showing you how to prepare yourself for
 ## <a name="clase6"> 06 - Preparing yourself for a job interview </a>
 
 Hello again.
-In the last video, we created your CV. Now it's time to start prepering for a job interview.
+In the last video, we created your CV. Now it's time to start preparing for a job interview.
 And it's true that sometimes interviews can be a little scary and intimidating. But if you prepare yourself you are going to find this task a lot more easier.
 
 This video has a listening exercise, so be prepared to take notes and answer some questions.
 
 For the first part you need to be aware of your strengths and your weaknesses. 
-Also you need to prepare your wardrove and you need to visualize your self in the job interview.
+Also you need to prepare your wardrobe and you need to visualize yourself in the job interview.
 
-So, the first thing that we are going to do is to create the list of strnghts and weaknesses.
+So, the first thing that we are going to do is to create the list of strengths and weaknesses.
 
 In my personal case, my ```strengths``` are:
 
@@ -622,9 +622,9 @@ First, you need to:
   + Listen and take notes
   + Read and compare it with your notes
   
-There are two parts in this listenig exercise. The first one is concentrated on stengths and the second one on weaknesses.
+There are two parts in this listening exercise. The first one is concentrated on strengths and the second one on weaknesses.
 
-## Strength Exercisse:
+## Strength Exercise:
   
 My notes: 
   
@@ -636,12 +636,9 @@ My notes:
 
 Here you have the text for the listening exercise. Compare it to the notes that you took.
 
-  > I think one of my strengths is that I am very good at teamwork. I can help people be organized, I support my team and I make sure everyone does their its task.
-  
-  > I think one of my strengths is that I am very sociable. I get along with people and they feel confortable with me.
-  
-  > I consider that I am very organized. I know the tasks that are pending, I organize my days with my tasks in mind. I try to keep lists of the things I need to do.
-  
+
+## Weaknesses Exercise:
+
 Ok, so now, lets go to the second part of this listening exercise. Remember that this one is focused in my weaknesses, so again, listen and take notes. And then, read and compare.
 
 For weaknesses:
@@ -653,6 +650,8 @@ For weaknesses:
   > When I have too much stress, I sometimes get too sensitive.
 
 Now, read and compare your notes with the text.
+
+#
 
 All right, now you know what your strengths and weaknesses are. It is time for you to visualize yourself in your job interview.
 So here I give you some questions that you can answer to prepare for this job interview:
@@ -682,6 +681,37 @@ So, the task for this video is going to have two parts:
     - _How can you exceed the position expectations?_
     
 Live your answers in the discussion board and remember that everyone is going to give you feedback.
+
+
+
+## Task
+
+  + **Strengths**
+    + Ordered and detailer
+    + Logical and pragmatic
+    + Active learner
+    + Artistic Sensibility
+    + Goal-oriented
+    + If you're going to do something, do it well
+
+  + **Weaknesses**
+    + Obsessive
+    + Perfectionism
+    + Details can make me lose focus
+   
+Questions: 
+
+  + **When do you feel confident?**
+    > I feel confident when I know I have experience in what I'm doing. But I feel confident too when I have new defies.
+    
+  + **What are your qualities?**
+    > I am creative, I am always learning and I don't give up easily.
+    
+  + **Why do you think this company needs you?**
+    > I am responsible, punctual, and I have many experience of the stack.
+    
+  + **How can you exceed the position expectations?**
+    > At first quickly adapting myself to the workflow of the team, and then bringing new ideas to improve it.     
 
 
 <br>
