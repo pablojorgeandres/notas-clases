@@ -347,6 +347,124 @@ Ejemplo de sintaxis:
 
 ## <a name="clase6">Transformaciones de rotación</a>
 
+La propiedad _ transform: rotate(angle)_ nos permite hacer la rotación de un objeto.
+
+Hay 3 ejes posibles para hacer rotaciones:
+
+  + X - rotateX() - rotación horizontal   :arrow_up_down:
+  + Y - rotateY() - rotación vertical     :left_right_arrow:
+  + Z _ rotateZ() - rotación eje central  :arrows_counterclockwise:
+
+Por defecto _rotate()_ refiere a la rotación del eje Z, por lo tanto:
+
+    rotate(Xdeg) == rotateZ(Xdeg)
+
+Un valor positivo rotará en sentido de las agujas del relog y un valor negativo en sentido reverso:
+
+  ```rotate(45deg)``` :leftwards_arrow_with_hook:
+  ```rotate(-45deg)``` :arrow_right_hook:
+  
+
+También puedo rotar el elemento en 2 o 3 ejes a la vez:
+
+  ```transform: rotateX(Xdeg) rotateY(Xdeg) rotateZ(Xdeg);```
+
+  ```transform: rotate3d(0, 1, 0, -45deg);```
+
+
+Cuando aplico transition debo referirme siempre al padre del elemento, ya que si por ejemplo hago un hover en la esquina del mismo, cuando este empieza a rotar mi hover ya no está sobre el elemento porque este se "corrió".
+
+```html
+
+    <style>
+        .cuadrado {
+            transition-duration: Xs;
+        }
+        .container:hover .cuadrado {
+            transform: rotate(Xdeg);
+        }
+    </style>
+    <div class="container">
+      <div class="cuadrado">
+      </div>
+    </div>
+
+```
+
+Ej: 
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transformation rotate</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            border: 2px solid red;
+        }
+        .cuadrado {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            background-color: #7dc900;
+            margin: 20px;
+            box-shadow: 0 0 50px #000;
+            transition-duration: 2s;
+        }
+        .container:hover .cuadrado.a {
+            transform: rotate(45deg);
+        }
+        .container:hover .cuadrado.b {
+            transform: rotateX(45deg);
+        }
+        .container:hover .cuadrado.c {
+            transform: rotateY(45deg);
+        }
+        .container:hover .cuadrado.d {
+            transform: rotateX(30deg) rotateY(15deg) rotateZ(90deg);
+        }
+        .container:hover .cuadrado.e {
+            transform: rotate3d(0, 1, 0, -45deg);
+        }
+        .container:hover .cuadrado.f {
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cuadrado a">
+        </div>
+        <div class="cuadrado b">
+        </div>
+        <div class="cuadrado c">
+        </div>
+        <div class="cuadrado d">
+        </div>
+        <div class="cuadrado e">
+        </div>
+        <div class="cuadrado f">
+        </div>
+    </div>
+</body>
+</html>
+
+
+```
+
+
 <br>
 <br>
 <br>
