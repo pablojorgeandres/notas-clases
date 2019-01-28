@@ -189,12 +189,105 @@ Para aplicar transiciones a múltiples elementos utilizo un elemento padre.
 
 ```html
 
+  <style>
+    .pelota {
+      background-color: rojo;
+    }
+    .canasta {
+      transition-duration: 1.5s;
+    }
+    .canasta:hover .pelota{
+      background-color: azul;     
+    }
+  </style>
   <div class="canasta">
     <div class="pelota a">
     <div class="pelota b">
   </div>
 
 ```
+
+Ej:
+
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        .container{
+            height: 100px;
+            width: 100vw;
+            border: 1px solid black;
+            transition-duration: 1.5s;
+        }
+        .ball {
+            position: absolute;
+            display: flex;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            transition-duration: 1.5s;
+            align-items: center;
+            justify-content: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .ball p {
+            opacity: 0;
+            font-size: 15px;
+            transition-duration: 1.5s;
+        }
+        .ball.a {
+            left: 0;
+        }
+        .ball.b{
+            right: 0;
+        }
+        .container:hover .ball {
+            background-color: red;
+            width: 300px;
+            height: 300px;
+        }
+        .container:hover .ball.a{
+            left: calc(50vw - 150px);
+        }
+        .container:hover .ball.b{
+            right: calc(50vw - 150px);
+        }
+        .container:hover .ball p {
+            font-size: 30px;
+            opacity: 1;
+        }
+        .container:hover {
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball a"><p>Hate</p></div>
+        <div class="ball b"><p>Love</p></div>
+    </div>
+</body>
+</html>
+
+
+
+```
+
 
 <br>
 <br>
@@ -206,6 +299,47 @@ Para aplicar transiciones a múltiples elementos utilizo un elemento padre.
 <br>
 
 ## <a name="clase5">Sintaxis de Transformaciones</a>
+
+[_Transform_](#https://www.w3schools.com/cssref/css3_pr_transform.asp) es una propiedad muy utilizada en CSS3.
+Esta nos permite manipular un elemento de las siguientes maneras:
+
+  + ```mover```
+  + ```escalar```
+  + ```sesgar```
+  + ```rotar```
+  
+  Sintaxis:
+  
+    ```transform: none|transform-functions|initial|inherit;```
+
+  Sintaxis JavaScript
+ 
+    ```object.style.transform="rotate(7deg)"```
+
+  Propiedades:
+  
+   + translate()
+   + scale()
+   + rotate()
+   + skew()
+
+Ejemplo de sintaxis:
+
+```html
+
+  <style>
+    .canasta {
+      transform: translate(50px) scale(1.5) rotate(15deg) skew(30deg);
+    }
+  </style>
+  <div class="canasta">
+    <div class="pelota a">
+    <div class="pelota b">
+  </div>
+
+
+```
+
 
 <br>
 <br>
