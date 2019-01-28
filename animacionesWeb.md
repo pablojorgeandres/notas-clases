@@ -467,7 +467,9 @@ Ej:
 
 ![image](https://developerathome.tk/Store/images/CSSrotate.gif)
 
-[Ejemplo fancy:](https://codepen.io/thebabydino/pen/MeeqLB)
+<img src="https://developerathome.tk/Store/images/CSSrotate.gif" style="float: center; margin-right: 10px;" />
+
+[Ejemplo fancy...](https://codepen.io/thebabydino/pen/MeeqLB)
 
 ![image](https://developerathome.tk/Store/images/CSS3Drotate.gif)
 
