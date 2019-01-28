@@ -310,11 +310,11 @@ Esta nos permite manipular un elemento de las siguientes maneras:
   
   Sintaxis:
   
-    ```transform: none|transform-functions|initial|inherit;```
+    transform: none|transform-functions|initial|inherit;
 
   Sintaxis JavaScript
  
-    ```object.style.transform="rotate(7deg)"```
+    object.style.transform="rotate(7deg)"
 
   Propiedades:
   
