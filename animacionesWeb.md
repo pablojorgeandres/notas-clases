@@ -300,7 +300,7 @@ Ej:
 
 ## <a name="clase5">Sintaxis de Transformaciones</a>
 
-[_Transform_](#https://www.w3schools.com/cssref/css3_pr_transform.asp) es una propiedad muy utilizada en CSS3.
+[_Transform_] (#https://www.w3schools.com/cssref/css3_pr_transform.asp) es una propiedad muy utilizada en CSS3.
 Esta nos permite manipular un elemento de las siguientes maneras:
 
   + ```mover```
