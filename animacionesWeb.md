@@ -361,15 +361,16 @@ Por defecto _rotate()_ refiere a la rotación del eje Z, por lo tanto:
 
 Un valor positivo rotará en sentido de las agujas del relog y un valor negativo en sentido reverso:
 
-  ```rotate(45deg)``` :leftwards_arrow_with_hook:
-  ```rotate(-45deg)``` :arrow_right_hook:
+    ```rotate(45deg)``` :leftwards_arrow_with_hook:
+  
+    ```rotate(-45deg)``` :arrow_right_hook:
   
 
 También puedo rotar el elemento en 2 o 3 ejes a la vez:
 
-  ```transform: rotateX(Xdeg) rotateY(Xdeg) rotateZ(Xdeg);```
+    ```transform: rotateX(Xdeg) rotateY(Xdeg) rotateZ(Xdeg);```
 
-  ```transform: rotate3d(0, 1, 0, -45deg);```
+    ```transform: rotate3d(0, 1, 0, -45deg);```
 
 
 Cuando aplico transition debo referirme siempre al padre del elemento, ya que si por ejemplo hago un hover en la esquina del mismo, cuando este empieza a rotar mi hover ya no está sobre el elemento porque este se "corrió".
@@ -464,6 +465,11 @@ Ej:
 
 ```
 
+![](https://developerathome.tk/Store/images/CSSrotate.gif)
+
+[Ejemplo fancy:](#https://codepen.io/thebabydino/pen/MeeqLB)
+
+![](https://developerathome.tk/Store/images/CSS3Drotate.gif)
 
 <br>
 <br>
