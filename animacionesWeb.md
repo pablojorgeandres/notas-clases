@@ -655,6 +655,49 @@ Ej:
 
 ## <a name="clase11">Sintaxis</a>
 
+Con la propiedad [```animation```](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations) puedo hacer animaciones de cualquier propiedad visual de CSS en una cantidad determinada de tiempo.
+Para que funcione, la sintaxis básica es ```animation-name``` y ```animation-duration``` en el elemento que deseamos animar. Y un ```@keyframes``` apuntando al nombre previamente seteado.
+
+```css
+
+  .objeto {
+    animation-name: objeto1;
+    animation-time: 2s;
+  }
+  @keyframes objeto1 {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+
+```
+El ```@keyframes``` puede usarse con los keywords "from" y "to" ó con porcentajes cuándo necesito más de un cambio durante el tiempo seteado.
+
+```css
+
+  @keyframes objeto1 {
+    0% { background-color: red; }
+    25% { background-color: orange; }
+    50% { background-color: dark-orange; }
+    100% { background-color: yellow; }
+  }
+
+
+```
+
+Al terminar el ```animation``` el objeto vuelve a su estado original salvo lo configuremos para que la animación se convierta en un loop.
+
+Otras propiedades:
+
+  + ```animation-delay: Xs```  - tiempo después de la carga de la página hasta que comienza el efecto. [Referencia](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay)
+  + ```animation-iteration-count: n | infinite``` - cantidad de veces que se repetirá el efecto. [Referencia](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count)
+  + ```animation-timing-function: ease | cubic-bezier() | steps()``` - cómo es el progreso de la animación a traves del tiempo. [Referencia](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function)
+  + ```animation-direction: normal | reverse | alternate``` determina la dirección de la animación y si se repite y de qué manera. [Referencia](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction)
+  + ```animation-fill-mode: forwards | backwards | both``` setear estilos antes y después de la animación. [Referencia](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode)
+  + ```animation-play-state: running | paused``` detiene la animación en el momento en el que está. [Referencia](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state)
+  
+
+
 <br>
 <br>
 <br>
