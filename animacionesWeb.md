@@ -479,7 +479,7 @@ Ej:
 
 ## <a name="clase7">Transformaciones de translación y perspectiva</a>
 
-La propiedad _ transform: translate()_ nos permite hacer la translación de un objeto.
+La propiedad _transform: translate()_ nos permite hacer la translación de un objeto.
 
 Hablando de animaciones en 2D, puedo mover los objetos sobre el eje X o sobre el eje Y:
 
@@ -490,9 +490,12 @@ Hablando de animaciones en 2D, puedo mover los objetos sobre el eje X o sobre el
 
 También es posible generar movimiento en 3D utilizando la propiedad _perspective_ en el body (en firefox agregar _transform-style: preserve-3d;_ al padre del objeto a mover) y la propiedad _transform: translateZ()_ en el objeto.
 
-Al agregar la propiedad _perspective-origin(x,y)_ al padre, body en este caso, puedo mover el foco de la perspectiva a cualquier lugar de la ventana. Por defecto el punto de foco de la perspectiva es el centro.
+Al agregar la propiedad _perspective-origin_ al padre, body en este caso, puedo mover el foco de la perspectiva a cualquier lugar de la ventana. Por defecto el punto de foco de la perspectiva es el centro.
+La propiedad que nos lo permite:
 
     perspective-origin: x y | px | % | ... | top | left | bottom | right
+
+Ej:
 
 ```html
 
@@ -518,10 +521,17 @@ Al agregar la propiedad _perspective-origin(x,y)_ al padre, body en este caso, p
 
 ```
 
+La propiedad _translate3d()_ nos permite manipular todos los ejes a la vez: 
 
+    translate3d(x, y, z)
 
+```html
 
+    .container:hover .box {
+      transform: translate3d(20px, -50px, 35px);
+    }
 
+```
 
 <br>
 <br>
