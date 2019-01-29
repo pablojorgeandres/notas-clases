@@ -539,6 +539,27 @@ La propiedad _translate3d()_ nos permite manipular todos los ejes a la vez:
 
 ## <a name="clase8">Transformaciones de escala</a>
 
+
+```transform: scale()``` modifica el tamaño de cualquier objeto dentro del DOM.
+
+```scale()``` recibe x e y como parámetros en decimales, es decir entre 0 y 1 correspondiendo con el porcentaje de tamaño.
+
+    0 == 0%
+    0.5 == 50%
+    1 == 100%
+ 
+ Ej:
+ 
+    transform: scale(.7, 1.3)
+    
+ Si en vez de cargar los datos _x_ e _y_ cargo sólo un dato, el objeto se modificará en igual proporción tanto en el eje _x_ como en el _y_
+
+ Ej:
+
+    transform: scale(.5)
+
+
+
 <br>
 <br>
 <br>
