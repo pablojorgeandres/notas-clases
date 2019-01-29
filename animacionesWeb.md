@@ -566,6 +566,29 @@ La propiedad _translate3d()_ nos permite manipular todos los ejes a la vez:
 
 ## <a name="clase9">Transformaciones de sesgado</a>
 
+
+Con ```transform: skew(Xdeg)``` podemos manipular el sesgado del elemento.
+```transform: skew()``` recibe dos parámetros en grados, parámetro 'x' y parámetro 'y', cada uno modifica el eje que representa. Si sólo inserto 1 valor el eje modificado será el eje 'x'.
+
+Al igual que los otros métodos de _transform_ skew tiene sus variables para cada eje:
+
+      skewX()
+      skewY()
+
+
+```css
+
+  transform: skew(25deg);
+
+  transform: skew(25deg, 10deg);
+
+  transform: skewX(24deg);
+  transform: skewY(45deg);
+
+
+```
+
+
 <br>
 <br>
 <br>
