@@ -595,6 +595,53 @@ Al igual que los otros métodos de _transform_ skew tiene sus variables para cad
 
 ## <a name="clase10">Punto de transformación</a>
 
+Por defecto, el punto de transformación de los objetos en la propiedad de CSS _transform_ está en el centro. 
+Podemos modificar la ubicación del punto con la propiedad [_transform-origin_](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin).
+
+    transform-origin: x% y% z%; /*   % || <length>  values  */
+
+    transform-origin: center top right; /* sugar syntax */
+
+Por defecto, si inserto sólo un valor se modificará solamente el eje 'x' y los otros dos segiran centrados, si inserto 2 valores, 'x' e 'y' y 'z' será 'center'.
+
+Ej:
+
+```html
+
+      <style>
+          body{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 100vh;
+          }
+          .container {
+              border: 2px solid red;
+          }
+          .cuadrado {
+              width: 200px;
+              height: 200px;
+              display: inline-block;
+              background-color: #7dc900;
+              margin: 20px;
+              box-shadow: 0 0 50px #000;
+              transition-duration: 1s;
+          }
+          .container:hover .cuadrado {
+              transform-origin: 60px bottom;
+              transform: rotateZ(90deg);
+          }
+      </style>
+
+      <body>
+          <div class="container">
+              <div class="cuadrado a">
+              </div>
+          </div>
+      </body>
+
+```
+
 
 
 <br>
