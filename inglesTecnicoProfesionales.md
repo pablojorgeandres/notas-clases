@@ -724,43 +724,43 @@ Up until here you know how to create your professional profile, your CV and how 
 
 Now, we are going to show you an example of an interview, a real interview, and the most common questions that you can encounter here. So, take notes and be prepared.
 
-> Nicole: Hi Paula, welcome, how are you?
+> **Nicole:** Hi Paula, welcome, how are you?
 
-> Paula: Hi Nicolle!, good, and you?
+> **Paula:** Hi Nicolle!, good, and you?
 
-> Nicole: I'm very good, thank you. Ok Paula, tell me a little bit about yourself.
+> **Nicole:** I'm very good, thank you. Ok Paula, tell me a little bit about yourself.
 
-> Paula: Well aaa, what can I tell you? I'm an education expert. I have experience in curricular design, in structional design. I have worked in different universities... That's mainly it.
+> **Paula:** Well aaa, what can I tell you? I'm an education expert. I have experience in curricular design, in structional design. I have worked in different universities... That's mainly it.
 
-> Nicole: Ok, good. And what are you doing right now? What it's your job position? Are you currently looking for a job? Tell me about it.
+> **Nicole:** Ok, good. And what are you doing right now? What it's your job position? Are you currently looking for a job? Tell me about it.
 
-> Paula: Well, in this moment I'm working as an education analyst at Platzi. But I would like to continue expanding my horizons and yes, I'm looking for a better position right now.
+> **Paula:** Well, in this moment I'm working as an education analyst at Platzi. But I would like to continue expanding my horizons and yes, I'm looking for a better position right now.
 
-> Nicole: Great, let's talk about your strengths. Tell me a little bit about what you think are your best strengths.
+> **Nicole:** Great, let's talk about your strengths. Tell me a little bit about what you think are your best strengths.
 
-> Paula: Well, I think I'm a very organized person. I also have abilities to work with people, so I would say that team work is one of my strenghts. And I'm very goal-oriented; every time that I proyect something I try to accomplish it.
+> **Paula:** Well, I think I'm a very organized person. I also have abilities to work with people, so I would say that team work is one of my strenghts. And I'm very goal-oriented; every time that I proyect something I try to accomplish it.
 
-> Nicolle: Ok, very good. So, tell me a little bit about your weaknesses.
+> **Nicolle:** Ok, very good. So, tell me a little bit about your weaknesses.
 
-> Paula: I think that some times I have problems with details, like those specific things that are important but are not like the core of my workflows. So I need to be writing lists and be really careful with the tasks that I have pending.
+> **Paula:** I think that some times I have problems with details, like those specific things that are important but are not like the core of my workflows. So I need to be writing lists and be really careful with the tasks that I have pending.
 
-> Nicole: Can you tell me about, maybe if you had a problem with details in the past or recently, so we can know more about yourself?
+> **Nicole:** Can you tell me about, maybe if you had a problem with details in the past or recently, so we can know more about yourself?
 
-> Paula: Well, I would say that, well, the other day I sent an email by mistake and I think that is not something that is really like crucial, but it gives the impression that I'm not super careful with details.
+> **Paula:** Well, I would say that, well, the other day I sent an email by mistake and I think that is not something that is really like crucial, but it gives the impression that I'm not super careful with details.
 
-> Nicole: Ok, so, you've actually never had like a real problem with this ... ammm detail ...amm weakness? 
+> **Nicole:** Ok, so, you've actually never had like a real problem with this ... ammm detail ...amm weakness? 
 
-> Paula: Well, I cannot think of any situation that was like really serious ...aaa but is because what I'm saying; it's something that is detail and not something that is the core of the things that I have to do. So, I thinks it's a problem and I'm working on it, but aaaa I know it doesn't have that huge impact on the things that I do.
+> **Paula:** Well, I cannot think of any situation that was like really serious ...aaa but is because what I'm saying; it's something that is detail and not something that is the core of the things that I have to do. So, I thinks it's a problem and I'm working on it, but aaaa I know it doesn't have that huge impact on the things that I do.
 
-> Nicole: Ok, thank you. So how do you think you can exceed the position expectations?
+> **Nicole:** Ok, thank you. So how do you think you can exceed the position expectations?
 
-> Paula: Well, I know that you are looking for a person that is able to design curricular here and I think that I have a lot of experience in this area and I know that I can give you all the knowledge that I have and all the experience that I have so we can create great courses and we can like teach teachers how to be better at their job.
+> **Paula:** Well, I know that you are looking for a person that is able to design curricular here and I think that I have a lot of experience in this area and I know that I can give you all the knowledge that I have and all the experience that I have so we can create great courses and we can like teach teachers how to be better at their job.
 
-> Nicole: Ok, great. Well, thank you very much for this interview. We will contact you very soon and will see you very soon.
+> **Nicole:** Ok, great. Well, thank you very much for this interview. We will contact you very soon and will see you very soon.
 
-> Paula: Ok, thank you very much Nicole. Bye.
+> **Paula:** Ok, thank you very much Nicole. Bye.
 
-> Nicole: Byye.
+> **Nicole:** Byye.
 
 
 As you can see, the most common questions can be related to how you describe yourself, what are your strengths and what are the weaknesses. But remember that conversations develop, so it's important that you are prepared for expanding details and tell more about yourself.
