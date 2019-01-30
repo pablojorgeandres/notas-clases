@@ -860,15 +860,49 @@ Ejemplo completo:
 
 
 ```
-
-
-
-
 <br>
 <br>
 <br>
 
 ## <a name="clase14">Detectar eventos de animaciones</a>
+
+Para detectar un evento en las animaciones puedo usar javascript.
+
+En principio localizo el objeto con ```document.getElementById()``` pasando como parámetro el id del objeto sobre el que se ejecuta la animación.
+
+      const $objeto = document.getElementById('objeto')
+
+Cargo luego un oyente de eventos ```addEventListener()``` para detectar el fin de la animación con ```animationend```.
+Y finalmente gatillo la animación extra a travez de la función del listener.
+
+      $objeto.addEventListener('animationend', function(){
+        /* disparo la siguiente animación aquí */
+      })
+
+Para gatillar la función siguiente utilizo la propiedad [```.style.animation```](https://www.w3schools.com/jsref/prop_style_animation.asp) de javascript. Los básicos para que funcione son ```animationName``` y ```animationDuration```.
+
+      $objeto.style.animationName = 'animacionDeObjeto'
+      $objeto.style.animationDuration = 'Xs'
+
+
+Otras propiedades:
+
+  + [animationName](https://www.w3schools.com/jsref/prop_style_animationname.asp)
+  + [animationDuration](https://www.w3schools.com/jsref/prop_style_animationduration.asp)
+  + [animationTimingFunction](https://www.w3schools.com/jsref/prop_style_animationtimingfunction.asp)
+  + [animationDelay](https://www.w3schools.com/jsref/prop_style_animationdelay.asp)
+  + [animationIterationCount](https://www.w3schools.com/jsref/prop_style_animationiterationcount.asp)
+  + [animationDirection](https://www.w3schools.com/jsref/prop_style_animationdirection.asp)
+  + [animationFillMode](https://www.w3schools.com/jsref/prop_style_animationfillmode.asp)
+  + [animationPlayState](https://www.w3schools.com/jsref/prop_style_animationplaystate.asp)
+
+Otros listeners:
+
+  + [```animationstart```](https://www.w3schools.com/jsref/event_animationstart.asp)
+  + [```animationiteration```](https://www.w3schools.com/jsref/event_animationiteration.asp)
+  + [```animationend```](https://www.w3schools.com/jsref/event_animationend.asp)
+
+
 
 <br>
 <br>
