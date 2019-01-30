@@ -710,6 +710,97 @@ Otras propiedades:
 
 ## <a name="clase13">Múltiples animaciones</a>
 
+Para generar una múltiple animación a un mismo objeto tengo que configurar otro ```@keyframes```.
+Para esto, tengo primero que generar otro ```animation-name```, lo que hago agregando una ',' al ```action-name``` ya declarado:
+
+    animation-name: cuadrado, otraAnimacion;
+
+Esto nos permite generar otro ```@keyframes``` con una nueva animación.
+
+    @keyframes otraAnimacion { }
+
+Todas las propiedades de animación ya declaradas se pasan automáticamente a este segundo ```@keyframes```. Si quiero propiedades diferentes las agrego luego de una ',' a las propiedades ya declaradas.
+
+Ej: 
+
+      animation-timing-function: linear, ease-out;
+      animation-duration: 3s, 300ms;
+
+
+Ejemplo completo:
+
+
+```html
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Transformation rotate</title>
+      <style>
+          body{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 100vh;
+              color: white;
+              font-family: Arial, Helvetica, sans-serif;
+          }
+          .container {
+              border: 2px solid red;
+              width: 100vw;
+              /* transform: rotate(270deg) */
+          }
+          .cuadrado {
+              width: 200px;
+              height: 200px;
+              border-radius: 50%;
+              display: inline-block;
+              position: relative;
+              background-color: #7dc900;
+              animation-name: cuadrado, secAnimation;
+              animation-duration: 3s, 300ms;
+              animation-iteration-count: infinite;
+              animation-direction: alternate;
+              animation-timing-function: linear, ease-out;
+          }
+          @keyframes cuadrado{
+              0% {
+                  left: 0;
+              }
+              100% {
+                  left: calc(100% - 200px);
+              }
+          }
+          @keyframes secAnimation {
+              from {
+                  bottom: 0;
+                  transform: scale(1,.9);
+              }
+              to {
+                  bottom: 30vh;
+                  transform: scale(1,1);
+              }
+          }
+
+      </style>
+  </head>
+  <body>
+      <div class="container">
+          <div class="cuadrado a">
+          </div>
+      </div>
+  </body>
+  </html>
+
+
+```
+
+
+
+
 <br>
 <br>
 <br>
