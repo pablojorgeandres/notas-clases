@@ -704,6 +704,69 @@ Otras propiedades:
 
 ## <a name="clase12">Aceleración y curva de bezier</a>
 
+Para hacer animaciones debemos tener en cuenta el factor de la aceleración.
+El parámetro que nos permite hacer esto es [```animation-timing-function```](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function).
+
+```animation-timing-function``` presenta varias opciones para modificar el tipo de aceleración que podemos darle a nuesto objeto.
+
+
+```
+    /* valores predefinidos - keywords */
+    animation-timing-function: ease;
+    animation-timing-function: ease-in;
+    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
+    animation-timing-function: step-start;
+    animation-timing-function: step-end;
+
+    /* Funciones */
+    animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    animation-timing-function: steps(4, end);
+
+    /* Keywords para function step() */ 
+    animation-timing-function: steps(4, jump-start);
+    animation-timing-function: steps(10, jump-end);
+    animation-timing-function: steps(20, jump-none);
+    animation-timing-function: steps(5, jump-both);
+    animation-timing-function: steps(6, start);
+    animation-timing-function: steps(8, end);
+
+    /* Animaciones Múltiples */
+    animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1.0, 0.1);
+
+    /* Valores Globales */
+    animation-timing-function: inherit;
+    animation-timing-function: initial;
+    animation-timing-function: unset;
+
+```
+
+  Los keywords como ease o esae-in-out lo que hacen es mover el objeto de acuerdo a una velocidad preseteada. 
+  Las funciones nos permiten personalizar el tipo de aceleración más allá de las posibilidades de los keywords.
+
+  La función [```cubic-bezier()```](https://developer.mozilla.org/en-US/docs/Web/CSS/timing-function) nos permite generar nuestra propia curva de movimiento a partir de 4 parámetros entre 0 y 1 positivo o negativos para generar 'rebotes'.
+  
+      cubic-bezier(x1, y1, x2, y2)
+
+  Una herramienta gráfica para modificar los valores de la curva [aquí](http://cubic-bezier.com).
+
+
+  La función [```steps()```](https://developer.mozilla.org/en-US/docs/Web/CSS/timing-function) funciona con 2 parámetros, un número entero para la cantidad de 'pasos' y un keyword que indica si la función es continua hacia izquierda o derecha.
+  
+      steps( n, <direction> )
+      
+  Si uso sólo el valor numérico, este representará la cantidad de cuadros en el tiempo que dure mi animación. Entonces, por ejemplo podemos decir que un ```steps(60)``` con un ```animation-duration: 2s``` dará como resultado una animación de 30 cuadros por segundo.
+  El segundo parámetro (keyword) es un valor para configurar el estado entre 'steps' o cuadros.
+
+  + start - comienza moviéndose y se queda en el lugar hasta el estado siguiente
+  + end - se queda en su lugar hasta el siguiente step en el que se mueve y repite el movimiento.
+  + none
+  + both
+  
+  
+
+
 <br>
 <br>
 <br>
