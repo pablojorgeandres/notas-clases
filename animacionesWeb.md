@@ -915,11 +915,11 @@ Con los developer tools de Chrome podemos verificar varias cosas en las animacio
 Para usarlo abro el inspector y en los 3 puntos verticales de la esquina superior derecha de la ventana del mismo puedo ir a la pestaña 'More Tools' > 'Animations' o 'More Tools' > 'Render'. Esto agregará una pestaña nueva para cada herramienta en la misma ventana del 'console'.
 
 
-<img src="https://developerathome.tk/Store/images/devTools1.gif" align="left" alt="dev tools gif 1" width="300"/>
-<img src="https://developerathome.tk/Store/images/devTools2.gif" align="right" alt="dev tools gif 1" width="300"/>
+<img src="https://developerathome.tk/Store/images/devTools1.gif" align="center" alt="dev tools gif 1" width="300"/>
+<img src="https://developerathome.tk/Store/images/devTools2.gif" align="center" alt="dev tools gif 1" width="300"/>
 
+<br>
 
-      
 <span style="float: right">[Volver al índice](#index)</span>
 
 <br>
