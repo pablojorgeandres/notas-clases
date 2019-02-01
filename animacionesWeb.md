@@ -910,19 +910,46 @@ Otros listeners:
 
 ## <a name="clase15">Optimizar render con will-change y developer tools</a>
 
-Con los developer tools de Chrome podemos verificar varias cosas en las animaciones con CSS3; podemos incluso probar cambios en nuestras animaciones.
+Con los developer tools de Chrome podemos verificar varias cosas en las animaciones con CSS3; podemos incluso probar cambios y optimizar el rendering.
 
 Para usarlo abro el inspector y en los 3 puntos verticales de la esquina superior derecha de la ventana del mismo puedo ir a la pestaña 'More Tools' > 'Animations' o 'More Tools' > 'Render'. Esto agregará una pestaña nueva para cada herramienta en la misma ventana del 'console'.
 
 
 <p align="center">
   <img src="https://developerathome.tk/Store/images/devTools1.gif" alt="dev tools gif 1" width="300"/>
+  
   <img src="https://developerathome.tk/Store/images/devTools2.gif" alt="dev tools gif 1" width="300"/>
 </p>
 
-<br>
+Otra herramienta que puede ser útil desde CSS3 es ```will-change```.
+```will-change``` prepara (avisa/notifica) al navegador para que al renderizar una animación no genere impresiones extra del objeto o imagen que 'va a cambiar'.
 
-<p align="right">[Volver al índice](#index)</p>
+[developer.mozilla.org](https://developer.mozilla.org/es/docs/Web/CSS/will-change) nos advierte que ```will-change``` es para ser usado sólo como un último recurso en situaciones de problemas existentes de performance y no para 'anticipar' problemas.
+
+Dicho esto los recursos para los que ```will-change```está optimizado son ```opacity``` y ```transform``` aunque mozilla agrega [otros](https://developer.mozilla.org/es/docs/Web/CSS/will-change).
+
+Sintaxis ejemplo:
+
+```css
+
+    .cuadrado {
+        width: 200px;
+        height: 200px;
+        background-color: #000;
+        transition-duration: 2s;
+        opacity: 1;
+        will-change: opacity, transform;
+    }
+    .container:hover .cuadrado {
+        opacity: 0;
+        transform: scale(1.5, 0.5);
+    }
+
+
+```
+
+
+[Volver al índice](#index)
 
 <br>
 <br>
