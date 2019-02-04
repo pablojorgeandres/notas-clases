@@ -764,3 +764,186 @@ Now, we are going to show you an example of an interview, a real interview, and 
 
 
 As you can see, the most common questions can be related to how you describe yourself, what are your strengths and what are the weaknesses. But remember that conversations develop, so it's important that you are prepared for expanding details and tell more about yourself.
+
+
+<br>
+<br>
+<br>
+# <a name="sec2" >Section 2 - How to use English in the workplace</a>
+<br>
+<br>
+## <a name="clase8"> 08 - Glossary - How to use English in the workplace? </a>
+
+
+
+**Accomplish:** Achieve or complete something completely
+
+**Apps:** A program or software that is designed to fulfill a particular purpose
+
+**Argue:** Give reasons and evidence to support an idea
+
+**Assert:** State a fact forcefully
+
+**Assertive:** Having a confident personality
+
+**Audience:** A group of spectators in the display of something
+
+**Attack:** Take aggressive actions against something or someone
+
+**Attentive:** Paying close attention to something
+
+**Avoid:** Keep away from doing something
+
+**Aware:** Having knowledge of an event or a fact
+
+**Behavior:** The way in which a person acts or conducts oneself
+
+**Boss:** A person who is in charge or a business
+
+**Brands:** A type of product manufactured under the name of a specific company
+
+**Carefully:** In a way that avoids mistakes and errors when doing something
+
+**Challenge:** A task that needs great mental or physical effort to be achieved
+
+**Channel:** The way or media through which information is conveyed
+
+**Chat:** A digital channel frequently used in informal communication
+
+**Claim:** Assert or state something
+
+**Clarify:** Make a statement more comprehensible
+
+**Clients:** A person or company who uses the services or products of a company
+
+**Concise:** Giving enough information clearly and using a few words
+
+**Conclude:** Get to a judgement or position
+
+**Context:** The circumstances that from the setting for an event
+
+**Confirm:** Establish the truth or correctness
+
+**Control:** The power to influence or change people’s behaviors and the functionalities of things
+
+**Cover:** Put something in front or over something else
+
+**Coworkers:** A person with whom one works
+
+**Data:** Facts and statistics collected together for reference or analysis
+
+**Encrypt:** Cover information into code, especially to prevent unauthorized access
+
+**Demonstrate:** Clearly demonstrate the existence of something
+
+**Digital communication:** The exchange of messages and meaning through digital media
+
+**Direct:** Without intervening factors
+
+**Discover:** Find unexpectedly during research
+
+**Email:** Messages distributed through by electronic means from one user to a recipient or a group of recipients through a network
+
+**Employees:** A person employed for wages or salary
+
+**Ethics:** Moral principles that governs a person’s behavior
+
+**Experiment:** A scientific procedure to make a discovery
+
+**Find:** Discover something by chance
+
+**Fluent:** Easy to express oneself easily and clearly
+
+**Formal:** Done in accordance with convention and etiquette
+
+**For starters:** First of all, to start with
+
+**Fraud:** Criminal intention intended to result in financial or personal gain
+
+**Hack:** Gain unauthorized access to data in a system or computer
+
+**Hard drive:** A disk drive used to read from and write to a hard disk
+
+**Harassment:** Aggressive pressure or intimidation
+
+**Interact:** Act in a way as to have an effect on each other
+
+**Internet:** A global computer network which facilitates communications
+
+**Intimidating:** Something that frightens someone
+
+**Intrusive:** Causing disruption or annoyance through being unwelcome or uninvited
+
+**Involved:** Something or someone included in a situation
+
+**Letter:** A written or typed communication usually sent in an envelop by messenger
+
+**Message:** A communication sent by any channel
+
+**Mission:** An important assignment given to a person to complete
+
+**Microphone:** An instrument used to convert sound waves into electrical energy variations
+
+**Necessary:** Needed to be done, achieved or present
+
+**Notepad:** A pad of blank paper to write notes
+
+**Objectives:** A thing to be achieved
+
+**Organizations:** An organized group of people with a common goal
+
+**On behalf of:** To speak for someone or an organization
+
+**Password:** A secret word or phrase used to get access to a place
+
+**Pertinent:** Relevant or applicable to a particular matter
+
+**Permission:** The official authorization to do a particular thing
+
+**Privacy:** A state in which one is not observed by others
+
+**Prove:** Demonstrate the truth or existence of something
+
+**Providers:** A person or entity that provides something
+
+**Purchase:** Acquire something by paying for it
+
+**Regularly:** With a constant or definite pattern
+
+**Reject:** Dismiss as inadequate and unacceptable
+
+**Relevant:** Closely connected or appropriate to what is being considered
+
+**Report:** A account given of a particular matter
+
+**Rigid:** Not being able to be changed or modified
+
+****Rob:** Take property unlawfully from a person by force
+
+**Security:** The state of being free from danger
+
+**Sequence:** A particular order in which related things follow each other
+
+**Short:** Measuring a small distance from end to end
+
+**Specific:** Clearly defined or identified
+
+**Statistics:** A fact or piece of data obtained from a study
+
+**Successful:** Accomplishing a desired goal
+
+**Suitable:** Right or appropriate for a particular person
+
+**Summary:** A brief statement or account of the most important points of something
+
+**Test:** A procedure intended to determine the quality of something
+
+**To begin:** To start
+
+**Uninformed:** Not having the necessary information
+
+**Unnecessary:** Something not needed
+
+**Verify:** Make sure something is true, accurate or justified
+
+**Tricky:** Something that is difficult or problematic
