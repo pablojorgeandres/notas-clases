@@ -1206,7 +1206,6 @@ Código completo:
       animateProperties
     )
 
-
 ```
 Notar que los dos objetos van separados por una ',' simple.
 
@@ -1218,6 +1217,38 @@ Notar que los dos objetos van separados por una ',' simple.
 <br>
 
 ## <a name="clase18">Controlar Animaciones</a>
+
+Podemos controlar el estado de la animación. Esto podemos hacerlo por medio de botones que disparen la función que queremos.
+Los métodos que tenemos disponibles podemos verlos en la variable 'animate' en la consola.
+
+Ej (tomando el ejemplo de la clase anterior):
+
+```javascript
+
+    const animation = $element.animate(
+      keyFrames,
+      animateProperties
+    )
+
+    const $playButton = document.getElementById('play')
+    const $pauseButton = document.getElementById('pause')
+    const $stopButton = document.getElementById('stop')
+    const $reverseButton = document.getElementById('reverse')
+
+    $playButton.addEventListener('click', (event) => {
+      animation.play()
+    })
+    $pauseButton.addEventListener('click', (event) => {
+      animation.pause()
+    })
+    $stopButton.addEventListener('click', (event) => {
+      animation.cancel()
+    })
+    $reverseButton.addEventListener('click', (event) => {
+      animation.reverse()
+    })
+
+```
 
 <br>
 <br>
