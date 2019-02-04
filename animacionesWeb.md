@@ -1146,7 +1146,7 @@ Las propiedades que son posibles de animar en HTML y CSS son las siguientes:
 <br>
 <br>
 
-## <a name="clase11">element.animate</a>
+## <a name="clase17">element.animate</a>
 
 Puedo hacer también animaciones con ```element.animate``` que es una propiedad de JavaScript.
 
@@ -1217,11 +1217,11 @@ Notar que los dos objetos van separados por una ',' simple.
 <br>
 <br>
 
-## <a name="clase12">Controlar Animaciones</a>
+## <a name="clase18">Controlar Animaciones</a>
 
 <br>
 <br>
 <br>
 
-## <a name="clase13">Estás listo para certificarte</a>
+## <a name="clase19">Estás listo para certificarte</a>
 
