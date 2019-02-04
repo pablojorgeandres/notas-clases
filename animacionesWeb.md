@@ -1132,8 +1132,9 @@ Las propiedades que son posibles de animar en HTML y CSS son las siguientes:
 
 
 
-
   Referencia: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
+  
+  
   [Volver al índice](#index)
 
 <br>
@@ -1146,6 +1147,71 @@ Las propiedades que son posibles de animar en HTML y CSS son las siguientes:
 <br>
 
 ## <a name="clase11">element.animate</a>
+
+Puedo hacer también animaciones con ```element.animate``` que es una propiedad de JavaScript.
+
+    $element.animate()
+
+Es una propiedad relativamente nueva y el soporte en los diferentes browsers no es todavía completo. 
+Puedes ver la lista de compatibilidad [aquí](https://caniuse.com/#feat=web-animation).
+
+### [La sintaxis](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API): 
+
+Primero obtengo el elemento que quiero animar:
+
+    const $element = document.getElementById('element')
+  
+Luego le agrego el método ```.animate()```:
+
+    $element.animate()
+    
+```.animate()``` recibe dos objetos:
+
+  + 1 - el objeto correspondiente al @keyframes:
+
+```javascript
+
+  let keyFrames = [
+    // from
+    { transform: 'rotate() translate()', color: '#xxxxxx' },
+    // to
+    { transform: 'rotate() translate()', color: '#jjjjjj' }
+  ];
+
+```
+
+  + 2 - un objeto correspondiente a las propiedades de animación:
+  
+```javascript
+
+  let animateProperties = {
+      duration: ms // CSS == animation-duration
+      delay: ms  // CSS == animation-delay
+      direction: // CSS == animation-direction
+      easing: // CSS == animation-timing-function - default == 'linear'
+      interactions: // CSS == animation-iteration-count - Infinity != CSS infinite
+      fill: // CSS == animation-fill-mode 
+      iterationStart: 0 - 1 // nativo de JS - frame de comienzo de animación - 0.4 = 40%
+      endDelay: ms, // nativo de JS - tiempo de espera hasta repetir animación
+  }
+  
+```
+
+Código completo:
+
+```javascript
+
+    $element.animate(
+      keyFrames,
+      animateProperties
+    )
+
+
+```
+Notar que los dos objetos van separados por una ',' simple.
+
+* No hace falta generar variables.
+
 
 <br>
 <br>
