@@ -769,10 +769,13 @@ As you can see, the most common questions can be related to how you describe you
 <br>
 <br>
 <br>
-# <a name="sec2" >Section 2 - How to use English in the workplace</a>
+
+# <a name="sec2">Section 2 - How to use English in the workplace</a>
+
 <br>
 <br>
-## <a name="clase8"> 08 - Glossary - How to use English in the workplace? </a>
+
+## <a name="clase8">08 - Glossary - How to use English in the workplace?</a>
 
 
 
@@ -947,3 +950,14 @@ As you can see, the most common questions can be related to how you describe you
 **Verify:** Make sure something is true, accurate or justified
 
 **Tricky:** Something that is difficult or problematic
+
+<br><br><br>
+## <a name="clase9">09 - Vocabulary for the workplace</a>
+
+Communications in the workplace can be tricky, however you can always follow these tips to understand the best ways to interact with coworkers, clients, providers and of course your boss. In this article we are not talking only about digital communication, but all kinds of communication. For this reason, it is necessary that you pay attention to all the people involved, the way in which the message is sent and how it might be received, the context where the message is sent, the channel you choose to send the message, amongst other aspects.
+
+When communicating with people in the work environment it is necessary to consider who you are talking to. It is different if you are talking to your boss than to a colleague that you consider your friend. Additionally, you need to be careful with the channel that you select. Using email might be perceived as more formal than using chat. Paying attention to the context in which you are speaking or sending the message is also relevant for the way people understand.
+
+Asking questions might also be something challenging, especially for new employees. In certain occasions getting used to the **company’s way of communicating** could be intimidating. Nonetheless, asking questions is a skill that all employees need to develop. There are different types of questions you can ask according to the situation. There are direct questions, which are simple and basic, it is truly something you do not know. Also, there are control questions, which are more oriented to confirm something that you already know, sometimes they clarify if the person is uninformed or lying. You can ask summary questions which are more focused on verifying you have understood all the information. Remember not to ask unnecessary questions, so always evaluate if they are relevant and pertinent.
+
+In sum, having successful communications depends on several aspects like knowing the people you are communicating to, the context in which you are involved, the message you need to deliver, the channel you select, the person who receives the message, the pertinence of the message, and the importance of asking the necessary questions. Always try to evaluate the way in which you communicate, and you will be able to be more successful and assertive.
