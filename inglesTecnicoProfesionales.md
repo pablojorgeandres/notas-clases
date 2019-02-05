@@ -951,7 +951,10 @@ As you can see, the most common questions can be related to how you describe you
 
 **Tricky:** Something that is difficult or problematic
 
-<br><br><br>
+<br>
+<br>
+<br>
+
 ## <a name="clase9">09 - Vocabulary for the workplace</a>
 
 Communications in the workplace can be tricky, however you can always follow these tips to understand the best ways to interact with coworkers, clients, providers and of course your boss. In this article we are not talking only about digital communication, but all kinds of communication. For this reason, it is necessary that you pay attention to all the people involved, the way in which the message is sent and how it might be received, the context where the message is sent, the channel you choose to send the message, amongst other aspects.
@@ -961,3 +964,154 @@ When communicating with people in the work environment it is necessary to consid
 Asking questions might also be something challenging, especially for new employees. In certain occasions getting used to the **company’s way of communicating** could be intimidating. Nonetheless, asking questions is a skill that all employees need to develop. There are different types of questions you can ask according to the situation. There are direct questions, which are simple and basic, it is truly something you do not know. Also, there are control questions, which are more oriented to confirm something that you already know, sometimes they clarify if the person is uninformed or lying. You can ask summary questions which are more focused on verifying you have understood all the information. Remember not to ask unnecessary questions, so always evaluate if they are relevant and pertinent.
 
 In sum, having successful communications depends on several aspects like knowing the people you are communicating to, the context in which you are involved, the message you need to deliver, the channel you select, the person who receives the message, the pertinence of the message, and the importance of asking the necessary questions. Always try to evaluate the way in which you communicate, and you will be able to be more successful and assertive.
+
+<br>
+<br>
+<br>
+
+## <a name="clase10">10 - Good strategies for writing in the workplace</a>
+
+In the previous reading, you learned about why is it important to communicate in the workplace. In this video we are going to concentrate on writing and how to improve your writing in the workplace.
+
+For this, we are going to analyze three structures:
+
+  + The first one is emails
+  + The second one is reports
+  + And the third one is chats
+  
+### How to write emails?
+
+  Is important to take into account that people do not always have a lot of time to read your emails. So, every time that you write one, you need to be concise and short.
+  I'm going to show you two examples of emails and we are going to decide which one is effective and which one is not.
+  
+  The first one is very very long email. As I told you, people is not ready to read this long information. It's better that you summarize your information and give it in small chunks.
+  
+  In the next one we have a better example of an effective email. Here you can see that this is short, it's concize and it's divided in to little chunks. 
+  
+  Now, how to write an email?
+  What steps can we follow in order to do it? 
+
+  Before that, I need you to take into account that sometimes we want to say a lot of things, but this things that we want to say are not always relevant, so we need to find a balance between what is it that we want to say and the things that are relevant for the person that is receiving the email. 
+
+  Here we have this steps:
+  
+  + Select a subject: Be clear and concise: 
+    _for instance in my example would be:_ Tasks and deadlines.
+    
+  + Greet according to the profile of the recipient.
+    It's not the same if you are writing to the president of the company or to a CEO of a company, or if you are writing to one of your close clolleges.
+  
+  + Explain the purpose of the email in the first part.
+    Here we have an example: 'I’m writing to you to remind you of the pending tasks and their deadlines.'
+ 
+  + The next part is very important: Write bullets to list the information. This means try to summarize the information in small chunks.
+  Here I give you some: 
+    + Determine the project’s budget.
+    + Select the team for the project.
+    + Arrange a meeting to go over plans.
+    
+  + Finally, you need to include a (_Write a_) goodbye line. 
+    Here I'm using: 'Look forward to hearing from you, Paula.'
+   
+  Of course that there are many other options that you can use. And in the file section you are going to find a list of some of the expressions that you can use throughout emails.
+  The most important thing here is to have a clear structure and be as concise as possible.
+  
+  So, here we have an example that can be useful for you in order to create your own emails.
+
+Example:
+
+>Subject: Website Project
+Hello dear David,
+I’m writing you to inform you about our meeting next week. In this
+meeting I hope we can go over the details of the project:
+- Branding
+- Landing pages
+- Payment system
+So, see you next Monday at my office 795 Folsom St, 11:00 am.
+Regards,
+Paula
+
+The first is the subject and here we use: "Website project". Then we have a greeting line that is: "Hello David" or "Hellow dear David", it shows a little bit of closeness. And then the body of the email.
+
+>I’m writing you to inform you about our meeting next week. In this
+meeting I hope we can go over the details of the project:
+- Branding
+- Landing pages
+- Payment system
+So, see you next Monday at my office 795 Folsom St, 11:00 am.
+Regards,
+Paula
+
+  As you can see here are the reset different goodbye line, but still the structure is the same. So all of this expressions you can use them and here I present to you some others useful expressions.
+
+  Useful email expressions
+
+  + If you are introducing the email: I’m writing to inform you… / I’m emailing you to..
+  + If you are answering questions: I hope this clarifies your doubts
+  + If you want the recipient to do something: I would appreciate if you…
+  + If you are expecting an answer: Look forward to hearing from you.
+  + If you have been waiting for an answer: In reference to my email on July 20th
+
+  All of this expressions you can use them according to the necessities that you have in the email that you are writing.
+
+### How to write reports
+
+  Now, as I told you, the second part it's related to reports.
+  Wherever you are, in a work place environment, you are going to be needed to present reports. 
+  So what is the structure of a good report?
+  
+  First you need to take into account that people need to understand the data of the report that you are presenting.
+  Focus on data and statistics. Additionally be able to explain, first the introduction of the report and then the conclusions that you drew from this report.
+    
+   Whenever you are presenting a report using this types of expressions is going to help you to be clear and to explain in more detail what is it that you did.
+
+When giving reports the following expressions are very useful:
+
+  If you want to assert something:
+  + Argue, assert, claim
+  
+  If you want to show conclusions:
+  + Discover, find, conclude
+
+  If you want to show findings:
+  + Demonstrate, prove, test
+
+  If you want to compare:
+  + Given that x is significantly higher than y…
+
+  So, the important thing is that; first, you identify what is the structure that you have for the report and then you can start using usefull expressions to make it more clear.
+  
+  Finally, we have: 
+  
+### How to interact in chats
+
+ And here I want you to think that chats are a little bit more informal that other types of channels, for this reazon you can use different expressions that are more common in informal communication.
+
+  **Here you have some examples of chats:**
+  When communicating at work via chat you can shorten messages through the use of expressions such as:
+    + A.s.a.p. = "As soon as possible."
+    + Idk = "I don't know"
+    + FYI = "For your information"
+    + BRB ="Be right back"
+    + OT = "Off the topic"
+    +Thx or Thks = "Thanks"
+    
+  There are many many many ways to write in chats in a shorten way. And as I told you, in the glosary this information will be expanded so you can have more ideas on how to implement this in the communications that you have via chat.
+  
+  To finish this video, I would like you to write an email in which you apply to a job position. 
+  The idea is that you recycle not just the expressions that we learned in this lesson but also the expressions that you learnt in the previous units. The idea is that you can talk to about yourself and describe yourself using all this vocabulary.
+  Remember to be concise and short and also you can share it in the discussion board where we all will be checking your email and giving you feedback. 
+
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase11">11 - Making presentations in the workplace</a>
+
+<br>
+<br>
+<br>
+
+## <a name="clase12">12 - Understand and apply computer ethics</a>
