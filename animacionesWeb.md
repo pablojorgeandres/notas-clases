@@ -1389,6 +1389,40 @@ React activa (crea/genera) un servidor local para nuestra aplicación y nos abre
 
 ## <a name="clase31">Estructura de proyectos con React</a>
 
+ Después de la instalación local y de iniciar ```npm``` revisando los archivos del nuevo proyecto creado, podemos ver que entre otros archivos ha creado una carpeta ```public``` y otra ```src```.
+
+ En ```public``` se encuentra el archivo ```index.html``` que será el archivo que compile nuestro código dentro de su elemento ```<div id="root"></div>```.
+
+ En ```src``` se encuentran los archivos sobre los que trabajaremos.
+ 
+ + index.js - será el enlace con nuestra aplicación. Aquí se encuentra el componente _**App**_ y el import del archivo css, a demás del ```getElementById()``` que lo enlaza con el elemento **root** en ```index.html```.
+ 
+index.js:
+
+```react
+
+  import React from 'react';
+  import ReactDOM from 'react-dom';
+  import './index.css';
+  import App from './App';
+  import * as serviceWorker from './serviceWorker';
+
+  ReactDOM.render(<App />, document.getElementById('root'));
+
+  // If you want your app to work offline and load faster, you can change
+  // unregister() to register() below. Note this comes with some pitfalls.
+  // Learn more about service workers: http://bit.ly/CRA-PWA
+  serviceWorker.unregister();
+
+```
+
+React (línea 1) nos permite crear componentes. - ```<App />```
+ReactDOM (línea 2) nos aporta el método ```.render()``` que introduce el componente generado ```<App />``` dentro del elemento ```getElementById('root')``` en ```index.html```.
+Este _componente base_ ```<App />``` será donde iremos incorporando el nuevo arbol de componentes que vallamos generando para nuestro proyecto.
+  
+El archivo App.css (import en línea 4 de index.js) contiene los estilos del _componente base_.
+
+
 <br>
 
 [Volver al índice](#index)
