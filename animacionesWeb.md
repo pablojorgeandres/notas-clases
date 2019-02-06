@@ -84,6 +84,9 @@
 ## <a name="clase1">Bienvenido al curso</a>
 
 
+<br>
+
+[Volver al índice](#index)
 
 <br>
 <br>
@@ -106,6 +109,11 @@ La especificación de CSS 3 nos trae:
   + Transitions
   + Transform 
   + Animations
+
+
+<br>
+
+[Volver al índice](#index)
 
 <br>
 <br>
@@ -178,6 +186,11 @@ Ej:
 
 
 ```
+
+
+<br>
+
+[Volver al índice](#index)
 
 <br>
 <br>
@@ -288,6 +301,10 @@ Ej:
 
 ```
 
+<br>
+
+[Volver al índice](#index)
+
 
 <br>
 <br>
@@ -340,6 +357,10 @@ Ejemplo de sintaxis:
 
 ```
 
+
+<br>
+
+[Volver al índice](#index)
 
 <br>
 <br>
@@ -473,6 +494,11 @@ Ej:
 
 ![image](https://developerathome.tk/Store/images/CSS3Drotate.gif)
 
+
+<br>
+
+[Volver al índice](#index)
+
 <br>
 <br>
 <br>
@@ -534,6 +560,11 @@ La propiedad _translate3d()_ nos permite manipular todos los ejes a la vez:
 ```
 
 <br>
+
+[Volver al índice](#index)
+
+
+<br>
 <br>
 <br>
 
@@ -559,6 +590,10 @@ La propiedad _translate3d()_ nos permite manipular todos los ejes a la vez:
     transform: scale(.5)
 
 
+
+<br>
+
+[Volver al índice](#index)
 
 <br>
 <br>
@@ -587,6 +622,10 @@ Al igual que los otros métodos de _transform_ skew tiene sus variables para cad
 
 
 ```
+
+<br>
+
+[Volver al índice](#index)
 
 
 <br>
@@ -645,6 +684,10 @@ Ej:
 
 
 <br>
+
+[Volver al índice](#index)
+
+<br>
 <br>
 <br>
 
@@ -697,6 +740,10 @@ Otras propiedades:
   + ```animation-play-state: running | paused``` detiene la animación en el momento en el que está. [Referencia](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state)
   
 
+
+<br>
+
+[Volver al índice](#index)
 
 <br>
 <br>
@@ -766,6 +813,10 @@ El parámetro que nos permite hacer esto es [```animation-timing-function```](ht
   
   
 
+
+<br>
+
+[Volver al índice](#index)
 
 <br>
 <br>
@@ -860,6 +911,12 @@ Ejemplo completo:
 
 
 ```
+
+
+<br>
+
+[Volver al índice](#index)
+
 <br>
 <br>
 <br>
@@ -903,6 +960,10 @@ Otros listeners:
   + [```animationend```](https://www.w3schools.com/jsref/event_animationend.asp)
 
 
+
+<br>
+
+[Volver al índice](#index)
 
 <br>
 <br>
@@ -1213,6 +1274,10 @@ Notar que los dos objetos van separados por una ',' simple.
 
 
 <br>
+
+[Volver al índice](#index)
+
+<br>
 <br>
 <br>
 
@@ -1250,9 +1315,179 @@ Ej (tomando el ejemplo de la clase anterior):
 
 ```
 
+[Volver al índice](#index)
+
 <br>
 <br>
 <br>
 
 ## <a name="clase19">Estás listo para certificarte</a>
+
+<br>
+
+[Volver al índice](#index)
+
+<br>
+<br>
+<br>
+
+# <a name="sec7">Contenido bonus: Animaciones en ReactJS</a>
+
+<br>
+<br>
+
+## <a name="clase29">Intro al proyecto final del curso</a>
+
+
+<br>
+
+[Volver al índice](#index)
+
+<br>
+<br>
+<br>
+
+## <a name="clase30">Configurando una aplicación en React JS</a>
+
+ReactJS es una librería de JavaScript desarrollada por facebook basada en componentes.
+En esta sección del curso aprenderemos a dominar una interfaz, crear componentes y a animarlos.
+
+### SetUp
+
+
+
+<br>
+
+[Volver al índice](#index)
+
+<br>
+<br>
+<br>
+
+## <a name="clase31">Estructura de proyectos con React</a>
+
+<br>
+
+[Volver al índice](#index)
+
+<br>
+<br>
+<br>
+
+## <a name="clase32">Animaciones con React Transicion Group</a>
+
+<br>
+
+[Volver al índice](#index)
+
+<br>
+<br>
+<br>
+
+## <a name="clase33">Llevando HTML y CSS a React JS</a>
+
+<br>
+
+[Volver al índice](#index)
+
+<br>
+<br>
+<br>
+
+## <a name="clase34">Pasando de una página estática a una dinámica con propiedades</a>
+
+<br>
+
+[Volver al índice](#index)
+
+<br>
+<br>
+<br>
+
+## <a name="clase35">Puliendo el CSS de invie</a>
+
+
+<br>
+
+[Volver al índice](#index)
+
+<br>
+<br>
+<br>
+
+## <a name="clase36">Añadiendo Cheet JS</a>
+
+
+<br>
+
+[Volver al índice](#index)
+
+<br>
+<br>
+<br>
+
+## <a name="clase37">Configurando Redux</a>
+
+
+<br>
+
+[Volver al índice](#index)
+
+<br>
+<br>
+<br>
+
+## <a name="clase38">Animando las guitarras</a>
+
+
+<br>
+
+[Volver al índice](#index)
+
+<br>
+<br>
+<br>
+
+## <a name="clase39">Transición en los Cards de Guitarras</a>
+
+
+
+<br>
+
+[Volver al índice](#index)
+
+<br>
+<br>
+<br>
+
+## <a name="clase40">Animación de entrada y salida en la portada</a>
+
+
+
+<br>
+
+[Volver al índice](#index)
+
+<br>
+<br>
+<br>
+
+## <a name="clase41">Animando el background de la portada</a>
+
+
+
+<br>
+
+[Volver al índice](#index)
+
+<br>
+<br>
+<br>
+
+## <a name="clase42">Multiplicando y animando los corazones</a>
+
+
+[Volver al índice](#index)
+
+### [Cierre del Curso](#clase43)
 
