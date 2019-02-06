@@ -1351,8 +1351,31 @@ Ej (tomando el ejemplo de la clase anterior):
 
 ReactJS es una librería de JavaScript desarrollada por facebook basada en componentes.
 En esta sección del curso aprenderemos a dominar una interfaz, crear componentes y a animarlos.
+En el mundo de ECMAScript hay funciones no soportadas por todos los navegadores. Es sobre todo por este aspecto que utilizamos librerías y frameworks. 
+
 
 ### SetUp
+
+Para crear una aplicación de ReacJS tengo que instalarlo primero para generar el entorno de desarrollo.
+Esto lo hacemos con ```npm``` a travez del ```terminal``` por línea de comandos. 
+[Aquí](https://facebook.github.io/create-react-app/) la documentación.
+
+```
+  npx create-react-app my-app
+  
+```
+```
+  cd my-app
+
+```
+```
+  npm start 
+
+```
+React activa (crea/genera) un servidor local para nuestra aplicación y nos abre una ventana de bienvenida.
+
+
+
 
 
 
