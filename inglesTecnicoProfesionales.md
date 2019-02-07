@@ -1110,6 +1110,114 @@ When giving reports the following expressions are very useful:
 
 ## <a name="clase11">11 - Making presentations in the workplace</a>
 
+ So, whenever you are at the work you are going to need to communicate your ideas orally, for instance when you make presentations.
+ Presentations always need to have a structure and you need to actually think very well what is it that you are going to communicate.
+ 
+ In this video I am going to show you how to structure your presentations and how to use specific vocabulary and expressions to create your presentations.
+ 
+ + The first thing that you need to decide is what is the structure that you are going to follow and also the topics that you are going to cover.
+ + After that you need to decide what is the sequence that you are going to present.
+ + And finally you are going to think about what is the conclusion that this presentation leads to.
+
+
+>First, we need to structure the presentation, for this answer
+the following questions:
+- What topics do you want to cover?
+- What is the sequence that you need to follow to be clear?
+- What is the result or the conclusion of your presentation?
+ 
+ 
+There are some expressions that you can use for this.
+For example here we have the following expressions:
+
+  >Second, you need to start working on the opening of your
+presentation, for this you can use the following expressions:
+
+  - To begin…
+
+  - On behalf of…
+
+  - For starters…
+ 
+ You need to decide how is it that you are going to start your presentation.
+ 
+ If it is a very formal presentation I would suggest that you use terms like:
+ 
+  + On behalf of our organization.
+
+ Or if you are going to present something that is not as formal, you can use expressions for instanse like:
+
+  + For starters...
+ 
+ Here I present to you an example that can useful and that you can adapt to your presentations.
+ 
+ An example could be:
+
+```
+    
+    To begin I would like to tell you about the experiment that we
+    carried out in the product department. We run some tests with
+    users who saw different versions of the platform. In here we
+    wanted to identify the things that made users be more
+    engaged with the platform. 
+
+```
+ 
+ As you can see here, it's not just the beginning of the presentation but you start telling your audience what is it that you did.
+ 
+ Sometimes we present experiments that we carried out in different departments and this is what we are doing here. For this is very important that you are careful with the conjugations of the verbs that you are using, especially because the experiments were run in the past tense.
+ 
+ So, here, as you can see, we are describing what were the actions that the department took and what were the things that we did during this experiment. 
+ 
+ So, after you have described what is it that you did in the experiment or whatever it is that you are presenting, you are going to be more detailed in the things that you found througout your experiment.
+ For this, here, I present you some expressions that are useful for you in order to give count of whatever you did in your experiment. 
+
+  **Body:**
+
+```
+  After having described the experiment or treatment you
+  developed, you can start to present conclusions. For this, you
+  might need some expressions such as the following:
+  
+    - Throughout this experiment we discovered that…
+
+    - Also, we identified trends that showed us that…
+
+    - The data revealed that…
+
+
+```
+
+ So, the important thing here is that you use expressions and terms that show the audience that you know exactly what you're talking about and that you have analyzed the data as well.
+ 
+ In the end you need to present what is it that you found in the experiment and how your team and the company can take action upon it.
+ 
+
+**Conclusion:**
+
+```
+
+    In the end, you need to present the conclusions of your experiment and the further actions that you might take. In this section you can use phrases as:
+    
+      - With all this information, we have concluded that…
+ 
+      - It can be assumed that…
+ 
+    
+    For further actions you can use:
+    
+      - It is necessary that we…
+    
+      - There are some things the company can do…
+
+```
+
+ And that is precisely the task for this video.
+ You are going to create a presentation with all the vocabulary and structures that you have learnt, and you are going to upload it in a youtube video. Then you can share it in the discussion board where everybody can give you feedback.
+ 
+ Remember to use vocabulary to have a clear structure and also pay a lot of attention to your pronunciation. We will give you feedback and you will identify the things that you can improve.
+
+
 <br>
 <br>
 <br>
