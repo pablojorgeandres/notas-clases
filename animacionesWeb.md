@@ -1420,9 +1420,61 @@ React (línea 1) nos permite crear componentes. - ```<App />```
 ReactDOM (línea 2) nos aporta el método ```.render()``` que introduce el componente generado ```<App />``` dentro del elemento ```getElementById('root')``` en ```index.html```.
 Este _componente base_ ```<App />``` será donde iremos incorporando el nuevo arbol de componentes que vallamos generando para nuestro proyecto.
   
-El archivo App.css (import en línea 4 de index.js) contiene los estilos del _componente base_.
+El ```index.css``` (import línea 3 de index.js) tiene estilos para el _body_. 
+El archivo App.js (import en línea 4 de index.js) contiene el mismo _componente base_ a demás de la importación del archivo ```App.css``` que tiene los estilos propios del componente base. 
+Una particularidad a notar en este archivo CSS es que los nombres de las clases comienzan con mayúsculas (.App), esto obedece una convención para escribir _componentes_ de JS, ya que al fin y al cabo los _componentes_ son clases (```class```) de JavaScript y estas deberían comenzar con mayúsculas. 
+
+Otra convención es el hecho de nombrar las clases CSS como subclases del elemento padre anteponiendo el nombre de la clase más un guión medio antes del estilo del nuevo objeto html.
 
 
+```html
+
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p className="App-paragraph1">
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          .
+          .
+          .
+
+          
+```
+
+Archivo ```App.js```:
+
+
+```js
+
+  import React, { Component } from 'react';
+  import logo from './logo.svg';
+  import './App.css';
+
+  class App extends Component {
+    render() {
+        return (
+          <div className="App">
+          .
+          .
+          .
+
+```
+
+ En línea 1 importo _React_ y _**{ Component }**_ que es un método dentro de _React_ nos va a permitir crear la clase _App_ (línea 5).
+
+ Los elementos tienen un método principal que es _**render()**_. 
+ _**render()**_ va a renderizar la UI de nuestro componente, o lo que podríamos llamar el código HTML de nuestro mismo componente pero que en ReactJS se llama propiamente _**JSX**_.
+ Este _**JSX**_ nos permite escribir código HTML y a demás introducir variables u objetos siempre que lo hamos entre llaves.
+ 
+  
+        <img    src={logo}    className="App-logo" alt="logo" />
+ 
+ 
+ Otro punto importante es cerrar siempre los tags simples de html como el ejemplo anterior que es una imagen. Si la pusieramos sin el 'slash' daría un error.
+ 
+ Otro data particular es que el compilador de ```npm``` refresca automáticamente el browser cada vez que salvamos cambios en nuestro proyecto.
+ 
 <br>
 
 [Volver al índice](#index)
