@@ -1485,6 +1485,237 @@ Archivo ```App.js```:
 
 ## <a name="clase32">Animaciones con React Transicion Group</a>
 
+ Para manipular animaciones con CSS, React tiene una dependencia (add-on) llamado [ReactCSSTransitionGroup](https://reactjs.org/docs/animation.html).
+
+ Para instalar este Add-On detengo la ejecución del servidor locar en el terminal y luego, dentro de la misma carpeta del proyecto:
+
+ _Instalación del pack febrero 2019 con npm. Documentación [aquí](https://www.npmjs.com/package/react-addons-css-transition-group)_
+
+ Instalación:
+
+``` 
+
+      npm install --save react-transition-group@1.x
+  
+
+```
+
+Importar:
+
+```
+
+      import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+
+      <CSSTransitionGroup>
+    	</CSSTransitionGroup>
+
+
+```
+
+ Luego de instalar e importar el Add-On puedo manipular este nuevo componente utilizando el nombre asignado en ```import``` como un tag (como se muestra en el código inmediatamente anterior).
+
+ Este componente tiene sus propiedades que nos permiten configurar las animaciones.
+ 
+ Algunas:
+
+```
+  
+        <ReactCSSTransitionGroup
+          transitionName="animation"
+          transitionEnterTimeout={300}
+          transitionLeaveTimeout={300}
+        >
+
+
+```
+
+Puedo importar nuevas imágenes o elementos importándolos en archivo App.js.
+
+Ej:
+
+```
+  
+  import logo from './logo.png'
+  
+
+```
+
+Y después incorporarlos al código JSX con llaves:
+
+
+```
+
+  <img src={logo} className="App-logo" alt="logo" />
+
+
+```
+
+En App.css puedo invocar el nombre asignado al componente con la propiedad ```transitionName``` y generar el ```@keyframes``` para animar el componente.
+
+
+App.js:
+
+```
+
+        <ReactCSSTransitionGroup
+          transitionName="myanimation"
+          transitionEnterTimeout={300}
+          transitionLeaveTimeout={300}
+          transitionAppear={false} // default
+        >
+          <img src={logo} className="App-logo" alt="logo" />
+        </ReactCSSTransitionGroup>
+
+
+```
+
+App.css:
+
+```
+
+        @keyframes myanimation {
+          0%{
+          }
+          100%{
+          }
+        }
+
+```
+
+ El ```className``` en el elemento (<img className="App-logo"> en este caso) nos indica qué estilo modificar para cargar el nombre de la animación.
+
+ Por ejemplo, para animar dos objetos, uno 'A' que está por defecto y otro 'B' que aparece al desaparecer 'A'.
+ El elemento 'A' tomará el ```transitionLeaveTimeout``` y el 'B' ```transitionEnterTimeout```.
+ 
+ Al declarar y darle estilo a las animaciones debo usar los _class names_ de convención que responderán a los momentos de la animación y al ```transitionName``` dado:
+
+
+```
+  
+  .myanimation {}
+  .myanimation-enter{ /* estado inicial de entrada */ }
+  .myanimation-enter-active{ /* estado inicial de entrada */ }
+  .myanimation-leave{ /* estado inicial de salida */ } 
+  .myanimation-leave-active{ /* estado final de salida */ }
+
+
+```
+
+  Para que suceda efectivamente la animación y el elemento cambie puedo ahora, agregando un detector de eventos, un botón en este caso.
+  Para escuchar eventos dentro de ReactJS puedo utilizar cualquier [_SyntheticEvent_](https://reactjs.org/docs/events.html) de React. En este caso utilizamos el evento ```onClick```. 
+  A la vez tengo que 'atar' el evento al listener con un ```bind()```.
+
+```javascript
+
+        <ReactCSSTransitionGroup
+          transitionName="myanimation"
+          transitionEnterTimeout={1000}
+          transitionLeaveTimeout={1000}
+        >
+          <img src={logo} className="App-logo" alt="logo" />
+        </ReactCSSTransitionGroup>
+        <button onClick={this.onClick.bind(this)}>click me!</button>
+
+
+```
+
+  Por fuera de ```render()``` pero dentro de la instancia de la clase llamo al listener:
+  
+```javascript
+
+  class App extends Component {
+    onClick() {
+      ...
+    }
+    render(){...
+
+```
+
+ Lo que puedo animar es un valor dinámico dentro del componente. Para esto tengo que declarar cuál va a ser ese valor dinámico. Y a la vez, este valor dinámico puede ser un estado del componente.
+ Esta declaración la hago (inicializo) ```state``` (como un objeto de js) antes del listener.
+ 
+```
+
+  
+  class App extends Component {
+    state = {
+      logo: logo,
+    }
+    onClick() {
+      ...
+    }
+    render(){...
+
+
+```
+ 
+ Cambio el nombre de _{logo}_ en el tag img por el del **estado** de ese _{logo}_:
+ 
+```javascript
+
+        <ReactCSSTransitionGroup
+          transitionName="myanimation"
+          transitionEnterTimeout={1000}
+          transitionLeaveTimeout={1000}
+        >
+        
+            <img src={this.state.logo} className="App-logo" alt="logo" />
+        
+        </ReactCSSTransitionGroup>
+        
+        <button onClick={this.onClick.bind(this)}>click me!</button>
+
+
+
+``` 
+ 
+ Entonces ahora puedo cambiar ese {this.state.logo} por cualquier otro objeto, previamente importado en App.js en el evento con ```this.setState({})```.
+
+
+```
+
+  
+  import logoPlatzi from import logoPlatzi from './platzi.png';
+
+  class App extends Component {
+    state = {
+      logo: logo,
+    }
+    onClick() {
+      this.setState({
+        logo: logoPlatzi,
+      })
+    }
+
+
+``` 
+ 
+ A la vez, para que la animación funcione tengo que declarar mi animación como animable. Esto lo hago usando el keyword ```key``` declarando que este mismo es dinámico tal como el estado **dentro del tag img**. 
+ Por convención, dentro de ReactJS las animaciones serán detectadas por este ```key```.
+
+```
+ 
+          <ReactCSSTransitionGroup
+          transitionName="myanimation"
+          transitionEnterTimeout={1000}
+          transitionLeaveTimeout={1000}
+        >
+        
+            <img 
+                key={this.state.logo}
+                src={this.state.logo} 
+                className="App-logo" 
+                alt="logo" 
+            />
+        
+        </ReactCSSTransitionGroup>
+        
+        <button onClick={this.onClick.bind(this)}>click me!</button>
+ 
+ 
+```
+
+
 <br>
 
 [Volver al índice](#index)
