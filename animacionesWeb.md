@@ -1695,7 +1695,7 @@ App.css:
 
 ```
  
-          <ReactCSSTransitionGroup
+        <ReactCSSTransitionGroup
           transitionName="myanimation"
           transitionEnterTimeout={1000}
           transitionLeaveTimeout={1000}
