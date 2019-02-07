@@ -1464,8 +1464,8 @@ Archivo ```App.js```:
  En línea 1 importo _React_ y _**{ Component }**_ que es un método dentro de _React_ nos va a permitir crear la clase _App_ (línea 5).
 
  Los elementos tienen un método principal que es _**render()**_. 
- _**render()**_ va a renderizar la UI de nuestro componente, o lo que podríamos llamar el código HTML de nuestro mismo componente pero que en ReactJS se llama propiamente _**JSX**_.
- Este _**JSX**_ nos permite escribir código HTML y a demás introducir variables u objetos siempre que lo hamos entre llaves.
+ _**render()**_ va a renderizar la UI de nuestro componente, o lo que podríamos llamar el código HTML de nuestro mismo componente pero que en ReactJS se llama propiamente [_**JSX**_](https://reactjs.org/docs/introducing-jsx.html).
+ Este _**JSX**_ nos permite escribir código HTML y a demás introducir variables, objetos, mátodos y/o código JavaScript siempre que lo hagamos entre llaves.
  
   
         <img    src={logo}    className="App-logo" alt="logo" />
