@@ -1245,12 +1245,11 @@ Listen to the lecture and answer the following questions according to the exerci
   Right now you are going to listen and take notes to answer the questions.
   
 
->  There are many ways in which the internet, maybe dangerous for peoples privacy.
-  As in TV series we are exposed to being hacked, being victims of internet fraud, have our identity duplicated and more. Therefor it is necesary for everyone who uses technology to learn how to protect their information so they avoid attacks and hacks from people with cruel intentions.
-  Passwords needs to be our first concern. In numerous occations, people complain about their passwords being robbed, they do not realize that their are not careful enough with their privacy. When they go to the ATM they do not cover their password, they are not atentive of their card when making a purchase or they simply keep their pass on a notepad on their cellphones.
-  In adition we need to be aware of the permissions we give to the apps we use. Lately, we have seen that social media is showing us ads from the things we discuss about in our conversations.
+>  There are many ways in which the internet, may be dangerous for people's privacy. As in TV series we are exposed to being hacked, being victims of internet fraud, have our identity duplicated and more. Therefore it is necessary for everyone who uses technology to learn how to protect their information so they avoid attacks and hacks from people with cruel intentions.
+  Passwords needs to be our first concern. In numerous occasions, people complain about their passwords being robbed, they do not realize that their are not careful enough with their privacy. When they go to the ATM they do not cover their password, they are not attentive of their card when making a purchase or they simply keep their pass on a notepad on their cell phones.
+  In addition we need to be aware of the permissions we give to the apps we use. Lately, we have seen that social media is showing us ads from the things we discuss about in our conversations.
   Is normal to see this type of things when we have give permission to the app to access the microphone of our cellphone. The same with the camera from our computer or our cell.
-  Finally, it is necessary to remmember that computer security and ethics is "everyone matter". All people can be victims of fraud and harrasement. It is important that we all collaborate to avoid this problems and reject this type of behaviors.
+  Finally, it is necessary to remember that computer security and ethics is "everyone matter". All people can be victims of fraud and harassment. It is important that we all collaborate to avoid this problems and reject this type of behaviors.
   
   
   
@@ -1262,6 +1261,7 @@ Listen to the lecture and answer the following questions according to the exerci
   - Why is it necessary to be careful when we give permission to our apps?
 
   Share your answers in the discussion board and we'll all give you feedback.
+
 
 
 
