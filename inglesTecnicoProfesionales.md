@@ -1223,3 +1223,47 @@ presentation, for this you can use the following expressions:
 <br>
 
 ## <a name="clase12">12 - Understand and apply computer ethics</a>
+
+Hello again.
+So, in this video we are going to concentrate on your listening skill. 
+
+What is it that we are going to be talking about?
+The idea is that you listen to the lecture and unswer the following questions according to the exercise.
+
+
+```
+
+Listen to the lecture and answer the following questions according to the exercise:
+
+  - What crimes are most common in the techworld?
+  - Why is it important to protect our information?
+  - Why are so many people victims of internet crime?
+  - Why is it necessary to be careful when we give permission to our apps?
+
+
+```
+  Right now you are going to listen and take notes to answer the questions.
+  
+
+>  There are many ways in which the internet, maybe dangerous for peoples privacy.
+  As in TV series we are exposed to being hacked, being victims of internet fraud, have our identity duplicated and more. Therefor it is necesary for everyone who uses technology to learn how to protect their information so they avoid attacks and hacks from people with cruel intentions.
+  Passwords needs to be our first concern. In numerous occations, people complain about their passwords being robbed, they do not realize that their are not careful enough with their privacy. When they go to the ATM they do not cover their password, they are not atentive of their card when making a purchase or they simply keep their pass on a notepad on their cellphones.
+  In adition we need to be aware of the permissions we give to the apps we use. Lately, we have seen that social media is showing us ads from the things we discuss about in our conversations.
+  Is normal to see this type of things when we have give permission to the app to access the microphone of our cellphone. The same with the camera from our computer or our cell.
+  Finally, it is necessary to remmember that computer security and ethics is "everyone matter". All people can be victims of fraud and harrasement. It is important that we all collaborate to avoid this problems and reject this type of behaviors.
+  
+  
+  
+  So, we have finished our listening exercise. Remember that there are four questions that you need to answer in this exercise.
+  
+  - What crimes are most common in the techworld?
+  - Why is it important to protect our information?
+  - Why are so many people victims of internet crime?
+  - Why is it necessary to be careful when we give permission to our apps?
+
+  Share your answers in the discussion board and we'll all give you feedback.
+
+
+
+
+
