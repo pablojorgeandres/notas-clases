@@ -1263,7 +1263,91 @@ Listen to the lecture and answer the following questions according to the exerci
   Share your answers in the discussion board and we'll all give you feedback.
 
 
+<br>
+<br>
+<br>
 
+# <a name="sec3">Section III - How to create content to enhance your professional profile</a>
+
+<br>
+<br>
+
+## <a name="clase13"> 13 - Creating content for enhancing your professional profile </a>
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase14"> 14 - How to use English in your social networks? </a>
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase15"> 15 - Writing good blog posts </a>
+
+
+<br>
+<br>
+<br>
+
+# <a name="sec4"> Section IV - English for programming, marketing and business </a>
+
+<br>
+<br>
+
+## <a name="clase16"> 16 - Vocabulary for Programming </a>
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase17"> 17 - Listening Exercise: Programming Languages </a>
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase18"> 18 - Best strategies to learn English </a>
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase19"> 19 - Vocabulary for Marketing </a>
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase20"> 20 - Marketing strategies </a>
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase21"> 21 - How to create good copy for marketing campaigns </a>
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase22"> 22 - Business vocabulary overview </a>
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase23"> 23 - Tips for creating a successful pitch in English </a>
 
 
 
