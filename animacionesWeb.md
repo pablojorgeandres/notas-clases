@@ -1886,6 +1886,121 @@ Luego importo imágenes y demás recursos y listo.
 
 ## <a name="clase34">Pasando de una página estática a una dinámica con propiedades</a>
 
+**Redux**
+
+ Redux es una librería de JavaScript que sirve para manipular componentes dinámicos.
+ Puede usarse sola aunque es normalmente usada con React o Angular.
+
+ Para instalar([documentación](https://www.npmjs.com/package/react-redux)):
+
+```
+
+    npm install --save react-redux
+
+
+```
+
+ Ahora podemos convertir los datos estáticos de los elemntos HTML en dinámicos.
+ 
+ Para esto genero un array con los datos que necesito. Por ejemplo en un menú hecho con listas puedo aislar cada componente del menú por link y título y luego lo imprimo iterando el array que genero.
+  
+ Primero genero el array dentro de una variable _const_ en el archivo principal _my-app.js_ donde importo imágenes y demás elementos antes de la declaración del class principal.
+
+  
+```
+
+import guitarraAcustica from './images/invie-acustica.png'
+import guitarraClasica from './images/invie-classic.png'
+
+const data = {
+  menu : [
+    {
+      href: 'index.html',
+      title: 'Home'
+    },
+    {
+      href: '#guitarras',
+      title: 'Guitarras'
+    },
+    {
+      href: 'precios.html',
+      title: 'Precios'
+    }
+  ],
+  logoPortada: logoPortada,
+  guitarras: [{
+    src: guitarraAcustica,
+    alt: 'Guitarra Invie Acustica',
+    title: 'Invie Acustica',
+    features: [
+        'Estilo vintage',
+        'Madera pura',
+        'Incluye estuche invisible de aluminio'
+    ]
+  },
+  {
+    src: guitarraClasica,
+    alt: 'Guitarra Invie Classic',
+    title: 'Invie Classic',
+    features: [
+        'Estilo vintage',
+        'Liviana',
+        'Inicia tu camino como Rockstar'
+    ]    
+  }],
+}
+
+
+```
+
+A través de los tags de las secciones paso los parámetros:
+
+
+```
+   
+    class App extends Component {
+      render() {
+        return (
+          <section className="Invie">
+            {/* Sección1 */}
+            <Seccion1 menu={data.menu} />
+            {/* Sección2 */}
+            <Seccion2 guitarras={guitarras} />
+            {/* Sección3 */}
+            <Seccion3 />
+          </section>
+        );
+      }
+    }
+
+    export default App; 
+
+
+```
+
+Y cada componente recibe los datos del array precedido por ```{this.props. ... }```:
+
+```
+
+      <nav class="menu" id="menu">
+          <ul>
+            { this.props.menu.map( (item) => { 
+              return (                      
+                <li>
+                    <a href="{item.href}">{item.title}</a>
+                </li> 
+              )  
+            })}
+          </ul>
+      </nav>
+
+
+
+```
+
+Itero el array con la propiedad de JS ```.map()``` para imprimir cada valor del array.
+
+
 <br>
 
 [Volver al índice](#index)
