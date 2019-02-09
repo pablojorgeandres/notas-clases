@@ -1324,12 +1324,13 @@ Creating content is not a matter of one time, one week or one month, if you want
 
 ## <a name="clase14"> 14 - How to use English in your social networks? </a>
 
+
   Using Social Networks can be very useful when you are looking for a job.
-  Remember that employers, when are looking for a specific talent, they look for as many skills as possible and they look in as many spaces as they can. 
-  So, is adviceable to have our social networks updated and with content that can show them that we are very good professionals.
+  Remember that employers, when are looking for a specific talent, they look for as many skills as possible, and they look in as many spaces as they can. 
+  So, is advice able to have our social networks updated and with content that can show them that we are very good professionals.
 
   In this video, I am going to show you two things.
-  First; how to create content for specific social networks and second; I'm going to give you some tips on how to avoid problems with english miss used.
+  First; how to create content for specific social networks and second; I'm going to give you some tips on how to avoid problems with English misused.
   
   ### facebook
   
@@ -1338,7 +1339,10 @@ Creating content is not a matter of one time, one week or one month, if you want
   Here, I give you some expressions that are very useful and also catchy so you can engage your audience.
   
    + Be short
-   + Use expressions like: Today I learned that... ; I am very happy to participate in these events; I had the opportunity of…
+   + Use expressions like: 
+		+ Today I learned that...
+		+ I am very happy to participate in these events
+		+ I had the opportunity of…
   
   This are very short expressions that will catch your audience.
   
@@ -1347,39 +1351,38 @@ Creating content is not a matter of one time, one week or one month, if you want
    + I’m very happy to participate in events like this one, here
 you meet people and share with brilliant minds.
    + This weekend I had the opportunity of presenting my talk
-on strat-up creation. Great audience! We learned a lot.
+on stratup creation. Great audience! We learned a lot.
   
-  And remember to use alwais images to accompany this kind of posts.
+  And remember to use always images to accompany this kind of posts.
   
   ### Twitter
   
-  Then, twitter is very very specific and you have to be very careful when you post on twiter.
-  Here you know that you only have 140 characters to express this idea. So, it's very important that you avoid unnecesary words, that you avoid distracting expressions, and you focus on one thing only.
+  Then, twitter is very very specific and you have to be very careful when you post on Twitter.
+  Here you know that you only have 140 characters to express this idea. So, it's very important that you avoid unnecessary words, that you avoid distracting expressions, and you focus on one thing only.
   
-  Share information that is useful for the comunity or the audience that you are trying to reech.
+  Share information that is useful for the community or the audience that you are trying to reach.
   
   ### LinkedIn
   
-  LinkedIn is completely different, from other social media, here you can recycle everything you have learn in this course and you can apply everything that you've learn when you were creating your Curriculum Vitae. 
-  Be very careful with your professional description because this is the first thing that employeers look at. You can use your professional profile as an example to start crafting this professional description on LinkedIn.
+LinkedIn is completely different, from other social media, here you can recycle everything you have learned in this course and you can apply everything that you’ve learned when you were creating your Curriculum Vitae.
+Be very careful with your professional description because this is the first thing that employers look at. You can use your professional profile as an example to start crafting this professional description on LinkedIn.
+
+Now, I am going to give you some tips to avoid having problems with English in your social networks.
   
-  Now, I am going to give you some tips to avoid having problems with english in your social networks.
-  
-  + 1 - _**be extra careful with spelling**_.
-  >I have seen that meny people try to share things on facebook but they make mistakes with spelling, so, it's very adviceable that you check everything before you post it on your social media. Not just because employeers may see your mistakes, but bacause people are going to feel that you don't know how to use the language.
+  + 1 - _**Be extra careful with spelling**_.
+   >I have seen that many people try to share things on facebook, but they make mistakes with spelling, so, it’s very advice able that you check everything before you post it on your social media. Not just because employers may see your mistakes, but because people are going to feel that you don’t know how to use the language.
   
   + 2 - _**Have a clear and appealing professional description**_
-  > This is not just for LinkedIn, also you can have this on twitter and on facebook and even in instagram if you want to sha
-  re it. But it's important that you catch people with those talents that are very special to you.
+  > This is not just for LinkedIn, also you can have this on twitter and on Facebook and even in Instagram if you want to share it. But it's important that you catch people with those talents that are very special to you.
   
-  + 3 - _**Check your vocabulary use: Adjectives and Vervs**_
-  > If you use a lot of adjectives, pay attention to them so you don't start reapiting and coming a little bit redundant. And with vervs try to select those strong vervs that make you look like a better professional.
+  + 3 - _**Check your vocabulary use: Adjectives and Verbs**_
+  > If you use a lot of adjectives, pay attention to them so you don't start repiting and coming a little bit redundant. And with verbs try to select those strong verbs that make you look like a better professional.
   
   + 4 - _**Keep it professional**_
-  > If employeers can see your profile, if it's public, you need to avoid this types of posts that make you look bad. Try to alwais concentrate on showing things that are interesting and alwais try to teach your audience something. So whenever they see your social media they find something that is valuable.
+  > If employers can see your profile, if it's public, you need to avoid this types of posts that make you look bad. Try to always concentrate on showing things that are interesting and always try to teach your audience something. So whenever they see your social media they find something that is valuable.
   
   + 5 - _**Avoid informal language and abbreviations**_
-  > Specially for linked in when you are writting or when you are writing your work experience, it is very important to avoid abbreviations. It's better that you write all the words complete; do not write something like _"I would like"_ with the apostrophe 'd', but better write the complete words this make your communication more polish. And also try not to use informal language. When you use informal language people may have this felling that you are not as professional as you seem to be.
+  > Specially for linked in when you are writing or when you are writing your work experience, it is very important to avoid abbreviations. It's better that you write all the words complete; do not write something like _"I would like"_ with the apostrophe 'd', but better write the complete words this make your communication more polish. And also try not to use informal language. When you use informal language people may have this felling that you are not as professional as you seem to be.
 
 
 <br>
