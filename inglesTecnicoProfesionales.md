@@ -1299,6 +1299,21 @@ Listen to the lecture and answer the following questions according to the exerci
 
 ## <a name="clase13"> 13 - Creating content for enhancing your professional profile </a>
 
+
+>Nowadays everything is about content. Content gives you the possibility of entering into people’s lives without being intrusive. Right now, all brands, organizations and people that want to be successful create content so their audience and users feel they have something to learn. In this sense, it is important to create a content marketing strategy which allows you to touch people who surround you.
+
+> **What is the most common way to create a content strategy?**
+For starters, it is necessary to identify the type of audience you are communicating with. Knowing their profile is going to allow you to recognize the things that might or might not work with them. Consider that it’s different to be a teacher of math, than being a dev who works in San Francisco. With this in mind, you can start creating a map which includes the topics that you audience might like the most.
+
+>**There are many formats to reach your audience**
+Creating content for the audience does not need to be so rigid. In fact, you can show your audience that you have many channels to teach them things. For instance, you can create blogposts, videos, webminars, infographics, instagram stories, and more. Just make sure what the channels are used by the audience you aim to reach and start creating suitable content.
+
+> **Do it frequently**
+Creating content is not a matter of one time, one week or one month, if you want that your content strategy works you need to maintain your audience updated. To do this, it is advisable to create a calendar that helps you determine the time in which is pertinent to publish content. This can be as simple as having an excel document where you write the topics you want to cover and the dates to publish them.
+
+>These three tips are going to help you create successful content and get recognition in your work environment.
+
+
 <br>
 
 ### [Volver al índice](#title)
@@ -1309,6 +1324,47 @@ Listen to the lecture and answer the following questions according to the exerci
 
 ## <a name="clase14"> 14 - How to use English in your social networks? </a>
 
+  Using Social Networks can be very useful when you are looking for a job.
+  Remember that employers, when are looking for a specific talent, they look for as many skills as possible and they look in as many spaces as they can. 
+  So, is adviceable to have our social networks updated and with content that can show them that we are very good professionals.
+
+  In this video, I am going to show you two things.
+  First; how to create content for specific social networks and second; I'm going to give you some tips on how to avoid problems with english miss used.
+  
+  ### facebook
+  
+  When posting something on facebook, is very important to be short and concise. Remember that people don't have a lot of time to be checking on very long posts.
+  
+  Here, I give you some expressions that are very useful and also catchy so you can engage your audience.
+  
+>- Be short
+- Use expressions like: Today I learned that... ; I am very
+happy to participate in these events; I had the opportunity
+of…
+  
+  This are very short expressions that will catch your audience.
+  
+  
+  Here I show you some of the posts that I have used in my personal social media.
+  
+  > **Here I show you some examples:**
+- I’m very happy to participate in events like this one, here
+you meet people and share with brilliant minds.
+- This weekend I had the opportunity of presenting my talk
+on strat-up creation. Great audience! We learned a lot.
+  
+  
+  And remember to use alwais images to accompany this kind of posts.
+  
+  ### Twitter
+  
+  Then, twitter is very very specific and you have to be very careful when you post on twiter.
+  Here you know that you only have 140 characters to express this idea. So, it's very important that you avoid unnecesary words, that you avoid distracting expressions, and you focus on one thing only.
+  
+  Share information that is useful for the comunity or the audience that you are trying to reech.
+  
+  
+  
 <br>
 
 ### [Volver al índice](#title)
