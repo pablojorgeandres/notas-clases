@@ -1692,6 +1692,11 @@ App.css:
  
  A la vez, para que la animación funcione tengo que declarar mi animación como animable. Esto lo hago usando el keyword ```key``` declarando que este mismo es dinámico tal como el estado **dentro del tag img**. 
  Por convención, dentro de ReactJS las animaciones serán detectadas por este ```key```.
+ 
+>Post Added:
+_**key**_ es una propiedad de React que, cual id en CSS, permite a React tener identificado un elemento creado dinámicamente o alterado por el usuario.
+_**key**_ debe ser único e irrepetible por cada elemento.
+
 
 ```
  
@@ -1725,6 +1730,151 @@ App.css:
 <br>
 
 ## <a name="clase33">Llevando HTML y CSS a React JS</a>
+
+Para pasar un proyecto plano HTML, CSS y JavaScript a React repito el siguiente procedimiento.
+
+En principio creo un nuevo proyecto React en ```terminal```.
+
+```
+
+  npx create-react-app my-App
+
+
+```
+
+El siguiente paso es copiar los recursos (estilos, imágenes, etc) de mi proyecto plano en la carpeta ```src``` de mi nuevo proyecto.
+
+Luego tengo que incorporar el código HTML. Para esto tengo que generar **componentes** de React según convenga; por ejemplo por secciones.
+
+En ```index.js``` modifico _**App**_ con el nombre de mi nuevo proyecto.
+
+
+```javascript
+
+
+      import React from 'react';
+      import ReactDOM from 'react-dom';
+      import './index.css';
+      import my-App from './my-App';
+      import * as serviceWorker from './serviceWorker';
+
+      ReactDOM.render(<my-App />, document.getElementById('root'));
+
+
+```
+
+Modifico el nombre del archivo App.js por el de mi nuevo proyecto: ```my-App.js```.
+Y preparo la clase _**App**_ para importar los nuevos componentes que voy a generar para cada sección de mi archivo HTML.
+
+```javascript
+
+
+    import React, { Component } from 'react';
+    import logo from './logo.svg';
+    import './App.css';
+
+    class App extends Component {
+      render() {
+        return (
+          <section className="Invie">
+            {/* Sección1 */}
+            {/* Sección2 */}
+            {/* Sección3 */}
+          </section>
+        );
+      }
+    }
+
+    export default App;
+
+
+```
+
+Genero ahora un archivo _'.jsx'_ por cada nuevo componente (sección).
+
+```
+  
+  Seccion1.jsx
+  Seccion2.jsx
+  Seccion3.jsx
+
+
+```
+
+Los importo en _my-app.js_ y los agrego a la clase ```App``` dentro de _**'<miSección />'**_
+
+```javascript
+
+    import Seccion1 from './components/Seccion1.jsx'
+    import Seccion2 from './components/Seccion2.jsx'
+    import Seccion3 from './components/Seccion3.jsx'
+    
+    class App extends Component {
+      render() {
+        return (
+          <section className="Invie">
+            {/* Sección1 */}
+            <Seccion1 />
+            {/* Sección2 */}
+            <Seccion2 />
+            {/* Sección3 */}
+            <Seccion3 />
+          </section>
+        );
+      }
+    }
+
+    export default App;
+
+
+```
+
+La estructura básica de cada archivo '.jsx' será:
+
+```javascript
+
+  import React, { Component } from 'react'
+
+  class Seccion1 extends Component {
+    render() {
+      return(
+        { /* mi código HTML/JSX  */ }
+      )
+    }
+  }
+
+  export default Seccion1
+
+```
+
+Cuando copio el código HTML puro debo recordar borrar todos los comentarios o readaptarlos a _formato.jsx_.
+Otra palabra clave de js es _**class**_ que tiene que cambiar a _**className**_. Aunque en enero de 2019 funciona _**class**_, envía ```warnings``` en consola. 
+
+(Cuál es buena práctica al respecto???)
+
+Luego importo imágenes y demás recursos y listo.
+
+
+
+```
+
+
+  import React, { Component } from 'react'
+  import Image1 from '../images/image1.png'
+
+  class Seccion1 extends Component {
+    render() {
+      return(
+        <img src={Image1}>
+      )
+    }
+  }
+
+  export default Seccion1
+
+
+```
+
 
 <br>
 
