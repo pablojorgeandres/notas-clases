@@ -1337,22 +1337,17 @@ Creating content is not a matter of one time, one week or one month, if you want
   
   Here, I give you some expressions that are very useful and also catchy so you can engage your audience.
   
->- Be short
-- Use expressions like: Today I learned that... ; I am very
-happy to participate in these events; I had the opportunity
-of…
+   + Be short
+   + Use expressions like: Today I learned that... ; I am very happy to participate in these events; I had the opportunity of…
   
   This are very short expressions that will catch your audience.
   
-  
   Here I show you some of the posts that I have used in my personal social media.
   
-  > **Here I show you some examples:**
-- I’m very happy to participate in events like this one, here
+   + I’m very happy to participate in events like this one, here
 you meet people and share with brilliant minds.
-- This weekend I had the opportunity of presenting my talk
+   + This weekend I had the opportunity of presenting my talk
 on strat-up creation. Great audience! We learned a lot.
-  
   
   And remember to use alwais images to accompany this kind of posts.
   
@@ -1363,8 +1358,30 @@ on strat-up creation. Great audience! We learned a lot.
   
   Share information that is useful for the comunity or the audience that you are trying to reech.
   
+  ### LinkedIn
   
+  LinkedIn is completely different, from other social media, here you can recycle everything you have learn in this course and you can apply everything that you've learn when you were creating your Curriculum Vitae. 
+  Be very careful with your professional description because this is the first thing that employeers look at. You can use your professional profile as an example to start crafting this professional description on LinkedIn.
   
+  Now, I am going to give you some tips to avoid having problems with english in your social networks.
+  
+  + 1 - _**be extra careful with spelling**_.
+  >I have seen that meny people try to share things on facebook but they make mistakes with spelling, so, it's very adviceable that you check everything before you post it on your social media. Not just because employeers may see your mistakes, but bacause people are going to feel that you don't know how to use the language.
+  
+  + 2 - _**Have a clear and appealing professional description**_
+  > This is not just for LinkedIn, also you can have this on twitter and on facebook and even in instagram if you want to sha
+  re it. But it's important that you catch people with those talents that are very special to you.
+  
+  + 3 - _**Check your vocabulary use: Adjectives and Vervs**_
+  > If you use a lot of adjectives, pay attention to them so you don't start reapiting and coming a little bit redundant. And with vervs try to select those strong vervs that make you look like a better professional.
+  
+  + 4 - _**Keep it professional**_
+  > If employeers can see your profile, if it's public, you need to avoid this types of posts that make you look bad. Try to alwais concentrate on showing things that are interesting and alwais try to teach your audience something. So whenever they see your social media they find something that is valuable.
+  
+  + 5 - _**Avoid informal language and abbreviations**_
+  > Specially for linked in when you are writting or when you are writing your work experience, it is very important to avoid abbreviations. It's better that you write all the words complete; do not write something like _"I would like"_ with the apostrophe 'd', but better write the complete words this make your communication more polish. And also try not to use informal language. When you use informal language people may have this felling that you are not as professional as you seem to be.
+
+
 <br>
 
 ### [Volver al índice](#title)
