@@ -1638,6 +1638,37 @@ All these strategies can help you improve the quality of your marketing campaign
 
 ## <a name="clase22"> 22 - Business vocabulary overview </a>
 
+
+**Organize:** To arrange something: 
+	_People need to organize their agendas to attend the meeting._
+
+**Competitor:** Another business that has a similar product or service:
+	_Our competitor is gaining a lot of revenue thanks to their latest campaigns._
+
+**Public Relations (PR):** The strategy a company creates to appear in relevant media:
+	_We were just interviewed by the Times, finally the Public relations strategy is paying off._
+
+**After-sales service:** It is the support that businesses provide to their clients after the purchase:
+	_The after-sales service that Platzi provides is very good, the answers are quick._
+
+**Strategy:** A plan that has been designed to achieve a goal:
+	_The inbound strategy is based on blog posts and Youtube videos._
+
+**Team:** The people that work in a company or a project:
+	_The product-team is focused on releasing the new features as soon as possible._
+
+**Headquarters:** The place where the main office of a company is located:
+	_Platzi’s Headquarters are located in Bogota._
+
+**Product:** The thing that you offer and sell to your clients:
+	_Our product is very efficient and won’t let our customers down._
+
+**Investors:** People who give money to a company to grow their business:
+	_Investors have given us 500.000 US dollars to grow our team._
+
+**Clause:** A statement in a contract:
+	_The clauses in the team’s contract show that everyone is responsible for their results._
+
 <br>
 
 ### [Volver al índice](#title)
@@ -1649,4 +1680,39 @@ All these strategies can help you improve the quality of your marketing campaign
 ## <a name="clase23"> 23 - Tips for creating a successful pitch in English </a>
 
 
++ **Take maximum 10 minutes:**
 
+Introduce yourself very shortly and go straight the point immediately. It’s recommended to make a pitch as if you were telling a story. Think that everyone loves a good story, and remember that investors get bored with spreadsheets.
+
+**Use expressions such as:**
+- I’m very excited to be here showing you our project
+- Today I’m going to present to you our amazing start-up
+
+**Explain what your product or service really is:**
+The idea is to sell your product, that’s why you need to use every minute that you have available. Remember that investors want to know how much money your product makes.
+
+**For this use the following expressions:**
+- The main characteristics of our product are:
+- The key features of our product are:
+- What is amazing about our product is:
+
+**Know the audience:**
+When preparing your pitch have a general idea of the people who will be listening to you. Research who they are and what they expect from your presentation. 
+With this information you will know the type of language and tone you can use.
+- Formal tone: On behalf of our organization, I would like to introduce our product.
+- Informal tone: I would like to tell you all about this exciting project.
+
+**Explain your marketing strategy:**
+One thing investors pay a lot of attention to is the marketing strategies companies have. This allows them to see what the projections for sales that you have and the revenue you expect to get.
+
+**Expressions:**
+- Our marketing strategies will be based on three main components
+- The marketing strategies will be outbound and inbound.
+
+**Show enthusiasm:**
+When you are presenting your pitch you need to be energetic and enthusiastic, this shows the audience that you are excited about your business and your idea.
+
+**Expressions:**
+- It’s great to have this chance
+- Our amazing product
+- The projections are fantastic
