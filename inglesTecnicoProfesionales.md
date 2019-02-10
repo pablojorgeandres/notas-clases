@@ -1535,6 +1535,50 @@ syntax
 
 ## <a name="clase19"> 19 - Vocabulary for Marketing </a>
 
+### Vocabulary for marketing
+
++ **Consumer**
++ **Brand**
++ **Cost**
++ **Distribution**
++ **Label**
++ **Launch**
++ **Market research**
++ **PR - Public Relations**
++ **Ad copy**
++ **Banner ad**
++ **Tracking**
++ **CPC - Cost Per Click**
++ **CPA - Cost Per Acquisition**
++ **LTV - Life Time Value**
++ **MRR - Monthly Recurring Revenue**
++ **Creative strategy**
++ **Demographics**
++ **Campaign Traffic**
++ **Impressions**
++ **Strategic Market Planning**
++ **Content Strategy**
++ **Google Adwords**
++ **Facebook Ads**
++ **Channels**
++ **Audience**
++ **Convert**
++ **Display**
++ **Customer Persona**
++ **Age**
++ **Service**
++ **Social media**
++ **Benefits**
++ **Business**
++ **Invest**
++ **Search**
++ **Blog posts**
++ **Email marketing**
++ **Promotions**
++ **Discounts**
++ **Updates**
++ **Killer campaigns**
+
 <br>
 
 ### [Volver al índice](#title)
@@ -1545,6 +1589,18 @@ syntax
 
 ## <a name="clase20"> 20 - Marketing strategies </a>
 
+
+There are different ways to advertise your business, you can use Google Adwords, Facebook Ads, or you can even have a content marketing strategy. The most important thing is that you identify the best channels to get to your audience and convert as much as possible. With this in mind, you need to create a plan that will allow you to reach the correct audience, create the right ads and content, display this information in the places, and ultimately make more money.
+
+The first thing to do is to describe your client or create a customer persona. In order, to do this define the type of person that will buy your product or get your service. Assign a name to your buyer persona, also think about his or her age. Then, describe the person thinking about their job position, their income, the things they like, the things they do not like, their hobbies, the reasons why they need their product, the social media they use the most, and the reasons why they wouldn’t buy your product. The benefits of doing this include knowing the type of content you need to create for that person.
+
+With all this information you can start thinking about the strategy for advertising your business. For example, if your customer persona uses Facebook, then you can invest money on Facebook Ads. On the other hand, if your customer will probably search for your product on Google, then it’s a good idea to invest money on Google Adwords. Also, consider that no matter the product you need to advertise, it is always a good idea to teach your customers through content that is relevant for them. In this sense, you can always have blog posts to promote your product, service and brand.
+
+Remember that there are other strategies that you can use to have a good relationship with your audience. One of this is email marketing, this can help your customer get register to your website, receive information about promotions and discounts, get all information about updates or product changes. Also, your company needs to pay special attention to the support you provide to customers. This means that always listening to customers and trying to solve the problems they might have is fundamental to have a successful business.
+
+All these strategies can help you improve the quality of your marketing campaigns. Remember the goal is to have a good relationship with your customer to the point in which they start loving your brand.
+
+
 <br>
 
 ### [Volver al índice](#title)
@@ -1554,6 +1610,23 @@ syntax
 <br>
 
 ## <a name="clase21"> 21 - How to create good copy for marketing campaigns </a>
+
++ **Make the subject and the first line coherent**
+  + the title needs to be short and very specific
+  + it needs to call the attention of the recipient
+  + it **must** be connected with the first line of the email
+  
++ **Keep it short and Strong**
+  + You need to fing very short copies that are effective 
+  + Long texts maybe confuse and bore your clients
+  
++ **Use "you"**
+  + it helps you to make your client get more involved
+  
++ **Know your audience**
+  + You need to point to the right audience. Is not the same a developer that a designer...
+
++ **Focus on one objective only**
 
 <br>
 
