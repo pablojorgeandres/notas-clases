@@ -2012,6 +2012,38 @@ Itero el array con la propiedad de JS ```.map()``` para imprimir cada valor del 
 ## <a name="clase35">Puliendo el CSS de invie</a>
 
 
+### CSS ```counter```
+
+Para agregar un índice en css es posible usar la propiedad ```counter```.
+
+Genero una variable en el elemento padre:
+
+```
+ul {
+    counter-reset: elems;  /* inicializar contador */
+}
+
+```
+La incremento de acuerdo a la cantidad de hijos:
+
+```
+
+	li {
+	    counter-increment: elems;
+	}
+
+
+```
+
+La imprimo antes de cada ```<li>```:
+
+```
+	li::before {
+	    content: counter(elems);
+	}
+
+```
+
 <br>
 
 [Volver al índice](#index)
