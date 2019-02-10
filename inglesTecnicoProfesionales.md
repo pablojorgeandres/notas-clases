@@ -1395,6 +1395,29 @@ Now, I am going to give you some tips to avoid having problems with English in y
 
 ## <a name="clase15"> 15 - Writing good blog posts </a>
 
+ Some people believe that writing blog posts is something from the past, but they couldn't be more wrong.
+ Actually creating content for a blog is something that can help you create a position within your community and create you a name in your field.
+ Here I am going to show you what are the steps to create very good blog posts and I'll give you some tasks for you to practice.
+ 
+ + The first thing is to select a topic that is very common to you, that you know very well and that you feel comfortable writing about. 
+ When you know what is this topic that you want to talk about it's better for you to start crafting it's structure.
+ If you are a developer for example, a frontend developer, you can talk about how to create animations or how to incorporate a design to a website. So, if you know very well the topic go ahead and start talking about it and writing about.
+
+ + The second thing that you need to do, is to identify the aspects that you are going to cover in that blog post.
+ Try to separate it in chunks, what are the parts that you are going to divide that blog post in.
+ 
+ + After that, you need to write a draft. And writing a draft is not just writing like the general ideas of your blog post; is writing every detail that you are going to incorporate there.
+ After you have this draft, you can re-read it, yourself, or you can ask another person to read it for you. That will give you some feedback and some ideas on how to improve that blog post. 
+ 
+ + Then, you need to check if your blog post is SEO friendly. This means that, if you are using the correct keywords for people to find your blog post online, also checking that you have a good title, using provocative images or external links; things that enrich your SEO. And this is something that is very important when you want to positioning your content.
+ 
+ I'm going to give you an example of bad practices when writing blog posts. 
+ So, in the link section, you are going to find the link to that blog post that is not that well written. Check it and tell me what are your opinion on this blog posts. What are the things that you would change and how would you make it better.
+ 
+ In addition to that, you have a task.
+ 
+ Write a good blog post and share it in the discussion board, then read your partners’ and give them some feedback.
+
 <br>
 
 ### [Volver al índice](#title)
