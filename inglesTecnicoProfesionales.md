@@ -1433,6 +1433,43 @@ Now, I am going to give you some tips to avoid having problems with English in y
 
 ## <a name="clase16"> 16 - Vocabulary for Programming </a>
 
+## Programming Languages
+
++ **Features**
++ **Develop**
++ **Sites**
++ **Programs**
++ **Algorithms**
++ **Scope**
++ **Steps**
++ **Flowchart**
++ **Graphical Representation**
++ **Syntax**
++ **General+purpose**
++ **Backend**
++ **Web projects**
++ **HTML**
++ **High+level**
++ **Weakly+typed**
++ **Interpreted Language**
++ **Frameworks**
++ **Libraries**
++ **Angular**
++ **React**
++ **Multiparadigm**
++ **Readable**
++ **Indentation**
++ **Code blocks**
++ **Parethesis**
++ **Brackets**
++ **Coders**
++ **Lines of code**
++ **Open source**
++ **Productive**
++ **Functional Programming**
++ **Interpretative Programming**
++ **Object+oriented**
+
 <br>
 
 ### [Volver al índice](#title)
@@ -1476,6 +1513,17 @@ Now, it is time for you to start learning the language of your preference.
 <br>
 
 ## <a name="clase18"> 18 - Best strategies to learn English </a>
+
++ ### Read the documentation
+  >If you are coding and you are also in the pursuit of learning English, the first thing you should do is to read the documentation that comes in this language. Not only it is more reliable, but is also updates and helps you learn concepts in English in a faster way.
+
+
++ ### Pay attention to the command names and the
+syntax
+  >Command names are very useful to learn vocabulary in English, this is due to the fact that most commands have a root in real and day-to-day English, for this reason it would give you the chance to learn more.
+
++ ### Interact in events and forums
+  >Sharing information with people on internet and answering questions in forums is a great way to start learning English. This allows you to learn more vocabulary and also evaluate how successful you are being. 
 
 <br>
 
