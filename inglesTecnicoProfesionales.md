@@ -1443,6 +1443,30 @@ Now, I am going to give you some tips to avoid having problems with English in y
 
 ## <a name="clase17"> 17 - Listening Exercise: Programming Languages </a>
 
+### Programming Languages
+
+There are many different programming languages, and they all have specific features that allow programmers to develop sites and programs that solve a wide range of problems. However, it is difficult to know where to begin and what language to learn first. If you are new to this field it is a good idea to explore some of the options you have to start. In here, we will talk about some of the most common elements of programming languages and some of the most used programming languages.
+
+Programmers always seek to solve problems and the first thing they can do to come out with effective solutions is to create algorithms. For this, there are some steps that a programmer needs to follow:
+
+The problem needs to be identified and limited: This means that the scope it’s clear. 
+The programmer needs to define the steps that need to be taken in order to resolve the problem. One way to have this is by creating a flowchart or a graphical representation of the steps. Then the programmer uses the languages to write the solution to the problem.
+
+Once the programmer knows how to solve the problem through the creation of an algorithm, they need to know the syntax of the language to be able to write it. Nevertheless, there are many languages that a programmer can learn. Here you are going to get familiar with the most common programming languages and their uses.
+
++ **PHP**: If you are interested in web development a good option is to use PHP which is a General Purpose Language. Usually PHP is used for creating the backend of web projects. From this language is relevant to know that it can be embedded into HTML. Although it has been criticized it has become one of the most used programming languages.
+
++ **Javascript**: These programming language it’s usually called JS and it’s one of the languages with the biggest community among devs. Javascript is a high level weakly-typed dynamic and interpreted language. It is most used in frontend development and it supports itself in several frameworks and libraries such as Angular and React.
+
++ **Python**: Python is a multi-paradigm high level and General Purpose Language. The main purpose of this language is to be a readable that’s why its syntax is simpler than in other programming languages. To accomplish this it uses indentation to identify call blocks instead of parentheses or brackets. Additionally, it allows coders to express concepts in less lines of code.
+
++ **Ruby**: Ruby is an Open Source and dynamic programming language which aims for making coders life simpler and more productive. As Python, Ruby has a simple syntax which is read in natural ways and it’s easier to write. In addition, it merger functional and interpretative programming. 
+
+Most of these languages are Object Oriented which means they all work with a paradigm that sees everything is an object that can be defined and characterized.
+
+Now, it is time for you to start learning the language of your preference. 
+
+
 <br>
 
 ### [Volver al índice](#title)
