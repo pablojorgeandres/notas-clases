@@ -2088,7 +2088,7 @@ Usaremos cheet para animar nuestros llamados _'easterEggs'_ o animaciones sorpre
 
 ## <a name="clase37">Configurando Redux</a>
 
-Ahora sí, configuramos Redux en nuestro proyecto.
+Configuramos Redux en nuestro proyecto.
 
 Vamos a trabajar en el archivo 'index.js' y ya no en el archivo del proyecto 'my-project.js' (invie.js).
 
@@ -2193,9 +2193,9 @@ Para esto hay que importar un 'almacen' de datos desde redux. Es un método llam
 
 	function reducer(state, action){
 	  switch(action.type){
-	    case 'UPDATE_PROPS': {
-	      const newProps = action.payload.props
-	      return {...state, ...newProps}
+	    case 'UPDATE_PROPS': {                        	// analizo el caso que recibo en action.type
+	      const newProps = action.payload.props		// convierto los datos que recibo en constante
+	      return {...state, ...newProps}			// combino los elementos 
 	    }
 	    default: 
 	      return state
@@ -2207,7 +2207,61 @@ Para esto hay que importar un 'almacen' de datos desde redux. Es un método llam
 
 ```
 
+ Para cambiar lo que hay dentro de `store` usamos el método `.dispatch()`
 
+
+```
+
+	const easter = {          	// nuevo objeto que envío para cambiar contenido
+	  menu : [ {
+	      href: 'index.html',
+	      title: 'Home'
+	    }
+	  ]
+	}
+
+	cheet('s t r i n g', () => {
+	  store.dispatch({
+	    type: 'UPDATE_PROPS',
+	    payload: {
+	      props: easter
+	    }
+	  })
+	})
+	cheet('g o b a c k', () => {
+	  store.dispatch({
+	    type: 'UPDATE_PROPS',
+	    payload: {
+	      props: initialState
+	    }
+	  })
+	})
+
+
+```
+
+Ahora enlazo los componentes.
+
+En cada uno:
+
+```
+
+	import { connect } from 'react-redux'
+
+	function mapStateToProps(state){
+	  return {
+	    logo: state.logoPortada,
+	    menu: state.menu
+	  }
+	}
+	.
+	.
+	.
+	
+	export default connect(mapStateToProps)(Portada)
+
+
+```
 
 
 <br>
