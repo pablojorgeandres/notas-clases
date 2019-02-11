@@ -2054,6 +2054,29 @@ La imprimo antes de cada ```<li>```:
 
 ## <a name="clase36">Añadiendo Cheet JS</a>
 
+[**cheet.js**](https://namuol.github.io/cheet.js/) es una librería que nos permite 'escuchar' el teclado de una manera muy sencilla.
+
+Instalar:
+
+```
+
+	project-folder npm install cheet.js
+	
+
+```
+
+Cheet recibe dos parámetros para funcionar. 
+El primero es el string o set de teclas del keyboard que queremos 'oir' y el segundo una función con lo que queremos que suceda si el string es tipeado por el cliente.
+
+
+```
+
+	cheet( 's t r i n g', () => {} )
+	
+
+```
+Usaremos cheet para animar nuestros llamados _'easterEggs'_ o animaciones sorpresa.
+
 
 <br>
 
