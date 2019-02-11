@@ -2088,6 +2088,127 @@ Usaremos cheet para animar nuestros llamados _'easterEggs'_ o animaciones sorpre
 
 ## <a name="clase37">Configurando Redux</a>
 
+Ahora sí, configuramos Redux en nuestro proyecto.
+
+Vamos a trabajar en el archivo 'index.js' y ya no en el archivo del proyecto 'my-project.js' (invie.js).
+
++ Muevo `import cheet` y sus funciones a index.js.
+
+```
+
+	import cheet from 'cheet.js'
+	
+	cheet('s t r i n g', () => {  mis cambios })
+	cheet('s t r i n g', () => {  estado inicial })
+
+```
+
++ Muevo los objetos con los `elementos` con sus respectivos `imports` también al index.js.
+
+```
+
+import logoPortada from './images/invie.png'
+import guitarraAcustica from './images/invie-acustica.png'
+import guitarraClasica from './images/invie-classic.png'
+import logoFooter from './images/invie-white.png'
+
+const initialState = {
+  menu : [
+    {
+      href: 'index.html',
+      title: 'Home'
+    },
+    {
+      href: '#guitarras',
+      title: 'Guitarras'
+    },
+    {
+      href: 'precios.html',
+      title: 'Precios'
+    }
+  ],
+  logoPortada: logoPortada,
+  guitarras: [{
+  .
+  .
+  .
+
+```
+
++ importo `Provider` desde `react-redux` y envuelvo el tag <mi-proyecto/>.
+  + `Provider` es un administrador de contenido interactivo de `redux`.
+
+```
+	
+	import { Provider } from 'react-redux'
+	
+	ReactDOM.render(
+	  <Provider store={store} >
+	    <mi-proyecto/>
+	  </Provider>,
+	  document.getElementById('root')
+	)
+	serviceWorker.unregister()
+
+
+```
+
++ <Provider> recibe un objeto con los elementos para repartir a los diferentes componente de nuestra aplicación.
+
+```
+
+	<Provider store={store} >
+
+
+```
+
+Para esto hay que importar un 'almacen' de datos desde redux. Es un método llamado `createStore()` que recibe dos parámetros; una función y un objeto. El objeto es el conjunto de elementos de mi aplicación y la función `reducer` será la que administra el dinamismo.
+
+
+```
+
+	import { createStore } from 'redux'
+
+	const initialState = {
+	  menu : [
+	    {
+	      href: 'index.html',
+	      title: 'Home'
+	    },
+	    {
+	      href: '#guitarras',
+	      title: 'Guitarras'
+	    },
+	    {
+	      href: 'precios.html',
+	      title: 'Precios'
+	    }
+	  ],
+	  logoPortada: logoPortada,
+	  guitarras: [{
+	  .
+	  .
+	  .
+	} 
+
+	function reducer(state, action){
+	  switch(action.type){
+	    case 'UPDATE_PROPS': {
+	      const newProps = action.payload.props
+	      return {...state, ...newProps}
+	    }
+	    default: 
+	      return state
+	  }
+	}
+	
+	const store = createStore(reducer, initialState)
+
+
+```
+
+
+
 
 <br>
 
