@@ -3,7 +3,7 @@
 # Index
 #
 
-## [Sección I - How to create a professional profile?](#sec1)
+## [Sección I - Introducción](#sec1)
 ### [01 - Bienvenida al Curso de PostCSS](#clase1)
 ### [02 - Instalación y uso del cliente de PostCSS](#clase2)
 ### [03 - Instalando y usando plugins en PostCSS](#clase3)
@@ -37,4 +37,30 @@
 
 ## [Sección IV - Conclusiones](#sec4)
 ### [21 - Conclusiones del Curso de PostCSS](#clase21)
+
+#
+
+<br>
+<br>
+<br>
+
+# <a name="sec1">Sección I - Introducción </a>
+
+<br>
+<br>
+
+## <a name="clase1"> 01 - Bienvenida al Curso de PostCSS </a>
+
+
+<br>
+<br>
+<br>
+
+## <a name="clase2"> 02 - Instalación y uso del cliente de PostCSS </a>
+
+<br>
+<br>
+<br>
+
+## <a name="clase3"> 03 - Instalando y usando plugins en PostCSS </a>
 
