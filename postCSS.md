@@ -256,12 +256,17 @@ Ej:
 <br>
 <br>
 
-# <a name="sec2">Sección II - NextCSS - El futuro de CSS</a>
+# <a name="sec2">Sección II - CSSNext - El futuro de CSS</a>
 
 <br>
 <br>
 
 ## <a name="clase4"> 04 - Instalando CSSNext </a>
+
+**[CSSNext](http://cssnext.io/)** es un paquete de plugins. 
+Incluye un plugin por cada una de las nuevas características todavía no soportadas por los browsers de CSS.
+
+
 
 
 
