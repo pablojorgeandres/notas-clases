@@ -72,6 +72,88 @@ PostCSS trabaja con features y sintaxis de CSS4 transpilando un archivo de códi
 
 ## <a name="clase2"> 02 - Instalación y uso del cliente de PostCSS </a>
 
+PostCSS puede utilizarse con WebPack, Gulp, Grunt o casi con cualquier administrador de entornos. 
+También corre con su propio cliente.
+
+Para instalar tenemos que tener seteado previamente node.js.
+En terminal, voy a la carpeta del proyecto y:
+
+    npm init
+
+Se genera en la carpeta principal un archivo `package.json` con datos de nuestro proyecto.
+Luego podemos instalar PostCSS.
+
+    npm i postcss-cli --save
+
+[Referencia aquí...](https://github.com/postcss/postcss-cli)
+
+Se agrega entonces la dependencia. Podemos ver la versión en el `package.json` file.
+
+```
+
+    "dependencies": {
+      "postcss-cli": "^6.1.2"
+    }
+
+```
+
+Para invocar esta dependendencia local desde el terminal usamos `npx postcss` segido del comando que necesitemos:
+
+```terminal
+
+    npx postcss --version // imprime versión instalada
+    
+    
+                                      /|\
+                                    //   //
+                                  //       //
+                                //___*___*___//
+                              //--*---------*--//
+                            /|| *             * ||/
+                          // ||*    v6.1.2     *|| //
+                        //   || *             * ||   //
+                      //_____||___*_________*___||_____//
+                      
+
+    
+    npx postcss --help  // imprime comandos
+
+      .
+      .
+      .
+      
+    Basic options:
+      -o, --output   Output file                                            [string]
+      -d, --dir      Output directory                                       [string]
+      -r, --replace  Replace (overwrite) the input file                    [boolean]
+      --map, -m      Create an external sourcemap
+      --no-map       Disable the default inline sourcemaps
+      --verbose      Be verbose                                            [boolean]
+      --watch, -w    Watch files for changes and recompile as needed       [boolean]
+      --env          A shortcut for setting NODE_ENV                        [string]
+      
+      .
+      .
+      .
+
+```
+
+Es posible crear scripts desde el `package.json` pero es realmente más agil para mantener un flujo de trabajo el hacerlo por línea de comandos.
+
+Sobre todo lo que vamos a necesitar saber es cómo generar el archivo en el que se va a transpilar nuestro código CSS.
+Este lo configuramos de la siguiente manera en terminal:
+
+    npx postcss ruta/archivo/origen/style.css -o ruta/archivo/transpilado/style.css
+
+Si quiero generar un archivo.css con otro nombre puedo hacerlo directamente en el comando anterior:
+
+    npx postcss ruta/archivo/origen/style.css -o ruta/archivo/transpilado/otroNombre.css
+
+
+Entonces , lo que ahora nuestro index invocará será el archivo transpilado. Hay que modificarlo en el <head>.
+
+Si agrego un `-w` al final del comando anterior, npm quedará pendiente de los cambios que vallamos haciendo en el archivo e irá actualizando el transpilado cada vez que guardemos los cambios en nuestro archivo.css de origen.
+
 
 [To top...](https://github.com/pablojorgeandres/notas-clases/blob/master/postCSS.md#index)
 
