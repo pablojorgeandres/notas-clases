@@ -163,6 +163,91 @@ Si agrego un `-w` al final del comando anterior, npm quedará pendiente de los c
 
 ## <a name="clase3"> 03 - Instalando y usando plugins en PostCSS </a>
 
+PostCSS es una herramienta para transformar CSS con JS y todo lo que hará es transpilar un archivo legible para multiples browsers a partir de los parámetros de los plugins que instalemos.
+
+[Referencia plugins](https://www.postcss.parts/).
+
+Podemos también generar nuestros plugins personales.
+
+El primero que usaremos es **autoprefixer**. Este es el plugin más popular y existe desde antes de postCSS.
+Lo que este plugin hace es agregar prefijos como -webkit- o -moz- por ejemplo a las propiedades de CSS siempre que sea necesario y los navegadores no soporten esa propiedad.
+
+Para instalar:
+
+        npm i --save autoprefixer
+
+Se agrega entonces la dependencia. Podemos ver la versión en el `package.json` file.
+
+
+```
+
+      "dependencies": {
+        "autoprefixer": "^9.4.9",
+        "postcss-cli": "^6.1.2"
+      }
+
+```
+
+Para utilizarlo hay dos formas.
+
+  • De forma básica o por defecto a través del terminal con el comando `-u` después de `-w`:
+  
+    npx postcss src/css/home.css -o dist/css/home.css -w -u autoprefixer
+    
+  • De forma custom generando un archivo `postcss.config.js` en el root de nuestro proyecto.
+
+   + carga por defecto
+
+```javascript
+
+        module.exports = {
+            plugins: [
+                require('autoprefixer')
+            ]
+        }
+
+
+```
+   + carga avanzada agregando prefijos para propiedades específicas de CSS:
+   
+```javascript
+
+
+        module.exports = {
+            plugins: [
+                require('autoprefixer')({
+                    grid: true
+                })
+            ]
+        }
+
+
+```
+
+Como algo todavía más específico otra posibilidad es la de encender e interrumpir el mecanismo de generar prefijos por cada clase o id de css es nuestro `style.css` de origen.
+[Ver documentación](https://github.com/postcss/autoprefixer) por propiedades ajustables.
+
+Ej:
+
+```CSS
+
+        .a {
+            transition: 1s; /* será prefixeada */
+        }
+
+        .b {
+            /* autoprefixer: off */
+            transition: 1s; /* no será prefixeada */
+        }
+
+        .c {
+            /* autoprefixer: ignore next */
+            transition: 1s; /* no será prefixeada */
+            mask: url(image.png); /* será prefixeada */
+        }
+
+
+```
 
 
 [To top...](https://github.com/pablojorgeandres/notas-clases/blob/master/postCSS.md#index)
